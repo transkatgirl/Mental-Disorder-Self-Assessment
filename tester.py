@@ -1,42 +1,50 @@
 import json
 import csv
 import datetime
-import pixie
 import math
 
-input_file = open("data/hitop-sr.json")
+input_file = open("data/hitop.json")
 data = json.loads(input_file.read())
 
-boxes = {}
-connections = []
 layers = []
 
-def flatten_tree(item, levels, headers):
+def flatten_tree(item, depth):
 	box = {}
+	if "children" in item:
+		box["children"] = item["children"]
+	if "id" in item:
+		box["id"] = item["id"]
 	if "label" in item:
 		box["heading"] = item["label"]
-		box["level"] = item["level"]
 	elif "header" in item:
-		if item["header"] in headers:
-			if headers[item["header"]]["show"]:
-				box["heading"] = item["header"]
-			box["level"] = headers[item["header"]]["level"]
-			box["body"] = item["items"]
-	if "level" in box:
-		while box["level"] >= len(layers):
-			layers.append([])
+		box["heading"] = item["header"]
+	if "items" in item:
+		box["body"] = item["items"]
+	while depth >= len(layers):
+		layers.append([])
 
-		if "id" in item:
-			boxes[item["id"]] = box
-			layers[box["level"]].append(item["id"])
+	if "id" in item:
+		has_item = False
+		for neighbor in layers[depth]:
+			if "id" in neighbor:
+				if neighbor["id"] == item["id"]:
+					neighbor["children"] += item["children"]
+					has_item = True
+		if not has_item:
+			layers[depth].append(box)
+	elif "heading" in box:
+		layers[depth].append(box)
+	elif "body" in box:
+		layers[depth].append(box)
+
 	if "members" in item:
 		for member in item["members"]:
-			if "id" not in member:
-				if "header" in member:
-					member["id"] = item["id"] + "." + member["header"]
-			if "id" in member:
-				connections.append({"from": item["id"], "to": member["id"]})
-			flatten_tree(member, levels, headers)
+			member["children"] = []
+			if "id" in item:
+				member["children"].append(item["id"])
+			else:
+				member["children"] += item["children"]
+			flatten_tree(member, depth + 1)
 
 scales = {}
 
@@ -87,7 +95,7 @@ if "dependencies" in data["metadata"]:
 		# TODO: Print mappings
 
 if data["metadata"]["type"] == "tree-diagram":
-	print("\n--- Tree Diagram ---")
+	print("\n--- Tree Diagram ---\n")
 	headers = {}
 	i = 0
 	for level in data["levels"]:
@@ -99,45 +107,48 @@ if data["metadata"]["type"] == "tree-diagram":
 				headers[header] = {"level": i, "show": show_headers}
 		i += 1
 
-	flatten_tree(data["tree"], data["levels"], headers)
+	flatten_tree(data["tree"], 0)
 
-	print("\nLevels:")
-	for level in data["levels"]:
-		print(level)
-	print("\nLayers:")
+	level = 0
 	for layer in layers:
-		print(layer)
-	print("\nBoxes:")
-	for box in boxes.items():
-		print(box)
-	print("\nConnections:")
-	for connection in connections:
-		print(connection)
-
-
-	#print(tree_width)
-	#print(tree_height)
-
-	"""image = pixie.Image((tree_width+1) * 250, (tree_height+1) * 250)
-	font = pixie.read_font("Roboto-Regular_1.ttf")
-	font.size = 20
-
-	for box in boxes.values():
-		if "heading" in box:
-			image.fill_text(
-				font,
-				box["heading"],
-				bounds = pixie.Vector2(200, 200),
-				transform = pixie.translate(box["x"] * 250, box["y"] * 250)
-			)
-
-	image.write_file("text.png")"""
-
-	# TODO
+		if "label" in data["levels"][level]:
+			print("-", data["levels"][level]["label"])
+		else:
+			print("~")
+		if "description" in data["levels"][level]:
+			print("\t-", data["levels"][level]["description"])
+		if len(layer) == 0:
+			if "label_long" in data["levels"][level]:
+				print("\t-", "[", data["levels"][level]["label_long"], "]")
+		level += 1
+		for item in layer:
+			if "id" in item:
+				if "children" in item:
+					print("\t-", item["children"], "->", item["id"])
+				else:
+					print("\t-", item["id"])
+				if "heading" in item:
+					print("\t\t-", item["heading"])
+				if "body" in item:
+					for line in item["body"]:
+						print("\t\t-", line)
+			else:
+				if "children" in item:
+					print("\t-", item["children"], "->", end=' ')
+				else:
+					print("\t-", end=' ')
+				if "heading" in item:
+					print(item["heading"])
+					if "body" in item:
+						for line in item["body"]:
+							print("\t\t-", line)
+				elif "body" in item:
+						print(item["body"])
+				else:
+					print()
 
 elif data["metadata"]["type"] == "questionnaire":
 	print("\n--- Questionnaire ---\n")
-	# TODO
 
 	for key, value in data["scales"].items():
 		flatten_scales(key, value)
