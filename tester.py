@@ -114,7 +114,7 @@ if data["metadata"]["type"] == "tree-diagram":
 		if "label" in data["levels"][level]:
 			print("-", data["levels"][level]["label"])
 		else:
-			print("~")
+			print()
 		if "description" in data["levels"][level]:
 			print("\t-", data["levels"][level]["description"])
 		if len(layer) == 0:
@@ -134,18 +134,20 @@ if data["metadata"]["type"] == "tree-diagram":
 						print("\t\t-", line)
 			else:
 				if "children" in item:
-					print("\t-", item["children"], "->", end=' ')
+					print("\t-", item["children"], end=' ')
 				else:
 					print("\t-", end=' ')
 				if "heading" in item:
-					print(item["heading"])
+					print("->", item["heading"])
 					if "body" in item:
 						for line in item["body"]:
 							print("\t\t-", line)
-				elif "body" in item:
-						print(item["body"])
 				else:
 					print()
+
+				if "body" in item:
+					for line in item["body"]:
+						print("\t\t-", line)
 
 elif data["metadata"]["type"] == "questionnaire":
 	print("\n--- Questionnaire ---\n")
