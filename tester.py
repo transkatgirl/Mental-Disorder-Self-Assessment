@@ -144,10 +144,9 @@ if data["metadata"]["type"] == "tree-diagram":
 							print("\t\t-", line)
 				else:
 					print()
-
-				if "body" in item:
-					for line in item["body"]:
-						print("\t\t-", line)
+					if "body" in item:
+						for line in item["body"]:
+							print("\t\t-", line)
 
 elif data["metadata"]["type"] == "questionnaire":
 	print("\n--- Questionnaire ---\n")
