@@ -1,0 +1,57 @@
+{
+	"version": 1712840093515,
+	"metadata": {
+		"label": "HiTOP Self Report Assessment",
+		"label_short": "HiTOP-SR",
+		"description": [
+			"The HiTOP-SR is a mental health intake assessment covering all elements of the HiTOP model.",
+			"HiTOP-consistent assessment instruments are a work in progress; This early version of the HiTOP-SR does not currently cover harmful substance use."
+		],
+		"type": "questionnaire",
+		"references": [
+			{
+				"title": "HiTOP-SR Research-Ready - Version 2023-12-01",
+				"retrieved": 1712840093515,
+				"link": "https://www.3plab.org/hitop/"
+			}
+		],
+		"dependencies": [
+			{
+				"file": "hitop.json",
+				"version": 1712840093515,
+				"mapping": {}
+			}
+		]
+	},
+	"instructions": [
+		"In this survey, you will be asked to respond to a number of statements about your thoughts, feelings, and behavior. Some of these things are pretty common, whereas others are less common.",
+		"As you complete the survey, please consider whether there have been significant times during the last 12 months during which the following statements applied to you. Then please select the option that best describes how well each statement described you during that period."
+	],
+	"estimated_seconds_per_question": 8,
+	"scales": {
+		"": {
+			"label": "",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"function": "normal",
+					"mean": 0,
+					"stddev": 0
+				}
+			},
+			"subscales": {}
+		}
+	},
+	"questions": {},
+	"choices": {
+		"12-month-significance": {
+			"instructions": "In the past 12 months:",
+			"options": [
+				"Not at all",
+				"A little",
+				"Moderately",
+				"A lot"
+			]
+		}
+	}
+}

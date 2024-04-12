@@ -1,0 +1,444 @@
+{
+	"version": 1712840093515,
+	"metadata": {
+		"label": "Hierarchical Taxonomy of Psychopathology",
+		"label_short": "HiTOP",
+		"description": [
+			"The Hierarchical Taxonomy of Psychopathology (HiTOP) framework is a classification system of mental health problems. HiTOP uses continuous dimensions of varying levels of specificity, organized hierarchically from narrowest to broadest.",
+			"Unlike traditional classification systems, such as the DSM and ICD, HiTOP treats mental health as a continuum, rather than as discrete categories. Classification is performed based on observable patterns of mental health problems.",
+			"The HiTOP model is a work in progress; Several aspects of the current model are provisional or incomplete. The model does not currently cover developmental disorders."
+		],
+		"type": "tree-diagram",
+		"references": [
+			{
+				"title": "HiTOP Model - Version 2022-11-24",
+				"retrieved": 1712792090306,
+				"link": "https://web.archive.org/web/20240411125623/https://www.hitop-system.org/current-model"
+			},
+			{
+				"title": "The Hierarchical Taxonomy Of Psychopathology (HiTOP): A Dimensional Alternative to Traditional Nosologies",
+				"retrieved": 1712792090306,
+				"link": "https://renaissance.stonybrookmedicine.edu/sites/default/files/HiTOP%20manuscript_online_posting.pdf"
+			},
+			{
+				"title": "Hierarchical Taxonomy of Psychopathology - Wikipedia",
+				"retrieved": 1712840093515,
+				"link": "https://en.wikipedia.org/w/index.php?title=Hierarchical_Taxonomy_of_Psychopathology&oldid=1194869178"
+			}
+		]
+	},
+	"levels": [
+		{
+			"label": "Superspectra",
+			"description": "Very broad dimensions that comprise multiple spectra."
+		},
+		{
+			"label": "Spectra",
+			"description": "Larger constellations of syndromes."
+		},
+		{
+			"label": "Subfactors",
+			"description": "Clusters of closely-related syndromes."
+		},
+		{
+			"label": "Syndromes",
+			"label_long": "Dimensional Syndromes",
+			"description": "Composites of closely-related components and traits."
+		},
+		{
+			"label": "Homogeneous Symptom Components / Maladaptive Traits",
+			"description": "Constellations of closely-related symptom manifestations.",
+			"headers": [
+				"Components",
+				"Traits"
+			]
+		},
+		{
+			"label": "Symptoms",
+			"label_long": "Individual Signs, Symptoms, and Maladaptive Behaviors"
+		},
+		{
+			"label": "Related To",
+			"description": "Related constructs and disorders linked to subfactors and specta. Not a formal part of the HiTOP framework.",
+			"headers": [
+				"Related"
+			],
+			"show_headers": false
+		}
+	],
+	"tree": {
+		"label": "General Factor of Psychopathology (p-factor)",
+		"id": "superspectra-general",
+		"level": 0,
+		"members": [
+			{
+				"label": "Somatoform",
+				"id": "spectra-somatoform",
+				"level": 1,
+				"members": [
+					{
+						"header": "Components",
+						"items": [
+							"Conversion",
+							"Somatization",
+							"Malaise",
+							"Head Pain",
+							"Gastro-intestinal",
+							"Cognitive"
+						]
+					},
+					{
+						"header": "Related",
+						"items": [
+							"Illness Anxiety Disorder",
+							"Somatic Symptom Disorder"
+						]
+					}
+				]
+			},
+			{
+				"label": "Internalizing",
+				"id": "spectra-internalizing",
+				"level": 1,
+				"members": [
+					{
+						"header": "Traits",
+						"items": [
+							"Anxiousness",
+							"Emotional lability",
+							"Hostility",
+							"Perseveration",
+							"(low) Restricted affectivity",
+							"Separation insecurity",
+							"Submissive-ness",
+							"Identity problems",
+							"Negative relationships",
+							"Fragility",
+							"Ineptitude",
+							"(low) Invulnerability"
+						]
+					},
+					{
+						"label": "Sexual Problems",
+						"id": "subfactor-sexual",
+						"level": 2,
+						"members": [
+							{
+								"header": "Related",
+								"items": [
+									"Arousal Difficulties",
+									"Low Desire",
+									"Orgasmic Dysfunction",
+									"Sexual Pain"
+								]
+							}
+						]
+					},
+					{
+						"label": "Eating Pathology",
+						"id": "subfactor-eating",
+						"level": 2,
+						"members": [
+							{
+								"header": "Related",
+								"items": [
+									"Anorexia Nervosa",
+									"Binge Eating Disorder",
+									"Bulimia Nervosa"
+								]
+							}
+						]
+					},
+					{
+						"label": "Fear",
+						"id": "subfactor-fear",
+						"level": 2,
+						"members": [
+							{
+								"header": "Components",
+								"items": [
+									"Interactive anxiety",
+									"Performance anxiety",
+									"Public places",
+									"Enclosed spaces",
+									"Animal phobia",
+									"Situational phobia",
+									"Blood-injection-injury",
+									"Physiological panic",
+									"Psychological panic",
+									"Cleaning",
+									"Rituals",
+									"Checking"
+								]
+							},
+							{
+								"header": "Related",
+								"items": [
+									"Agoraphobia",
+									"Obsessive-Compulsive Disorder",
+									"Panic Disorder",
+									"Social Anxiety Disorder",
+									"Social Phobia",
+									"Specific Phobia"
+								]
+							}
+						]
+					},
+					{
+						"label": "Distress",
+						"id": "subfactor-distress",
+						"level": 2,
+						"members": [
+							{
+								"header": "Components",
+								"items": [
+									"Dysphoria",
+									"Lassitude",
+									"Anhedonia",
+									"Insomnia",
+									"Suicidality",
+									"Agitation",
+									"Retardation",
+									"Appetite loss",
+									"Appetite gain",
+									"(low) Wellbeing",
+									"GAD Symptoms",
+									"Re-experiencing",
+									"Avoidance",
+									"Hyperarousal",
+									"Numbing",
+									"Dissociation",
+									"Irritability",
+									"Pure obsessions"
+								]
+							},
+							{
+								"header": "Related",
+								"items": [
+									"Borderline Personality Disorder",
+									"Dysthymia",
+									"Generalized Anxiety Disorder",
+									"Major Depressive Disorder",
+									"Post-traumatic Stress Disorder"
+								]
+							}
+						]
+					},
+					{
+						"label": "Mania",
+						"id": "subfactor-mania",
+						"level": 2,
+						"members": [
+							{
+								"header": "Components",
+								"items": [
+									"Euphoric activation",
+									"Hyper-active cognition",
+									"Reckless over-confidence"
+								]
+							},
+							{
+								"header": "Related",
+								"items": [
+									"Bipolar I & II"
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"label": "Thought Disorder",
+				"id": "spectra-disordered",
+				"level": 1,
+				"members": [
+					{
+						"id": "subfactor-mania"
+					},
+					{
+						"header": "Components",
+						"items": [
+							"Psychotic",
+							"Disorganized",
+							"Inexpressivity",
+							"Avolition"
+						]
+					},
+					{
+						"header": "Traits",
+						"items": [
+							"Eccentricity",
+							"Cognitive/perceptual dysregulation",
+							"Unusual beliefs and experiences",
+							"Fantasy proneness"
+						]
+					},
+					{
+						"header": "Related",
+						"items": [
+							"Mood Disorders with Psychosis",
+							"Paranoid Personality Disorder",
+							"Schizophrenia Spectrum",
+							"Schizoid Personality Disorder",
+							"Schizotypal Personality Disorder"
+						]
+					}
+				]
+			},
+			{
+				"label": "Detachment",
+				"id": "spectra-detached",
+				"level": 1,
+				"members": [
+					{
+						"header": "Traits",
+						"items": [
+							"Anhedonia",
+							"Depressivity",
+							"Intimacy avoidance",
+							"Suspicious-ness",
+							"Withdrawal",
+							"Interpersonal passivity",
+							"Disaffiliative-ness",
+							"(low) Attention seeking"
+						]
+					},
+					{
+						"header": "Related",
+						"items": [
+							"Avoidant Personality Disorder",
+							"(low) Histrionic Personality Disorder",
+							"Schizoid Personality Disorder"
+						]
+					}
+				]
+			},
+			{
+				"label": "Externalizing",
+				"id": "superspectra-externalizing",
+				"level": 0,
+				"members": [
+					{
+						"label": "Disinhibited Externalizing",
+						"id": "spectra-disinhibited",
+						"level": 1,
+						"members": [
+							{
+								"header": "Traits",
+								"items": [
+									"Problematic impulsivity",
+									"Irresponsibility",
+									"Theft",
+									"Distractibility",
+									"Risk taking",
+									"(low) Rigid perfectionism",
+									"(low) Ruminative deliberation",
+									"(low) Workaholism"
+								]
+							},
+							{
+								"label": "Harmful Substance Use",
+								"id": "subfactor-substance",
+								"level": 2,
+								"members": [
+									{
+										"header": "Components",
+										"items": [
+											"Alcohol use",
+											"Alcohol problems",
+											"Marijuana use",
+											"Marijuana problems",
+											"Drug use",
+											"Drug problems"
+										]
+									},
+									{
+										"header": "Related",
+										"items": [
+											"Substance-Related Disorders"
+										]
+									}
+								]
+							},
+							{
+								"label": "Antisocial Behavior",
+								"id": "subfactor-antisocial",
+								"level": 2,
+								"members": [
+									{
+										"header": "Components",
+										"items": [
+											"Physical aggression",
+											"Destructive aggression",
+											"Relational aggression",
+											"Fraud"
+										]
+									},
+									{
+										"header": "Traits",
+										"items": [
+											"Impatient urgency",
+											"(low) Planful control",
+											"(low) Dependability",
+											"Alienation",
+											"Boredom proneness",
+											"Blame externalization",
+											"(low) Honesty",
+											"Rebelliousness",
+											"(low) Empathy",
+											"Excitement seeking"
+										]
+									},
+									{
+										"header": "Related",
+										"items": [
+											"Antisocial Personality Disorder",
+											"Conduct Disorder",
+											"Intermittent Explosive Disorder",
+											"Oppositional Defiant Disorder",
+											"Attention-Deficit/Hyperactivity Disorder"
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"label": "Antagonistic Externalizing",
+						"id": "spectra-antagonistic",
+						"level": 1,
+						"members": [
+							{
+								"id": "subfactor-antisocial"
+							},
+							{
+								"header": "Traits",
+								"items": [
+									"Attention seeking",
+									"Callousness",
+									"Deceitfulness",
+									"Grandiosity",
+									"Manipulative-ness",
+									"Rudeness",
+									"Egocentricity",
+									"Dominance",
+									"Flirtatiousness",
+									"(low) Timorousness"
+								]
+							},
+							{
+								"header": "Related",
+								"items": [
+									"Borderline Personality Disorder",
+									"Histrionic Personality Disorder",
+									"Narcissistic Personality Disorder",
+									"Paranoid Personality Disorder"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
