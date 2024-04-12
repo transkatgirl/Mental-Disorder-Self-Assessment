@@ -19,17 +19,20 @@
 		"This questionnaire asks about difficulties due to health conditions. Health conditions include diseases or illnesses, other health problems that may be short or long lasting, injuries, mental or emotional problems, and problems with alcohol or drugs.",
 		"Think back over the past 30 days and answer these questions, thinking about how much difficulty you had doing the following activities."
 	],
+	"interpretation": [
+		"The WHODAS outputs scores ranging from 0 to 100. A score of 0 represents no disability, while a score of 100 represents full disability."
+	],
 	"estimated_seconds_per_question": 30,
 	"scales": {
 		"total": {
 			"label": "Total",
 			"scoring": {
 				"average": true,
-				"show_raw": true,
 				"percentile": {
 					"function": "ln",
 					"multiplier": 14.372,
-					"intercept": 37.598
+					"intercept": 37.598,
+					"show_raw": true
 				}
 			},
 			"subscales": {
@@ -39,7 +42,7 @@
 					"scoring": {
 						"average": true,
 						"offset": -1,
-						"divisor": 4
+						"multiplier": 25
 					}
 				},
 				"mobility": {
@@ -48,7 +51,7 @@
 					"scoring": {
 						"average": true,
 						"offset": -1,
-						"divisor": 4
+						"multiplier": 25
 					}
 				},
 				"self-care": {
@@ -57,7 +60,7 @@
 					"scoring": {
 						"average": true,
 						"offset": -1,
-						"divisor": 4
+						"multiplier": 25
 					}
 				},
 				"getting-along": {
@@ -66,7 +69,7 @@
 					"scoring": {
 						"average": true,
 						"offset": -1,
-						"divisor": 4
+						"multiplier": 25
 					}
 				},
 				"life-activities": {
@@ -75,7 +78,7 @@
 					"scoring": {
 						"average": true,
 						"offset": -1,
-						"divisor": 4
+						"multiplier": 25
 					},
 					"subscales": {
 						"work-activities": {
@@ -83,7 +86,7 @@
 							"scoring": {
 								"average": true,
 								"offset": -1,
-								"divisor": 4
+								"multiplier": 25
 							}
 						}
 					}
@@ -94,7 +97,7 @@
 					"scoring": {
 						"average": true,
 						"offset": -1,
-						"divisor": 4
+						"multiplier": 25
 					}
 				}
 			}

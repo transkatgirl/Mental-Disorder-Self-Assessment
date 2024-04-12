@@ -57,13 +57,12 @@ def print_scale_scoring(indent, id, item):
 	if "label" in item:
 		print(("\t" * indent) + "-", item["label"], "(" + id + ")")
 	else:
-		print(("\t" * indent) + "-", id)
+		print(("\t" * indent) + "-", "(" + id + ")")
 	if "choices" in item:
 		print(("\t" * (indent + 1)) + "- choices:", item["choices"])
 	if "scoring" in item:
 		for key, value in item["scoring"].items():
 			print(("\t" * (indent + 1)) + "-", key + ":", value)
-
 	if "subscales" in item:
 		for key, value in item["subscales"].items():
 			print_scale_scoring(indent + 1, key, value)
@@ -154,12 +153,15 @@ if data["metadata"]["type"] == "questionnaire":
 
 	print("\nThis questionnaire will take approximately", math.ceil(datetime.timedelta(seconds=data["estimated_seconds_per_question"] * length) / datetime.timedelta(minutes=1)), "minutes to complete.")
 
+	print()
 	for section, question_set in data["questions"].items():
 		print("\n#", section + "\n")
 		last_instruction = ""
 		for question, scale in question_set.items():
 			choice = None
+			scale_id = None
 			if scale in scales:
+				scale_id = scale
 				if "choices" in scales[scale]:
 					choice = data["choices"][scales[scale]["choices"]]
 			elif scale in data["choices"]:
@@ -177,14 +179,13 @@ if data["metadata"]["type"] == "questionnaire":
 					print("\t- Minimum:", choice["range"]["minimum"])
 					print("\t- Maximum:", choice["range"]["maximum"])
 					print("\t- Increment:", choice["range"]["increment"])
+				if scale_id is not None:
+					print("\n\t- Scale:", scale_id)
+
+	print("\n")
+	for line in data["interpretation"]:
+		print(line)
 
 	print("\nScoring:")
 	for key, value in data["scales"].items():
 		print_scale_scoring(0, key, value)
-
-
-	# TODO: Decode scoring info
-
-
-#print()
-#print(data)
