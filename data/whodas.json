@@ -20,7 +20,7 @@
 		"Think back over the past 30 days and answer these questions, thinking about how much difficulty you had doing the following activities."
 	],
 	"interpretation": [
-		"The WHODAS outputs scores ranging from 0 to 100. A score of 0 represents no disability, while a score of 100 represents full disability."
+		"Scores ranging from 0 to 100 are reported. A score of 0 represents no disability, while a score of 100 represents full disability."
 	],
 	"estimated_seconds_per_question": 30,
 	"scales": {

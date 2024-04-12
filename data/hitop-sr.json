@@ -19,7 +19,123 @@
 			{
 				"file": "hitop.json",
 				"version": 1712840093515,
-				"mapping": {}
+				"mapping": {
+					"subfactor-fear": [
+						"Agoraphobia",
+						"Checking",
+						"Cleaning",
+						"Counting",
+						"Excoriation",
+						"Hoarding",
+						"Hypervigilance",
+						"Panic",
+						"SpecifcPhobiaIndex",
+						"AnimalPhobia",
+						"BloodPhobia",
+						"SituationalPhobia",
+						"TraumaReactions",
+						"Trichotillomania"
+					],
+					"subfactor-antisocial": [
+						"AntisocActs",
+						"Oppositional"
+					],
+					"subfactor-eating": [
+						"AppetiteLoss",
+						"BingeEating",
+						"BodyDissatisfaction",
+						"BodyFocus",
+						"DietRestraintEfforts",
+						"ExcessiveExercise",
+						"FoodSelectivity",
+						"MuscleBuilding",
+						"Purging",
+						"RestrictiveEating"
+					],
+					"spectra-somatoform": [
+						"BodilyDistress",
+						"Conversion",
+						"DiseaseConvict",
+						"HealthAnxiety",
+						"SomaticPreocc"
+					],
+					"spectra-antagonistic": [
+						"Callousness",
+						"Dishonesty",
+						"Deceitfulness",
+						"Manipulativeness",
+						"Domineering",
+						"Entitlement",
+						"Exhib",
+						"Grandiosity",
+						"SocAggression"
+					],
+					"subfactor-distress": [
+						"CogDisorg",
+						"Distress",
+						"Anehdonia",
+						"AnxiousWorry",
+						"DepressedMood",
+						"Lassitude",
+						"ShameGuilt",
+						"Emotionality",
+						"AffLability",
+						"AngryHostility",
+						"Irritability",
+						"Insomnia",
+						"Nightmares",
+						"NSSI",
+						"Suicidality"
+					],
+					"subfactor-sexual": [
+						"DiffReachingOrgasm",
+						"LowSexArousal",
+						"LowSexInterest",
+						"Paraphilias",
+						"PrematureOrgasm",
+						"RiskySex",
+						"SexSubstanceUse",
+						"SexualDistress",
+						"SexualPain"
+					],
+					"spectra-disinhibited": [
+						"Disorg",
+						"Gambling",
+						"Gaming",
+						"Hyperdelib",
+						"NonPersist",
+						"NonPlan",
+						"Perfectionism",
+						"ProbShopping",
+						"Restless",
+						"Rigidity",
+						"RiskAversion",
+						"RiskTaking",
+						"Workaholism"
+					],
+					"spectra-disordered": [
+						"Dissociation",
+						"Eccentric",
+						"FantasyProne",
+						"Mistrust",
+						"Cynicism",
+						"Suspiciousness",
+						"RealityDist",
+						"Delusions",
+						"Hallucinations"
+					],
+					"subfactor-mania": [
+						"ManicEnergy"
+					],
+					"spectra-detached": [
+						"RestrictedAffect",
+						"RomDisinterest",
+						"SocAloofness",
+						"SocAnxiety",
+						"Submissiveness",
+						"Wellbeing"
+					]
+				}
 			}
 		]
 	},
@@ -27,7 +143,10 @@
 		"In this survey, you will be asked to respond to a number of statements about your thoughts, feelings, and behavior. Some of these things are pretty common, whereas others are less common.",
 		"As you complete the survey, please consider whether there have been significant times during the last 12 months during which the following statements applied to you. Then please select the option that best describes how well each statement described you during that period."
 	],
-	"interpretation": [],
+	"interpretation": [
+		"Scores are reported as t-scores by default, which have a mean of 50 and a standard deviation of 10. Statistically-based cutoffs (such as a t-score of 65-70 or greater) may be useful heuristics, but they should not be used in an inflexible manner. Low scores (such as a t-score below 40) are not always meaningful, and need to be evaluated on a case-by-case basis.",
+		"This scoring system makes the assumption that scores are normally distributed, and this assumption is often violated when evaluating pathological traits. If the scale is not normally distributed, then the t-scores may match up with either a higher or lower percentile, depending on how the distribution is skewed."
+	],
 	"estimated_seconds_per_question": 8,
 	"scales": {
 		"Agoraphobia": {
