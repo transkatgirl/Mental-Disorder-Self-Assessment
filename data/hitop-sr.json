@@ -1229,503 +1229,196 @@
 			"subscales": {}
 		}
 	},
-	"display_question_headings": false,
+	"randomize": true,
 	"questions": {
-		"Agoraphobia": {
+		"Fear": {
 			"I felt like I would be unable to breathe in a small, tight, or enclosed space.": "Agoraphobia",
 			"I was afraid of getting trapped in a crowd.": "Agoraphobia",
 			"I avoided small, tight, or enclosed spaces.": "Agoraphobia",
 			"I avoided small public spaces (such as an office or restaurant).": "Agoraphobia",
-			"I was afraid that I would have a panic attack in a small, tight, or enclosed space.": "Agoraphobia"
-		},
-		"Antisocial Behavior": {
-			"I vandalized or defaced public property.": "AntisocActs",
-			"I found it enjoyable to hurt animals.": "AntisocActs",
-			"I got in trouble with the law.": "AntisocActs",
-			"I forged checks or used other people\u2019s credit cards without permission.": "AntisocActs",
-			"I stole from someone I knew without their knowledge.": "AntisocActs",
-			"I forced someone to have sex with me.": "AntisocActs",
-			"I broke into houses, buildings, or cars.": "AntisocActs",
-			"I threatened someone with a weapon like a bat, brick, knife, or gun.": "AntisocActs"
-		},
-		"Appetite Loss": {
-			"My appetite was poor.": "AppetiteLoss",
-			"I lost a significant amount of weight without even trying.": "AppetiteLoss",
-			"I did not feel much like eating.": "AppetiteLoss"
-		},
-		"Binge Eating": {
-			"Once I started eating, I could not stop.": "BingeEating",
-			"I could not resist eating.": "BingeEating",
-			"I ate a very large amount of food in a short period of time (e.g., within 2 hours).": "BingeEating"
-		},
-		"Bodily Distress": {
-			"I had pains in several parts of my body.": "BodilyDistress",
-			"My muscles were weak.": "BodilyDistress",
-			"I felt something was wrong with my body.": "BodilyDistress",
-			"I was bothered by stomach symptoms (diarrhea, nausea, stomach pain etc.)": "BodilyDistress",
-			"I experienced chest pain.": "BodilyDistress",
-			"I was bothered by several bodily symptoms (e.g., headache, fatigue or stomach problems) for which there was no clear or sufficient medical explanation.": "BodilyDistress"
-		},
-		"Body Dissatisfaction": {
-			"I couldn\u2019t stop comparing my body to those of others.": "BodyDissatisfaction",
-			"I wished I could change certain parts of my body.": "BodyDissatisfaction",
-			"I was dissatisfied with the shape of my body.": "BodyDissatisfaction",
-			"I did not like my weight (the number on the scale).": "BodyDissatisfaction"
-		},
-		"Body Focus": {
-			"I spent a lot of time looking at myself.": "BodyFocus",
-			"If I passed by a reflective surface (like a window), I checked how I looked.": "BodyFocus",
-			"I spent a lot of time getting ready before going out.": "BodyFocus",
-			"I paid a lot of attention to how I look.": "BodyFocus",
-			"I spent a lot of time grooming myself.": "BodyFocus"
-		},
-		"Callousness": {
-			"I was not all that concerned with other peoples' needs.": "Callousness",
-			"I did not really care how others felt.": "Callousness",
-			"I did not have much sympathy for others.": "Callousness",
-			"People told me I was coldhearted.": "Callousness",
-			"I did not concern myself with helping people.": "Callousness",
-			"Some people thought I was uncaring and unfeeling.": "Callousness"
-		},
-		"Checking": {
+			"I was afraid that I would have a panic attack in a small, tight, or enclosed space.": "Agoraphobia",
 			"I felt the urge to check to make sure I really had done something.": "Checking",
 			"Even when I was very careful, I worried whether I had done something correctly.": "Checking",
 			"I had a nagging doubt that I'd failed to do something important.": "Checking",
 			"After I left my home, I worried that I failed to do something.": "Checking",
-			"I found myself worrying whether I actually did something or only intended to do it.": "Checking"
-		},
-		"Cleaning": {
+			"I found myself worrying whether I actually did something or only intended to do it.": "Checking",
 			"It was difficult for me to touch something that was dirty.": "Cleaning",
 			"I worried about getting germs through contact with animals.": "Cleaning",
 			"I avoided contact with people because I was worried about germs.": "Cleaning",
 			"I felt the need to wash my hands again and again.": "Cleaning",
 			"I was obsessed with cleanliness.": "Cleaning",
-			"I had to clean myself because I felt contaminated.": "Cleaning"
+			"I had to clean myself because I felt contaminated.": "Cleaning",
+			"I felt compelled to count things.": "Counting",
+			"I avoided numbers that could bring bad luck.": "Counting",
+			"I counted things over and over again.": "Counting",
+			"I thought that certain numbers were lucky for me.": "Counting",
+			"I needed to count to a certain number before starting an activity.": "Counting",
+			"My skin picking created problems for me.": "Excoriation",
+			"I tried to conceal areas where I had picked at my skin.": "Excoriation",
+			"I picked at areas of my skin that I don't like.": "Excoriation",
+			"I found it difficult to throw things away.": "Hoarding",
+			"I collected things I did not need.": "Hoarding",
+			"My home was so cluttered that it was difficult to get around.": "Hoarding",
+			"I could not resist buying something that I did not need.": "Hoarding",
+			"My compulsive buying caused me financial problems.": "Hoarding",
+			"I kept items that I did not need.": "Hoarding",
+			"I felt like I was in danger.": "Hypervigilance",
+			"I felt on guard and on edge.": "Hypervigilance",
+			"I was easily startled.": "Hypervigilance",
+			"I felt that the world is a dangerous place.": "Hypervigilance",
+			"I was watchful for danger.": "Hypervigilance",
+			"I was concerned that other persons might bring me harm.": "Hypervigilance",
+			"I felt dizzy or lightheaded.": "Panic",
+			"I was trembling or shaking.": "Panic",
+			"My heart was racing or pounding.": "Panic",
+			"I was afraid that I might be having a heart attack.": "Panic",
+			"I was so worked up I thought I might die.": "Panic",
+			"I was afraid of spiders.": "AnimalPhobia",
+			"I was fearful of rats or mice.": "AnimalPhobia",
+			"I was afraid of getting stung or bitten.": "AnimalPhobia",
+			"I avoided areas where there might be snakes or lizards.": "AnimalPhobia",
+			"The sight of an insect (e.g., a cockroach) upset me.": "AnimalPhobia",
+			"Seeing something gory made me woozy.": "BloodPhobia",
+			"The sight of a needle upset me.": "BloodPhobia",
+			"I felt faint at the sight of blood.": "BloodPhobia",
+			"I was afraid of flying.": "SituationalPhobia",
+			"I was afraid of heights.": "SituationalPhobia",
+			"I became very anxious during a storm.": "SituationalPhobia",
+			"I was afraid of the dark.": "SituationalPhobia",
+			"I avoided places that reminded me of something bad that happened.": "TraumaReactions",
+			"I avoided people who might bring back bad memories.": "TraumaReactions",
+			"I had repeated memories of a traumatic event.": "TraumaReactions",
+			"I suddenly felt as if a traumatic event were actually happening again.": "TraumaReactions",
+			"My mind was flooded with troubling images of a bad experience.": "TraumaReactions",
+			"I was embarrassed because I pulled my hair.": "Trichotillomania",
+			"I pulled out hairs that were a different color or texture.": "Trichotillomania",
+			"I felt an urge to pull my hair.": "Trichotillomania"
 		},
-		"Cognitive Problems": {
-			"I struggled to think clearly.": "CogDisorg",
-			"My mind felt mixed up.": "CogDisorg",
-			"I was easily distracted.": "CogDisorg",
-			"I had trouble remembering things.": "CogDisorg",
-			"My thoughts kept jumping from one thing to another.": "CogDisorg"
+		"Antisocial": {
+			"I vandalized or defaced public property.": "AntisocActs",
+			"I found it enjoyable to hurt animals.": "AntisocActs",
+			"I got in trouble with the law.": "AntisocActs",
+			"I forged checks or used other people's credit cards without permission.": "AntisocActs",
+			"I stole from someone I knew without their knowledge.": "AntisocActs",
+			"I forced someone to have sex with me.": "AntisocActs",
+			"I broke into houses, buildings, or cars.": "AntisocActs",
+			"I threatened someone with a weapon like a bat, brick, knife, or gun.": "AntisocActs",
+			"I enjoyed rebelling against authority figures (e.g., police, teachers, bosses).": "Oppositional",
+			"Life felt too short to follow other peoples' rules.": "Oppositional",
+			"I was a rule breaker.": "Oppositional",
+			"I didn't care whether my behavior was considered proper or not.": "Oppositional",
+			"I didn't pay much attention to social standards of behavior.": "Oppositional",
+			"I did things on purpose that were against the rules.": "Oppositional"
 		},
-		"Conversion Symptoms": {
+		"Eating Pathology": {
+			"My appetite was poor.": "AppetiteLoss",
+			"I lost a significant amount of weight without even trying.": "AppetiteLoss",
+			"I did not feel much like eating.": "AppetiteLoss",
+			"Once I started eating, I could not stop.": "BingeEating",
+			"I could not resist eating.": "BingeEating",
+			"I ate a very large amount of food in a short period of time (e.g., within 2 hours).": "BingeEating",
+			"I couldn't stop comparing my body to those of others.": "BodyDissatisfaction",
+			"I wished I could change certain parts of my body.": "BodyDissatisfaction",
+			"I was dissatisfied with the shape of my body.": "BodyDissatisfaction",
+			"I did not like my weight (the number on the scale).": "BodyDissatisfaction",
+			"I spent a lot of time looking at myself.": "BodyFocus",
+			"If I passed by a reflective surface (like a window), I checked how I looked.": "BodyFocus",
+			"I spent a lot of time getting ready before going out.": "BodyFocus",
+			"I paid a lot of attention to how I look.": "BodyFocus",
+			"I spent a lot of time grooming myself.": "BodyFocus",
+			"I tried to eat only healthy foods.": "DietRestraintEfforts",
+			"I tried to limit the number of fatty foods I ate.": "DietRestraintEfforts",
+			"I spent time planning how to reduce my food intake.": "DietRestraintEfforts",
+			"I focused on eating more healthy foods.": "DietRestraintEfforts",
+			"I tried to eat fewer snacks.": "DietRestraintEfforts",
+			"People told me I exercised too much.": "ExcessiveExercise",
+			"I exercised more than was good for me.": "ExcessiveExercise",
+			"I exercised until I felt sick.": "ExcessiveExercise",
+			"I exercised when I was injured.": "ExcessiveExercise",
+			"I had to cancel plans in order to get my exercise in.": "ExcessiveExercise",
+			"People told me that I was a very picky eater.": "FoodSelectivity",
+			"I avoided foods because of their smell or texture.": "FoodSelectivity",
+			"I avoided foods because I did not like their appearance": "FoodSelectivity",
+			"Many types of food disgusted me.": "FoodSelectivity",
+			"It was important to me to build muscle mass and eliminate body fat.": "MuscleBuilding",
+			"Bulking up muscle while staying lean was a main fitness goal for me.": "MuscleBuilding",
+			"I wanted well-defined stomach muscles.": "MuscleBuilding",
+			"Being muscular was very important to me.": "MuscleBuilding",
+			"I used medicines or supplements to bulk up.": "MuscleBuilding",
+			"I vomited to control my weight.": "Purging",
+			"I used certain medications (e.g. laxatives, diuretics) to lose weight.": "Purging",
+			"I considered using syrup of ipecac, enemas, or suppositories to lose weight.": "Purging",
+			"People told me that I did not eat enough.": "RestrictiveEating",
+			"I skipped two meals in a row.": "RestrictiveEating",
+			"I went a long time without eating.": "RestrictiveEating",
+			"I made excuses to avoid eating.": "RestrictiveEating"
+		},
+		"Somatoform": {
+			"I had pains in several parts of my body.": "BodilyDistress",
+			"My muscles were weak.": "BodilyDistress",
+			"I felt something was wrong with my body.": "BodilyDistress",
+			"I was bothered by stomach symptoms (diarrhea, nausea, stomach pain etc.)": "BodilyDistress",
+			"I experienced chest pain.": "BodilyDistress",
+			"I was bothered by several bodily symptoms (e.g., headache, fatigue or stomach problems) for which there was no clear or sufficient medical explanation.": "BodilyDistress",
 			"I experienced a sudden sensory loss (e.g., seeing or hearing problems) that doctors could not explain.": "Conversion",
 			"I could not feel things I touched.": "Conversion",
 			"I had periods of unexplained deafness.": "Conversion",
 			"I experienced sudden muscle weakness or paralysis.": "Conversion",
 			"I was troubled by unexplained seizures or convulsions.": "Conversion",
 			"I had periods of unexplained blindness.": "Conversion",
-			"I experienced loss of consciousness or had fainting spells (in the absence of a diagnosed medical disorder)": "Conversion"
-		},
-		"Counting": {
-			"I felt compelled to count things.": "Counting",
-			"I avoided numbers that could bring bad luck.": "Counting",
-			"I counted things over and over again.": "Counting",
-			"I thought that certain numbers were lucky for me.": "Counting",
-			"I needed to count to a certain number before starting an activity.": "Counting"
-		},
-		"Dietary Restraint": {
-			"I tried to eat only healthy foods.": "DietRestraintEfforts",
-			"I tried to limit the number of fatty foods I ate.": "DietRestraintEfforts",
-			"I spent time planning how to reduce my food intake.": "DietRestraintEfforts",
-			"I focused on eating more healthy foods.": "DietRestraintEfforts",
-			"I tried to eat fewer snacks.": "DietRestraintEfforts"
-		},
-		"Difficulties Reaching Orgasm": {
-			"I was unable to reach orgasm.": "DiffReachingOrgasm",
-			"I reached orgasm later than I wanted to.": "DiffReachingOrgasm",
-			"I found it difficult to reach orgasm.": "DiffReachingOrgasm"
-		},
-		"Disease Conviction": {
+			"I experienced loss of consciousness or had fainting spells (in the absence of a diagnosed medical disorder)": "Conversion",
 			"I had an illness or disease that others dismissed.": "DiseaseConvict",
 			"I got angry when people did not take my health problems seriously.": "DiseaseConvict",
 			"It was difficult to find healthcare providers who recognized my illness.": "DiseaseConvict",
-			"I was frustrated with having to convince others I had a real illness.": "DiseaseConvict"
+			"I was frustrated with having to convince others I had a real illness.": "DiseaseConvict",
+			"I spent too much time thinking about illnesses I might have.": "HealthAnxiety",
+			"Reading articles about disease made me worry about my health.": "HealthAnxiety",
+			"I worried a lot about my health.": "HealthAnxiety",
+			"I was afraid that I might suffer from a serious illness": "HealthAnxiety",
+			"I paid close attention to how my body feels.": "SomaticPreocc",
+			"I noticed small changes to how my body feels.": "SomaticPreocc",
+			"I was acutely aware of what was going on with my body.": "SomaticPreocc",
+			"I could feel changes in my body.": "SomaticPreocc",
+			"I was sensitive to changes in my body.": "SomaticPreocc"
 		},
-		"Deceitfulness": {
+		"Antagonism": {
+			"I was not all that concerned with other peoples' needs.": "Callousness",
+			"I did not really care how others felt.": "Callousness",
+			"I did not have much sympathy for others.": "Callousness",
+			"People told me I was coldhearted.": "Callousness",
+			"I did not concern myself with helping people.": "Callousness",
+			"Some people thought I was uncaring and unfeeling.": "Callousness",
 			"I said things that were not true.": "Deceitfulness",
 			"I was willing to tell a small lie to make things easier for myself.": "Deceitfulness",
 			"I believed it was fine to tell a little lie in order to get out of trouble.": "Deceitfulness",
-			"I lied about myself to other people.": "Deceitfulness"
-		},
-		"Manipulativeness": {
+			"I lied about myself to other people.": "Deceitfulness",
 			"I tried to con or cheat other people.": "Manipulativeness",
 			"I found it easy to deceive others.": "Manipulativeness",
 			"I found it easy to manipulate others.": "Manipulativeness",
-			"I made people believe almost anything.": "Manipulativeness"
-		},
-		"Disorganization": {
-			"I was never on time.": "Disorg",
-			"I had trouble planning and keeping to schedules.": "Disorg",
-			"I paid my bills late or missed other important deadlines.": "Disorg",
-			"I lost things that I needed.": "Disorg",
-			"I could have improved on my organizational skills.": "Disorg",
-			"I missed appointments because I forgot about them.": "Disorg",
-			"I was a messy person.": "Disorg"
-		},
-		"Dissociation": {
-			"I had the experience that everything suddenly seemed unfamiliar and I forgot where I was.": "Dissociation",
-			"I felt like I no longer existed.": "Dissociation",
-			"I had blank spells or periods of missing time.": "Dissociation",
-			"I felt that things around me were not real.": "Dissociation",
-			"I felt like I was outside of my body.": "Dissociation",
-			"I had trouble telling whether something really happened or I just imagined it.": "Dissociation"
-		},
-		"Anhedonia": {
-			"Nothing seemed interesting to me.": "Anehdonia",
-			"I didn't get excited about very much.": "Anehdonia",
-			"I didn't experience the joy and pleasure that most other people do.": "Anehdonia"
-		},
-		"Anxious Worry": {
-			"I was overwhelmed by anxiety.": "AnxiousWorry",
-			"I felt nervous and on edge.": "AnxiousWorry",
-			"I felt very stressed.": "AnxiousWorry"
-		},
-		"Depressed Mood": {
-			"I felt hopeless about the future.": "DepressedMood",
-			"I felt worthless.": "DepressedMood",
-			"I felt depressed.": "DepressedMood",
-			"I felt down and discouraged.": "DepressedMood"
-		},
-		"Lassitude": {
-			"Took a lot of effort to get going.": "Lassitude",
-			"I had very little energy.": "Lassitude",
-			"I felt worn out.": "Lassitude"
-		},
-		"Shame/Guilt": {
-			"I was disgusted with myself.": "ShameGuilt",
-			"I blamed myself for things.": "ShameGuilt",
-			"I was ashamed of myself.": "ShameGuilt"
-		},
-		"Domineering": {
+			"I made people believe almost anything.": "Manipulativeness",
 			"I liked having power.": "Domineering",
 			"It was very important for me to take the lead.": "Domineering",
 			"I liked being the person who has the authority.": "Domineering",
 			"When in a group, I liked to be in control.": "Domineering",
 			"Things went best when I told others what to do.": "Domineering",
-			"I was the dominant person in my relationships.": "Domineering"
-		},
-		"Eccentricity": {
-			"Many people thought that my behavior was really strange.": "Eccentric",
-			"I thought about things in unusual ways.": "Eccentric",
-			"I said unusual things.": "Eccentric",
-			"People said I am strange.": "Eccentric",
-			"People told me that I was being inappropriate.": "Eccentric"
-		},
-		"Affective Lability": {
-			"My moods were intense and unpredictable.": "AffLability",
-			"My mood changed suddenly for no good reason.": "AffLability",
-			"I quickly went from being sad to being happy.": "AffLability"
-		},
-		"Angry Hostility": {
-			"I got angry about small things.": "AngryHostility",
-			"I got so angry that I yelled or screamed.": "AngryHostility",
-			"I had angry outbursts.": "AngryHostility",
-			"My temper scared people.": "AngryHostility"
-		},
-		"irritability": {
-			"I was easily annoyed.": "Irritability",
-			"I was grouchy.": "Irritability",
-			"I was very irritable.": "Irritability",
-			"Minor frustrations really upset me.": "Irritability"
-		},
-		"Entitlement": {
+			"I was the dominant person in my relationships.": "Domineering",
 			"I was selfish.": "Entitlement",
 			"I deserved special treatment.": "Entitlement",
 			"My needs and wants came first.": "Entitlement",
 			"Some people thought I was self-centered.": "Entitlement",
 			"I expected to get treated better than others.": "Entitlement",
-			"I was jealous of what other people have.": "Entitlement"
-		},
-		"Excessive Exercise": {
-			"People told me I exercised too much.": "ExcessiveExercise",
-			"I exercised more than was good for me.": "ExcessiveExercise",
-			"I exercised until I felt sick.": "ExcessiveExercise",
-			"I exercised when I was injured.": "ExcessiveExercise",
-			"I had to cancel plans in order to get my exercise in.": "ExcessiveExercise"
-		},
-		"Excoriation": {
-			"My skin picking created problems for me.": "Excoriation",
-			"I tried to conceal areas where I had picked at my skin.": "Excoriation",
-			"I picked at areas of my skin that I don\u2019t like.": "Excoriation"
-		},
-		"Exhibitionism": {
+			"I was jealous of what other people have.": "Entitlement",
 			"I liked attracting the attention of others.": "Exhib",
 			"I enjoyed being the center of attention.": "Exhib",
 			"I did things to get others to notice me.": "Exhib",
 			"I dressed so as to call attention to myself.": "Exhib",
-			"When in public, I liked to stand out.": "Exhib"
-		},
-		"Fantasy Proneness": {
-			"I was prone to daydreaming.": "FantasyProne",
-			"My fantasies felt very real to me.": "FantasyProne",
-			"I wished I lived in my fantasies instead of real life.": "FantasyProne",
-			"My mind wandered far away from the present.": "FantasyProne",
-			"My imagination held my attention for hours.": "FantasyProne",
-			"I lost myself in a fictional character.": "FantasyProne"
-		},
-		"Food Selectivity": {
-			"People told me that I was a very picky eater.": "FoodSelectivity",
-			"I avoided foods because of their smell or texture.": "FoodSelectivity",
-			"I avoided foods because I did not like their appearance": "FoodSelectivity",
-			"Many types of food disgusted me.": "FoodSelectivity"
-		},
-		"Gambling": {
-			"I was unable to resist the impulse to gamble.": "Gambling",
-			"It was hard to stop gambling once I started.": "Gambling",
-			"I kept gambling even though it caused problems in my relationships.": "Gambling",
-			"I bet more money than I could really afford to lose.": "Gambling",
-			"Gambling caused me to go into debt.": "Gambling"
-		},
-		"Gaming": {
-			"I kept gaming, even though it caused problems at work or school.": "Gaming",
-			"I turned down social invitations so that I could spend more time gaming.": "Gaming",
-			"I looked for ways to make time for gaming.": "Gaming",
-			"My mood was negatively affected when I was unable to game as long as I wanted.": "Gaming"
-		},
-		"Grandiosity": {
+			"When in public, I liked to stand out.": "Exhib",
 			"People admired me.": "Grandiosity",
 			"I recognized that I had a lot of special qualities.": "Grandiosity",
 			"I enjoyed thinking about my future and the great things it would bring.": "Grandiosity",
 			"I enjoyed looking in the mirror.": "Grandiosity",
 			"Most people would have liked to be like me.": "Grandiosity",
-			"I was very confident in myself around other people.": "Grandiosity"
-		},
-		"Health Anxiety": {
-			"I spent too much time thinking about illnesses I might have.": "HealthAnxiety",
-			"Reading articles about disease made me worry about my health.": "HealthAnxiety",
-			"I worried a lot about my health.": "HealthAnxiety",
-			"I was afraid that I might suffer from a serious illness": "HealthAnxiety"
-		},
-		"Hoarding": {
-			"I found it difficult to throw things away.": "Hoarding",
-			"I collected things I did not need.": "Hoarding",
-			"My home was so cluttered that it was difficult to get around.": "Hoarding",
-			"I could not resist buying something that I did not need.": "Hoarding",
-			"My compulsive buying caused me financial problems.": "Hoarding",
-			"I kept items that I did not need.": "Hoarding"
-		},
-		"Hyperdeliberation": {
-			"I put a lot of thought into ideas before I took any action.": "Hyperdelib",
-			"I examined every single option before making a selection.": "Hyperdelib",
-			"Major decisions took months of careful consideration to arrive at a choice.": "Hyperdelib",
-			"I made decisions only after I had all the information I could get.": "Hyperdelib",
-			"I carefully weighed out the pros and cons before I made any decision.": "Hyperdelib",
-			"I took time to consider all possible outcomes before making any decision.": "Hyperdelib"
-		},
-		"Hypervigilance": {
-			"I felt like I was in danger.": "Hypervigilance",
-			"I felt on guard and on edge.": "Hypervigilance",
-			"I was easily startled.": "Hypervigilance",
-			"I felt that the world is a dangerous place.": "Hypervigilance",
-			"I was watchful for danger.": "Hypervigilance",
-			"I was concerned that other persons might bring me harm.": "Hypervigilance"
-		},
-		"Insomnia": {
-			"I slept very poorly.": "Insomnia",
-			"I had trouble staying asleep.": "Insomnia",
-			"I woke up early and could not get back to sleep.": "Insomnia",
-			"I had trouble falling asleep.": "Insomnia"
-		},
-		"Low Sexual Arousal": {
-			"It was difficult for me to get sexually aroused.": "LowSexArousal",
-			"It was difficult for me to stay sexually aroused once sexual activity had started.": "LowSexArousal",
-			"I did not experience enough sexual arousal (penile erection or vaginal lubrication) to enjoy sex.": "LowSexArousal"
-		},
-		"Low Sexual Interest": {
-			"I had little or no interest in sexual activity.": "LowSexInterest",
-			"I felt little desire for sexual activity": "LowSexInterest",
-			"I felt uninterested during sexual activity": "LowSexInterest"
-		},
-		"Manic Energy": {
-			"Others noticed that I was unusually excited or up.": "ManicEnergy",
-			"I felt a lot more hyper or active than usual.": "ManicEnergy",
-			"I was much more talkative than usual.": "ManicEnergy",
-			"I had so much energy that others couldn\u2019t keep up with me.": "ManicEnergy",
-			"I felt like I could go for days without sleeping.": "ManicEnergy",
-			"I felt like I could keep going and going without ever getting tired.": "ManicEnergy",
-			"I had much more energy than usual.": "ManicEnergy"
-		},
-		"Cynicism": {
-			"People were basically selfish with little concern for others.": "Cynicism",
-			"Others could not be trusted.": "Cynicism",
-			"I believed that if you are not careful, other people will take advantage of you.": "Cynicism",
-			"Most people were just out for themselves.": "Cynicism"
-		},
-		"Suspiciousness": {
-			"Some people were out to harm me.": "Suspiciousness",
-			"People talked behind my back.": "Suspiciousness",
-			"I was very suspicious of other people.": "Suspiciousness",
-			"I felt that other persons were acting against me.": "Suspiciousness"
-		},
-		"Muscle Building": {
-			"It was important to me to build muscle mass and eliminate body fat.": "MuscleBuilding",
-			"Bulking up muscle while staying lean was a main fitness goal for me.": "MuscleBuilding",
-			"I wanted well-defined stomach muscles.": "MuscleBuilding",
-			"Being muscular was very important to me.": "MuscleBuilding",
-			"I used medicines or supplements to bulk up.": "MuscleBuilding"
-		},
-		"Nightmares": {
-			"Nightmares caused me to wake up at night.": "Nightmares",
-			"I had a recurring bad dream.": "Nightmares",
-			"I had a dream so distressing that it continued to affect me after waking.": "Nightmares"
-		},
-		"Non-persistence": {
-			"I quit working (my job, homework, or housework) before I was finished.": "NonPersist",
-			"I could not return to a task after getting distracted.": "NonPersist",
-			"I quit tasks that became too challenging.": "NonPersist",
-			"I was unable to concentrate on a task when it was uninteresting to me.": "NonPersist",
-			"I became disinterested in tasks easily.": "NonPersist"
-		},
-		"Non-planfulness": {
-			"I made decisions quickly without thinking them through.": "NonPlan",
-			"I said things without thinking.": "NonPlan",
-			"I acted on impulse.": "NonPlan",
-			"I did something spontaneous that I later regretted.": "NonPlan",
-			"I failed to consider the consequences of an action.": "NonPlan"
-		},
-		"NSSI": {
-			"I bit myself on purpose.": "NSSI",
-			"I hurt myself on purpose.": "NSSI",
-			"I felt an urge to hurt myself (cut, burn, bite, etc.).": "NSSI",
-			"I cut myself on purpose.": "NSSI",
-			"At times, I just wanted to feel pain.": "NSSI",
-			"I intentionally scratched my skin so severely that it started bleeding.": "NSSI"
-		},
-		"Oppositionality": {
-			"I enjoyed rebelling against authority figures (e.g., police, teachers, bosses).": "Oppositional",
-			"Life felt too short to follow other peoples' rules.": "Oppositional",
-			"I was a rule breaker.": "Oppositional",
-			"I didn't care whether my behavior was considered proper or not.": "Oppositional",
-			"I didn\u2019t pay much attention to social standards of behavior.": "Oppositional",
-			"I did things on purpose that were against the rules.": "Oppositional"
-		},
-		"Panic": {
-			"I felt dizzy or lightheaded.": "Panic",
-			"I was trembling or shaking.": "Panic",
-			"My heart was racing or pounding.": "Panic",
-			"I was afraid that I might be having a heart attack.": "Panic",
-			"I was so worked up I thought I might die.": "Panic"
-		},
-		"Paraphilias": {
-			"My sexual fantasies strained my relationships.": "Paraphilias",
-			"I found watching unsuspecting people who were naked, masturbating, or having sex sexually arousing.": "Paraphilias",
-			"I found exposing my genitals to a stranger sexually arousing.": "Paraphilias",
-			"I found touching or rubbing against a stranger sexually arousing.": "Paraphilias",
-			"I found sexual activity with someone unconscious (e.g., asleep or passed out from alcohol or a drug) sexually arousing.": "Paraphilias"
-		},
-		"Perfectionism": {
-			"People told me that I was too perfectionistic.": "Perfectionism",
-			"My desire for things to be flawless kept me from getting everything done.": "Perfectionism",
-			"I strove for perfection, even when others said that I should move on.": "Perfectionism",
-			"I felt that my work must be flawless.": "Perfectionism",
-			"I demanded perfection from myself.": "Perfectionism"
-		},
-		"Premature Orgasm": {
-			"During sex, I usually climaxed very quickly.": "PrematureOrgasm",
-			"During sex, I consciously tried to delay orgasm so I could last longer.": "PrematureOrgasm",
-			"I reached orgasm sooner than I wanted to.": "PrematureOrgasm",
-			"I was unable to control when I reached orgasm.": "PrematureOrgasm"
-		},
-		"Problematic Shopping": {
-			"I found it hard to resist the urge to shop.": "ProbShopping",
-			"I bought much more than I needed.": "ProbShopping",
-			"I kept my shopping a secret.": "ProbShopping",
-			"I spent more money shopping than I could afford.": "ProbShopping"
-		},
-		"Purging": {
-			"I vomited to control my weight.": "Purging",
-			"I used certain medications (e.g. laxatives, diuretics) to lose weight.": "Purging",
-			"I considered using syrup of ipecac, enemas, or suppositories to lose weight.": "Purging"
-		},
-		"Delusions": {
-			"I could control things with my mind.": "Delusions",
-			"I thought it may be possible for other people to read my mind, or for me to read other's minds.": "Delusions",
-			"I believed other people could actually hear my thoughts.": "Delusions",
-			"Special messages were written in papers or announced on TV just for me.": "Delusions",
-			"I thought I was the only one chosen by God for a special role.": "Delusions"
-		},
-		"Hallucinations": {
-			"I experienced strange sights or sounds.": "Hallucinations",
-			"I smelled things that were not actually there.": "Hallucinations",
-			"I saw things that were not really there.": "Hallucinations",
-			"I saw a person but then realized it was just a shadow.": "Hallucinations",
-			"I heard things that no one else could hear.": "Hallucinations",
-			"I had a sensation that something was crawling under my skin.": "Hallucinations"
-		},
-		"Restlessness": {
-			"I felt restless when I had to sit still for more than ten minutes.": "Restless",
-			"I had a hard time staying in my seat when I was supposed to be seated.": "Restless",
-			"I felt the need to stand up when I should have been sitting down.": "Restless",
-			"I avoided activities where I would need to sit down for long.": "Restless",
-			"I had trouble sitting still.": "Restless"
-		},
-		"Restricted Affectivity": {
-			"I hid my emotions.": "RestrictedAffect",
-			"I hardly showed any feelings.": "RestrictedAffect",
-			"I didn't respond to things that other people found emotional.": "RestrictedAffect",
-			"People told me that I do not show emotions.": "RestrictedAffect",
-			"I didn't express my emotions.": "RestrictedAffect"
-		},
-		"Restricted Eating": {
-			"People told me that I did not eat enough.": "RestrictiveEating",
-			"I skipped two meals in a row.": "RestrictiveEating",
-			"I went a long time without eating.": "RestrictiveEating",
-			"I made excuses to avoid eating.": "RestrictiveEating"
-		},
-		"Rigidity": {
-			"I refused to budge as a matter of principle, even on small matters.": "Rigidity",
-			"I continued to do things the same way, even though my approach clearly wasn\u2019t working.": "Rigidity",
-			"I was very set in my ways.": "Rigidity",
-			"I refused to compromise because I knew I was right.": "Rigidity",
-			"I was rigid and inflexible in my approach to doing things.": "Rigidity"
-		},
-		"Risk Aversion": {
-			"I went out of my way to avoid risks.": "RiskAversion",
-			"I was cautious.": "RiskAversion",
-			"I preferred to do things the safest way possible.": "RiskAversion",
-			"I did not like taking chances.": "RiskAversion",
-			"I was very cautious about taking risks.": "RiskAversion",
-			"I avoided taking risks at all costs.": "RiskAversion"
-		},
-		"Risk Taking": {
-			"I was a thrill-seeker.": "RiskTaking",
-			"People would describe me as a risk-taker.": "RiskTaking",
-			"I enjoyed activities that were a little bit dangerous.": "RiskTaking",
-			"Taking risks made me feel alive.": "RiskTaking"
-		},
-		"Risky Sex": {
-			"I engaged in sexual activities that I later regretted.": "RiskySex",
-			"I engaged in unprotected sex.": "RiskySex",
-			"I used sex to relieve negative feelings (e.g., anxiety, sadness, anger).": "RiskySex",
-			"I engaged in risky sexual activity.": "RiskySex"
-		},
-		"Romantic Disinterest": {
-			"I found romantic relationships to be tiresome.": "RomDisinterest",
-			"Romantic relationships seemed like a hassle to me.": "RomDisinterest",
-			"I felt that I did not want to be in a close relationship.": "RomDisinterest",
-			"I had no interest in romantic relationships.": "RomDisinterest",
-			"I was happiest when I was in a romantic relationship.": "RomDisinterest"
-		},
-		"Sex-Related Substance Use": {
-			"Sexual activity was even more enjoyable for me when I was intoxicated/high.": "SexSubstanceUse",
-			"I used substances to reduce anxiety during sexual activity.": "SexSubstanceUse",
-			"I used substances to make my partner more appealing.": "SexSubstanceUse",
-			"I used substances during sex to encourage my partner to use substances too.": "SexSubstanceUse"
-		},
-		"Sexual Distress": {
-			"I felt guilty about sexual difficulties": "SexualDistress",
-			"I was worried about my sex life.": "SexualDistress",
-			"I felt sexually inadequate.": "SexualDistress",
-			"I was unhappy about my sexual performance.": "SexualDistress"
-		},
-		"Sexual Pain": {
-			"I tensed up during sexual activity due to pain.": "SexualPain",
-			"I found sex physically uncomfortable.": "SexualPain",
-			"It was painful for me to have (or try to have) penetrative vaginal or anal intercourse.": "SexualPain"
-		},
-		"Social Aggression": {
+			"I was very confident in myself around other people.": "Grandiosity",
 			"I mocked people.": "SocAggression",
 			"I tried to break up someone else's friendship or romantic relationship.": "SocAggression",
 			"I insulted others.": "SocAggression",
@@ -1733,82 +1426,239 @@
 			"I spread rumors about other people.": "SocAggression",
 			"I taunted others.": "SocAggression"
 		},
-		"Social Aloofness": {
-			"When I had the chance, I chose to be alone rather than with other people.": "SocAloofness",
-			"Interacting with others was not very important to me.": "SocAloofness",
-			"I did not feel like spending time with people.": "SocAloofness",
-			"I was happiest when I was alone.": "SocAloofness",
-			"I preferred to stay home than to go to a party.": "SocAloofness"
-		},
-		"Social Anxiety": {
-			"I felt shy around other people.": "SocAnxiety",
-			"I had difficulty making eye contact with others.": "SocAnxiety",
-			"I was uncomfortable meeting new people.": "SocAnxiety",
-			"I avoided performing or giving a talk in front of others.": "SocAnxiety",
-			"I got anxious when others were watching me.": "SocAnxiety"
-		},
-		"Somatic Preoccupation": {
-			"I paid close attention to how my body feels.": "SomaticPreocc",
-			"I noticed small changes to how my body feels.": "SomaticPreocc",
-			"I was acutely aware of what was going on with my body.": "SomaticPreocc",
-			"I could feel changes in my body.": "SomaticPreocc",
-			"I was sensitive to changes in my body.": "SomaticPreocc"
-		},
-		"Animal-Insect Phobia": {
-			"I was afraid of spiders.": "AnimalPhobia",
-			"I was fearful of rats or mice.": "AnimalPhobia",
-			"I was afraid of getting stung or bitten.": "AnimalPhobia",
-			"I avoided areas where there might be snakes or lizards.": "AnimalPhobia",
-			"The sight of an insect (e.g., a cockroach) upset me.": "AnimalPhobia"
-		},
-		"Blood-Injection Phobia": {
-			"Seeing something gory made me woozy.": "BloodPhobia",
-			"The sight of a needle upset me.": "BloodPhobia",
-			"I felt faint at the sight of blood.": "BloodPhobia"
-		},
-		"Situational Phobias": {
-			"I was afraid of flying.": "SituationalPhobia",
-			"I was afraid of heights.": "SituationalPhobia",
-			"I became very anxious during a storm.": "SituationalPhobia",
-			"I was afraid of the dark.": "SituationalPhobia"
-		},
-		"Submissiveness": {
-			"I allowed people to take advantage of me.": "Submissiveness",
-			"I had trouble standing up for myself.": "Submissiveness",
-			"I had a hard time asserting myself to others.": "Submissiveness",
-			"Others could easily take advantage of me because I was too passive.": "Submissiveness"
-		},
-		"Suicidality": {
+		"Distress": {
+			"I struggled to think clearly.": "CogDisorg",
+			"My mind felt mixed up.": "CogDisorg",
+			"I was easily distracted.": "CogDisorg",
+			"I had trouble remembering things.": "CogDisorg",
+			"My thoughts kept jumping from one thing to another.": "CogDisorg",
+			"Nothing seemed interesting to me.": "Anehdonia",
+			"I didn't get excited about very much.": "Anehdonia",
+			"I didn't experience the joy and pleasure that most other people do.": "Anehdonia",
+			"I was overwhelmed by anxiety.": "AnxiousWorry",
+			"I felt nervous and on edge.": "AnxiousWorry",
+			"I felt very stressed.": "AnxiousWorry",
+			"I felt hopeless about the future.": "DepressedMood",
+			"I felt worthless.": "DepressedMood",
+			"I felt depressed.": "DepressedMood",
+			"I felt down and discouraged.": "DepressedMood",
+			"Took a lot of effort to get going.": "Lassitude",
+			"I had very little energy.": "Lassitude",
+			"I felt worn out.": "Lassitude",
+			"I was disgusted with myself.": "ShameGuilt",
+			"I blamed myself for things.": "ShameGuilt",
+			"I was ashamed of myself.": "ShameGuilt",
+			"My moods were intense and unpredictable.": "AffLability",
+			"My mood changed suddenly for no good reason.": "AffLability",
+			"I quickly went from being sad to being happy.": "AffLability",
+			"I got angry about small things.": "AngryHostility",
+			"I got so angry that I yelled or screamed.": "AngryHostility",
+			"I had angry outbursts.": "AngryHostility",
+			"My temper scared people.": "AngryHostility",
+			"I was easily annoyed.": "Irritability",
+			"I was grouchy.": "Irritability",
+			"I was very irritable.": "Irritability",
+			"Minor frustrations really upset me.": "Irritability",
+			"I slept very poorly.": "Insomnia",
+			"I had trouble staying asleep.": "Insomnia",
+			"I woke up early and could not get back to sleep.": "Insomnia",
+			"I had trouble falling asleep.": "Insomnia",
+			"Nightmares caused me to wake up at night.": "Nightmares",
+			"I had a recurring bad dream.": "Nightmares",
+			"I had a dream so distressing that it continued to affect me after waking.": "Nightmares",
+			"I bit myself on purpose.": "NSSI",
+			"I hurt myself on purpose.": "NSSI",
+			"I felt an urge to hurt myself (cut, burn, bite, etc.).": "NSSI",
+			"I cut myself on purpose.": "NSSI",
+			"At times, I just wanted to feel pain.": "NSSI",
+			"I intentionally scratched my skin so severely that it started bleeding.": "NSSI",
 			"I thought a lot about death.": "Suicidality",
 			"I worked on a plan to kill myself.": "Suicidality",
 			"I thought about killing myself.": "Suicidality",
 			"I tried to kill myself.": "Suicidality"
 		},
-		"Trauma Reactions": {
-			"I avoided places that reminded me of something bad that happened.": "TraumaReactions",
-			"I avoided people who might bring back bad memories.": "TraumaReactions",
-			"I had repeated memories of a traumatic event.": "TraumaReactions",
-			"I suddenly felt as if a traumatic event were actually happening again.": "TraumaReactions",
-			"My mind was flooded with troubling images of a bad experience.": "TraumaReactions"
+		"Sexual Problems": {
+			"I was unable to reach orgasm.": "DiffReachingOrgasm",
+			"I reached orgasm later than I wanted to.": "DiffReachingOrgasm",
+			"I found it difficult to reach orgasm.": "DiffReachingOrgasm",
+			"It was difficult for me to get sexually aroused.": "LowSexArousal",
+			"It was difficult for me to stay sexually aroused once sexual activity had started.": "LowSexArousal",
+			"I did not experience enough sexual arousal (penile erection or vaginal lubrication) to enjoy sex.": "LowSexArousal",
+			"I had little or no interest in sexual activity.": "LowSexInterest",
+			"I felt little desire for sexual activity": "LowSexInterest",
+			"I felt uninterested during sexual activity": "LowSexInterest",
+			"My sexual fantasies strained my relationships.": "Paraphilias",
+			"I found watching unsuspecting people who were naked, masturbating, or having sex sexually arousing.": "Paraphilias",
+			"I found exposing my genitals to a stranger sexually arousing.": "Paraphilias",
+			"I found touching or rubbing against a stranger sexually arousing.": "Paraphilias",
+			"I found sexual activity with someone unconscious (e.g., asleep or passed out from alcohol or a drug) sexually arousing.": "Paraphilias",
+			"During sex, I usually climaxed very quickly.": "PrematureOrgasm",
+			"During sex, I consciously tried to delay orgasm so I could last longer.": "PrematureOrgasm",
+			"I reached orgasm sooner than I wanted to.": "PrematureOrgasm",
+			"I was unable to control when I reached orgasm.": "PrematureOrgasm",
+			"I engaged in sexual activities that I later regretted.": "RiskySex",
+			"I engaged in unprotected sex.": "RiskySex",
+			"I used sex to relieve negative feelings (e.g., anxiety, sadness, anger).": "RiskySex",
+			"I engaged in risky sexual activity.": "RiskySex",
+			"Sexual activity was even more enjoyable for me when I was intoxicated/high.": "SexSubstanceUse",
+			"I used substances to reduce anxiety during sexual activity.": "SexSubstanceUse",
+			"I used substances to make my partner more appealing.": "SexSubstanceUse",
+			"I used substances during sex to encourage my partner to use substances too.": "SexSubstanceUse",
+			"I felt guilty about sexual difficulties": "SexualDistress",
+			"I was worried about my sex life.": "SexualDistress",
+			"I felt sexually inadequate.": "SexualDistress",
+			"I was unhappy about my sexual performance.": "SexualDistress",
+			"I tensed up during sexual activity due to pain.": "SexualPain",
+			"I found sex physically uncomfortable.": "SexualPain",
+			"It was painful for me to have (or try to have) penetrative vaginal or anal intercourse.": "SexualPain"
 		},
-		"Trichotillomania": {
-			"I was embarrassed because I pulled my hair.": "Trichotillomania",
-			"I pulled out hairs that were a different color or texture.": "Trichotillomania",
-			"I felt an urge to pull my hair.": "Trichotillomania"
+		"Disinhibition": {
+			"I was never on time.": "Disorg",
+			"I had trouble planning and keeping to schedules.": "Disorg",
+			"I paid my bills late or missed other important deadlines.": "Disorg",
+			"I lost things that I needed.": "Disorg",
+			"I could have improved on my organizational skills.": "Disorg",
+			"I missed appointments because I forgot about them.": "Disorg",
+			"I was a messy person.": "Disorg",
+			"I was unable to resist the impulse to gamble.": "Gambling",
+			"It was hard to stop gambling once I started.": "Gambling",
+			"I kept gambling even though it caused problems in my relationships.": "Gambling",
+			"I bet more money than I could really afford to lose.": "Gambling",
+			"Gambling caused me to go into debt.": "Gambling",
+			"I kept gaming, even though it caused problems at work or school.": "Gaming",
+			"I turned down social invitations so that I could spend more time gaming.": "Gaming",
+			"I looked for ways to make time for gaming.": "Gaming",
+			"My mood was negatively affected when I was unable to game as long as I wanted.": "Gaming",
+			"I quit working (my job, homework, or housework) before I was finished.": "NonPersist",
+			"I could not return to a task after getting distracted.": "NonPersist",
+			"I quit tasks that became too challenging.": "NonPersist",
+			"I was unable to concentrate on a task when it was uninteresting to me.": "NonPersist",
+			"I became disinterested in tasks easily.": "NonPersist",
+			"I made decisions quickly without thinking them through.": "NonPlan",
+			"I said things without thinking.": "NonPlan",
+			"I acted on impulse.": "NonPlan",
+			"I did something spontaneous that I later regretted.": "NonPlan",
+			"I failed to consider the consequences of an action.": "NonPlan",
+			"I found it hard to resist the urge to shop.": "ProbShopping",
+			"I bought much more than I needed.": "ProbShopping",
+			"I kept my shopping a secret.": "ProbShopping",
+			"I spent more money shopping than I could afford.": "ProbShopping",
+			"I felt restless when I had to sit still for more than ten minutes.": "Restless",
+			"I had a hard time staying in my seat when I was supposed to be seated.": "Restless",
+			"I felt the need to stand up when I should have been sitting down.": "Restless",
+			"I avoided activities where I would need to sit down for long.": "Restless",
+			"I had trouble sitting still.": "Restless",
+			"I was a thrill-seeker.": "RiskTaking",
+			"People would describe me as a risk-taker.": "RiskTaking",
+			"I enjoyed activities that were a little bit dangerous.": "RiskTaking",
+			"Taking risks made me feel alive.": "RiskTaking"
 		},
-		"Well-being": {
-			"I was proud of myself.": "Wellbeing",
-			"I felt cheerful.": "Wellbeing",
-			"I felt optimistic.": "Wellbeing",
-			"I felt good about myself.": "Wellbeing",
-			"I felt motivated.": "Wellbeing"
+		"Thought Disorder": {
+			"I had the experience that everything suddenly seemed unfamiliar and I forgot where I was.": "Dissociation",
+			"I felt like I no longer existed.": "Dissociation",
+			"I had blank spells or periods of missing time.": "Dissociation",
+			"I felt that things around me were not real.": "Dissociation",
+			"I felt like I was outside of my body.": "Dissociation",
+			"I had trouble telling whether something really happened or I just imagined it.": "Dissociation",
+			"Many people thought that my behavior was really strange.": "Eccentric",
+			"I thought about things in unusual ways.": "Eccentric",
+			"I said unusual things.": "Eccentric",
+			"People said I am strange.": "Eccentric",
+			"People told me that I was being inappropriate.": "Eccentric",
+			"I was prone to daydreaming.": "FantasyProne",
+			"My fantasies felt very real to me.": "FantasyProne",
+			"I wished I lived in my fantasies instead of real life.": "FantasyProne",
+			"My mind wandered far away from the present.": "FantasyProne",
+			"My imagination held my attention for hours.": "FantasyProne",
+			"I lost myself in a fictional character.": "FantasyProne",
+			"People were basically selfish with little concern for others.": "Cynicism",
+			"Others could not be trusted.": "Cynicism",
+			"I believed that if you are not careful, other people will take advantage of you.": "Cynicism",
+			"Most people were just out for themselves.": "Cynicism",
+			"Some people were out to harm me.": "Suspiciousness",
+			"People talked behind my back.": "Suspiciousness",
+			"I was very suspicious of other people.": "Suspiciousness",
+			"I felt that other persons were acting against me.": "Suspiciousness",
+			"I could control things with my mind.": "Delusions",
+			"I thought it may be possible for other people to read my mind, or for me to read other's minds.": "Delusions",
+			"I believed other people could actually hear my thoughts.": "Delusions",
+			"Special messages were written in papers or announced on TV just for me.": "Delusions",
+			"I thought I was the only one chosen by God for a special role.": "Delusions",
+			"I experienced strange sights or sounds.": "Hallucinations",
+			"I smelled things that were not actually there.": "Hallucinations",
+			"I saw things that were not really there.": "Hallucinations",
+			"I saw a person but then realized it was just a shadow.": "Hallucinations",
+			"I heard things that no one else could hear.": "Hallucinations",
+			"I had a sensation that something was crawling under my skin.": "Hallucinations"
 		},
-		"Workaholism": {
+		"Anankastia": {
+			"I put a lot of thought into ideas before I took any action.": "Hyperdelib",
+			"I examined every single option before making a selection.": "Hyperdelib",
+			"Major decisions took months of careful consideration to arrive at a choice.": "Hyperdelib",
+			"I made decisions only after I had all the information I could get.": "Hyperdelib",
+			"I carefully weighed out the pros and cons before I made any decision.": "Hyperdelib",
+			"I took time to consider all possible outcomes before making any decision.": "Hyperdelib",
+			"People told me that I was too perfectionistic.": "Perfectionism",
+			"My desire for things to be flawless kept me from getting everything done.": "Perfectionism",
+			"I strove for perfection, even when others said that I should move on.": "Perfectionism",
+			"I felt that my work must be flawless.": "Perfectionism",
+			"I demanded perfection from myself.": "Perfectionism",
+			"I refused to budge as a matter of principle, even on small matters.": "Rigidity",
+			"I continued to do things the same way, even though my approach clearly wasn't working.": "Rigidity",
+			"I was very set in my ways.": "Rigidity",
+			"I refused to compromise because I knew I was right.": "Rigidity",
+			"I was rigid and inflexible in my approach to doing things.": "Rigidity",
+			"I went out of my way to avoid risks.": "RiskAversion",
+			"I was cautious.": "RiskAversion",
+			"I preferred to do things the safest way possible.": "RiskAversion",
+			"I did not like taking chances.": "RiskAversion",
+			"I was very cautious about taking risks.": "RiskAversion",
+			"I avoided taking risks at all costs.": "RiskAversion",
 			"I was something of a workaholic.": "Workaholism",
 			"Even on days off, I found myself thinking about work.": "Workaholism",
 			"I was so focused on being productive that I had less time for friends and family.": "Workaholism",
 			"My work success was the most valuable aspect of my life.": "Workaholism",
 			"People told me that I work too much.": "Workaholism"
+		},
+		"Mania": {
+			"Others noticed that I was unusually excited or up.": "ManicEnergy",
+			"I felt a lot more hyper or active than usual.": "ManicEnergy",
+			"I was much more talkative than usual.": "ManicEnergy",
+			"I had so much energy that others couldn't keep up with me.": "ManicEnergy",
+			"I felt like I could go for days without sleeping.": "ManicEnergy",
+			"I felt like I could keep going and going without ever getting tired.": "ManicEnergy",
+			"I had much more energy than usual.": "ManicEnergy"
+		},
+		"Detachment": {
+			"I hid my emotions.": "RestrictedAffect",
+			"I hardly showed any feelings.": "RestrictedAffect",
+			"I didn't respond to things that other people found emotional.": "RestrictedAffect",
+			"People told me that I do not show emotions.": "RestrictedAffect",
+			"I didn't express my emotions.": "RestrictedAffect",
+			"I found romantic relationships to be tiresome.": "RomDisinterest",
+			"Romantic relationships seemed like a hassle to me.": "RomDisinterest",
+			"I felt that I did not want to be in a close relationship.": "RomDisinterest",
+			"I had no interest in romantic relationships.": "RomDisinterest",
+			"I was happiest when I was in a romantic relationship.": "RomDisinterest",
+			"When I had the chance, I chose to be alone rather than with other people.": "SocAloofness",
+			"Interacting with others was not very important to me.": "SocAloofness",
+			"I did not feel like spending time with people.": "SocAloofness",
+			"I was happiest when I was alone.": "SocAloofness",
+			"I preferred to stay home than to go to a party.": "SocAloofness",
+			"I felt shy around other people.": "SocAnxiety",
+			"I had difficulty making eye contact with others.": "SocAnxiety",
+			"I was uncomfortable meeting new people.": "SocAnxiety",
+			"I avoided performing or giving a talk in front of others.": "SocAnxiety",
+			"I got anxious when others were watching me.": "SocAnxiety",
+			"I allowed people to take advantage of me.": "Submissiveness",
+			"I had trouble standing up for myself.": "Submissiveness",
+			"I had a hard time asserting myself to others.": "Submissiveness",
+			"Others could easily take advantage of me because I was too passive.": "Submissiveness",
+			"I was proud of myself.": "Wellbeing",
+			"I felt cheerful.": "Wellbeing",
+			"I felt optimistic.": "Wellbeing",
+			"I felt good about myself.": "Wellbeing",
+			"I felt motivated.": "Wellbeing"
 		}
 	},
 	"choices": {

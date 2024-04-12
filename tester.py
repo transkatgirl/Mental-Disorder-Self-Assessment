@@ -4,7 +4,7 @@ import datetime
 import pixie
 import math
 
-input_file = open("data/whodas.json")
+input_file = open("data/hitop-sr.json")
 data = json.loads(input_file.read())
 
 boxes = {}
@@ -80,12 +80,10 @@ print("\nReferences:")
 for reference in data["metadata"]["references"]:
 	print("- " + reference["title"] + "\n\t" + reference["link"] + "\n\tRetrieved " + str(datetime.datetime.fromtimestamp( reference["retrieved"] / 1000 )))
 
-print("\nType: " + data["metadata"]["type"])
-
 if "dependencies" in data["metadata"]:
 	print("\nDependencies:")
 	for dependency in data["metadata"]["dependencies"]:
-		print("- " + dependency["file"] + "\n\tVersion: " + str(datetime.fromtimestamp( dependency["version"] / 1000 )))
+		print("- " + dependency["file"] + "\n\tVersion: " + str(datetime.datetime.fromtimestamp( dependency["version"] / 1000 )))
 		# TODO: Print mappings
 
 if data["metadata"]["type"] == "tree-diagram":
@@ -137,7 +135,7 @@ if data["metadata"]["type"] == "tree-diagram":
 
 	# TODO
 
-if data["metadata"]["type"] == "questionnaire":
+elif data["metadata"]["type"] == "questionnaire":
 	print("\n--- Questionnaire ---\n")
 	# TODO
 
@@ -152,6 +150,10 @@ if data["metadata"]["type"] == "questionnaire":
 		length += len(question_set)
 
 	print("\nThis questionnaire will take approximately", math.ceil(datetime.timedelta(seconds=data["estimated_seconds_per_question"] * length) / datetime.timedelta(minutes=1)), "minutes to complete.")
+
+	if "randomize" in data:
+		if data["randomize"]:
+			print("\nSection headings will not be displayed in the questionnaire, and the order of questions will be randomized.")
 
 	print()
 	for section, question_set in data["questions"].items():
@@ -189,3 +191,6 @@ if data["metadata"]["type"] == "questionnaire":
 	print("\nScoring:")
 	for key, value in data["scales"].items():
 		print_scale_scoring(0, key, value)
+
+else:
+	print("\nType: " + data["metadata"]["type"])
