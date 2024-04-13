@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Mental Health Self-Assessment</title>
-		<script type="text/javascript" src="app.js" defer></script>
+		<script type="text/javascript" src="app.js" async></script>
 		<style>
 			body {
 				margin: 1.2em;
@@ -18,6 +18,10 @@
 	<body>
 		<h1>Mental Health Self-Assessment</h1>
 		<p>created by a mentally ill girl on the internet~</p>
+
+		<noscript>
+			<p><strong>JavaScript is required to use this application.</strong></p>
+		</noscript>
 
 		<h2>Introduction</h2>
 		<p>This application uses existing self-report mental health assessment questionnaires that have been assessed
@@ -83,7 +87,7 @@
 
 		<h3>Resources used</h3>
 		<p>The following documents were used to build this application:</p>
-		<ul id="references">
+		<ul>
 			<li>Introduction
 				<ul>
 					<li><a href="https://en.wikipedia.org/wiki/Mental_health#Prevention_and_promotion">Prevention and
@@ -99,7 +103,11 @@
 							Psychological testing - Wikipedia</a></li>
 				</ul>
 			</li>
-			<li id="references-loading-indicator">Loading...</li>
+			<li>Questionnaire & Results
+				<ul id="application-references">
+					<li>Loading...</li>
+				</ul>
+			</li>
 		</ul>
 
 		<hr>
@@ -117,9 +125,6 @@
 
 		<div id="application">
 			<p>Loading application...</p>
-			<noscript>
-				<p>JavaScript is required to use this application.</p>
-			</noscript>
 		</div>
 
 		<form>
