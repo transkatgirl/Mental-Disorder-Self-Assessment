@@ -145,7 +145,6 @@
 		"Scores are reported as t-scores by default, which have a mean of 50 and a standard deviation of 10. Statistically-based cutoffs (such as a t-score of 65-70 or greater) may be useful heuristics, but they should not be used in an inflexible manner. Low scores (such as a t-score below 40) are not always meaningful, and need to be evaluated on a case-by-case basis.",
 		"This scoring system makes the assumption that scores are normally distributed, and this assumption is often violated when evaluating pathological traits. If the scale is not normally distributed, then the t-scores may match up with either a higher or lower percentile, depending on how the distribution is skewed."
 	],
-	"estimated_seconds_per_question": 8,
 	"scales": {
 		"Agoraphobia": {
 			"label": "Agoraphobia",
@@ -1346,9 +1345,8 @@
 			"subscales": {}
 		}
 	},
-	"randomize": true,
-	"questions": {
-		"Fear": {
+	"questions": [
+		{
 			"I felt like I would be unable to breathe in a small, tight, or enclosed space.": "Agoraphobia",
 			"I was afraid of getting trapped in a crowd.": "Agoraphobia",
 			"I avoided small, tight, or enclosed spaces.": "Agoraphobia",
@@ -1411,7 +1409,7 @@
 			"I pulled out hairs that were a different color or texture.": "Trichotillomania",
 			"I felt an urge to pull my hair.": "Trichotillomania"
 		},
-		"Antisocial": {
+		{
 			"I vandalized or defaced public property.": "AntisocActs",
 			"I found it enjoyable to hurt animals.": "AntisocActs",
 			"I got in trouble with the law.": "AntisocActs",
@@ -1427,7 +1425,7 @@
 			"I didn't pay much attention to social standards of behavior.": "Oppositional",
 			"I did things on purpose that were against the rules.": "Oppositional"
 		},
-		"Eating Pathology": {
+		{
 			"My appetite was poor.": "AppetiteLoss",
 			"I lost a significant amount of weight without even trying.": "AppetiteLoss",
 			"I did not feel much like eating.": "AppetiteLoss",
@@ -1470,7 +1468,7 @@
 			"I went a long time without eating.": "RestrictiveEating",
 			"I made excuses to avoid eating.": "RestrictiveEating"
 		},
-		"Somatoform": {
+		{
 			"I had pains in several parts of my body.": "BodilyDistress",
 			"My muscles were weak.": "BodilyDistress",
 			"I felt something was wrong with my body.": "BodilyDistress",
@@ -1498,7 +1496,7 @@
 			"I could feel changes in my body.": "SomaticPreocc",
 			"I was sensitive to changes in my body.": "SomaticPreocc"
 		},
-		"Antagonism": {
+		{
 			"I was not all that concerned with other peoples' needs.": "Callousness",
 			"I did not really care how others felt.": "Callousness",
 			"I did not have much sympathy for others.": "Callousness",
@@ -1543,7 +1541,7 @@
 			"I spread rumors about other people.": "SocAggression",
 			"I taunted others.": "SocAggression"
 		},
-		"Distress": {
+		{
 			"I struggled to think clearly.": "CogDisorg",
 			"My mind felt mixed up.": "CogDisorg",
 			"I was easily distracted.": "CogDisorg",
@@ -1594,7 +1592,7 @@
 			"I thought about killing myself.": "Suicidality",
 			"I tried to kill myself.": "Suicidality"
 		},
-		"Sexual Problems": {
+		{
 			"I was unable to reach orgasm.": "DiffReachingOrgasm",
 			"I reached orgasm later than I wanted to.": "DiffReachingOrgasm",
 			"I found it difficult to reach orgasm.": "DiffReachingOrgasm",
@@ -1629,7 +1627,7 @@
 			"I found sex physically uncomfortable.": "SexualPain",
 			"It was painful for me to have (or try to have) penetrative vaginal or anal intercourse.": "SexualPain"
 		},
-		"Disinhibition": {
+		{
 			"I was never on time.": "Disorg",
 			"I had trouble planning and keeping to schedules.": "Disorg",
 			"I paid my bills late or missed other important deadlines.": "Disorg",
@@ -1670,7 +1668,7 @@
 			"I enjoyed activities that were a little bit dangerous.": "RiskTaking",
 			"Taking risks made me feel alive.": "RiskTaking"
 		},
-		"Thought Disorder": {
+		{
 			"I had the experience that everything suddenly seemed unfamiliar and I forgot where I was.": "Dissociation",
 			"I felt like I no longer existed.": "Dissociation",
 			"I had blank spells or periods of missing time.": "Dissociation",
@@ -1708,7 +1706,7 @@
 			"I heard things that no one else could hear.": "Hallucinations",
 			"I had a sensation that something was crawling under my skin.": "Hallucinations"
 		},
-		"Anankastia": {
+		{
 			"I put a lot of thought into ideas before I took any action.": "Hyperdelib",
 			"I examined every single option before making a selection.": "Hyperdelib",
 			"Major decisions took months of careful consideration to arrive at a choice.": "Hyperdelib",
@@ -1737,7 +1735,7 @@
 			"My work success was the most valuable aspect of my life.": "Workaholism",
 			"People told me that I work too much.": "Workaholism"
 		},
-		"Mania": {
+		{
 			"Others noticed that I was unusually excited or up.": "ManicEnergy",
 			"I felt a lot more hyper or active than usual.": "ManicEnergy",
 			"I was much more talkative than usual.": "ManicEnergy",
@@ -1746,7 +1744,7 @@
 			"I felt like I could keep going and going without ever getting tired.": "ManicEnergy",
 			"I had much more energy than usual.": "ManicEnergy"
 		},
-		"Detachment": {
+		{
 			"I hid my emotions.": "RestrictedAffect",
 			"I hardly showed any feelings.": "RestrictedAffect",
 			"I didn't respond to things that other people found emotional.": "RestrictedAffect",
@@ -1777,7 +1775,7 @@
 			"I felt good about myself.": "Wellbeing",
 			"I felt motivated.": "Wellbeing"
 		}
-	},
+	],
 	"choices": {
 		"12-month-significance": {
 			"instructions": "In the past 12 months:",

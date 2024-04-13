@@ -1,0 +1,199 @@
+{
+	"metadata": {
+		"label": "WHO Disability Assessment Schedule 2.0",
+		"label_short": "WHODAS 2.0",
+		"description": [
+			"The WHODAS 2.0 assessment is a generic instrument for assessing health status and disability across different cultures and settings. It can be used across all diseases, including mental, neurological and addictive disorders."
+		],
+		"type": "questionnaire",
+		"references": [
+			{
+				"title": "WHO Disability Assessment Schedule 2.0",
+				"retrieved": 1712848318199,
+				"link": "https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule"
+			}
+		]
+	},
+	"instructions": [
+		"This questionnaire asks about difficulties due to health conditions. Health conditions include diseases or illnesses, other health problems that may be short or long lasting, injuries, mental or emotional problems, and problems with alcohol or drugs.",
+		"Think back over the past 30 days and answer these questions, thinking about how much difficulty you had doing the following activities."
+	],
+	"interpretation": [
+		"Scores ranging from 0 to 100 are reported. A score of 0 represents no disability, while a score of 100 represents full disability."
+	],
+	"scales": {
+		"total": {
+			"label": "Total",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"function": "ln",
+					"multiplier": 14.372,
+					"intercept": 37.598,
+					"show_raw": true
+				}
+			},
+			"subscales": {
+				"cognition": {
+					"label": "Cognition",
+					"choices": "30-day-average-difficulty",
+					"scoring": {
+						"average": true,
+						"offset": -1,
+						"multiplier": 25
+					}
+				},
+				"mobility": {
+					"label": "Mobility",
+					"choices": "30-day-average-difficulty",
+					"scoring": {
+						"average": true,
+						"offset": -1,
+						"multiplier": 25
+					}
+				},
+				"self-care": {
+					"label": "Self-care",
+					"choices": "30-day-average-difficulty",
+					"scoring": {
+						"average": true,
+						"offset": -1,
+						"multiplier": 25
+					}
+				},
+				"getting-along": {
+					"label": "Getting along",
+					"choices": "30-day-average-difficulty",
+					"scoring": {
+						"average": true,
+						"offset": -1,
+						"multiplier": 25
+					}
+				},
+				"life-activities": {
+					"label": "Life activities",
+					"choices": "30-day-average-difficulty",
+					"scoring": {
+						"average": true,
+						"offset": -1,
+						"multiplier": 25
+					},
+					"subscales": {
+						"work-activities": {
+							"choices": "30-day-average-difficulty-optional",
+							"scoring": {
+								"average": true,
+								"offset": -1,
+								"multiplier": 25
+							}
+						}
+					}
+				},
+				"participation": {
+					"label": "Participation",
+					"choices": "30-day-average",
+					"scoring": {
+						"average": true,
+						"offset": -1,
+						"multiplier": 25
+					}
+				}
+			}
+		}
+	},
+	"questions": [
+		{
+			"Concentrating on doing something for ten minutes?": "cognition",
+			"Remembering to do important things?": "cognition",
+			"Analysing and finding solutions to problems in day-to-day life?": "cognition",
+			"Learning a new task, for example, learning how to get to a new place?": "cognition",
+			"Generally understanding what people say?": "cognition",
+			"Starting and maintaining a conversation?": "cognition"
+		},
+		{
+			"Standing for long periods such as 30 minutes?": "mobility",
+			"Standing up from sitting down?": "mobility",
+			"Moving around inside your home?": "mobility",
+			"Getting out of your home?": "mobility",
+			"Walking a long distance such as a kilometre [or equivalent]?": "mobility"
+		},
+		{
+			"Washing your whole body?": "self-care",
+			"Getting dressed?": "self-care",
+			"Eating?": "self-care",
+			"Staying by yourself for a few days?": "self-care"
+		},
+		{
+			"Dealing with people you do not know?": "getting-along",
+			"Maintaining a friendship?": "getting-along",
+			"Getting along with people who are close to you?": "getting-along",
+			"Making new friends?": "getting-along",
+			"Sexual activities?": "getting-along"
+		},
+		{
+			"Taking care of your household responsibilities?": "life-activities",
+			"Doing most important household tasks well?": "life-activities",
+			"Getting all the household work done that you needed to do?": "life-activities",
+			"Getting your household work done as quickly as needed?": "life-activities",
+			"Your day-to-day work/school?": "work-activities",
+			"Doing your most important work/school tasks well?": "work-activities",
+			"Getting all the work done that you need to do?": "work-activities",
+			"Getting your work done as quickly as needed?": "work-activities"
+		},
+		{
+			"How much of a problem did you have in joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?": "participation",
+			"How much of a problem did you have because of barriers or hindrances in the world around you?": "participation",
+			"How much of a problem did you have living with dignity because of the attitudes and actions of others?": "participation",
+			"How much time did you spend on your health condition, or its consequences?": "participation",
+			"How much have you been emotionally affected by your health condition?": "participation",
+			"How much has your health been a drain on the financial resources of you or your family?": "participation",
+			"How much of a problem did your family have because of your health problems?": "participation",
+			"How much of a problem did you have in doing things by yourself for relaxation or pleasure?": "participation"
+		},
+		{
+			"Overall, in the past 30 days, how many days were these difficulties present?": "number-of-days",
+			"In the past 30 days, for how many days were you totally unable to carry out your usual activities or work because of any health condition?": "number-of-days",
+			"In the past 30 days, not counting the days that you were totally unable, for how many days did you cut back or reduce your usual activities or work because of any health condition?": "number-of-days"
+		}
+	],
+	"choices": {
+		"30-day-average": {
+			"instructions": "In the past 30 days:",
+			"options": [
+				"None",
+				"Mild",
+				"Moderate",
+				"Severe",
+				"Extreme or cannot do"
+			]
+		},
+		"30-day-average-difficulty": {
+			"instructions": "In the past 30 days, how much difficulty did you have in:",
+			"options": [
+				"None",
+				"Mild",
+				"Moderate",
+				"Severe",
+				"Extreme or cannot do"
+			]
+		},
+		"30-day-average-difficulty-optional": {
+			"instructions": "In the past 30 days, how much difficulty did you have in:",
+			"skip_option": "Not Applicable",
+			"options": [
+				"None",
+				"Mild",
+				"Moderate",
+				"Severe",
+				"Extreme or cannot do"
+			]
+		},
+		"number-of-days": {
+			"range": {
+				"minimum": 0,
+				"maximum": 30,
+				"increment": 1
+			}
+		}
+	}
+}
