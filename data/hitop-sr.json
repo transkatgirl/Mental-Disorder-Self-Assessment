@@ -1,5 +1,4 @@
 {
-	"version": 1712840093515,
 	"metadata": {
 		"label": "HiTOP Self Report Assessment",
 		"label_short": "HiTOP-SR",
@@ -17,8 +16,7 @@
 		],
 		"dependencies": [
 			{
-				"file": "hitop.json",
-				"version": 1712840093515,
+				"name": "hitop",
 				"mapping": {
 					"subfactor-fear": [
 						"Agoraphobia",
