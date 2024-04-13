@@ -112,7 +112,7 @@ if data["metadata"]["type"] == "tree-diagram":
 	level = 0
 	for layer in layers:
 		if "label" in data["levels"][level]:
-			print("-", data["levels"][level]["label"])
+			print("-", data["levels"][level]["label"] + ":")
 		else:
 			print()
 		if "description" in data["levels"][level]:
