@@ -152,7 +152,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.62",
 					"stddev": "0.77"
@@ -165,7 +165,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.07",
 					"stddev": "0.25"
@@ -178,7 +178,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.68"
@@ -191,7 +191,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.65",
 					"stddev": "0.79"
@@ -204,7 +204,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.84",
 					"stddev": "0.74"
@@ -217,7 +217,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.31",
 					"stddev": "0.94"
@@ -230,7 +230,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.72",
 					"stddev": "0.68"
@@ -243,7 +243,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.47",
 					"stddev": "0.55"
@@ -256,7 +256,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.77"
@@ -269,7 +269,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.58"
@@ -282,7 +282,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.97",
 					"stddev": "0.82"
@@ -295,7 +295,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.12",
 					"stddev": "0.31"
@@ -308,7 +308,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.34",
 					"stddev": "0.55"
@@ -321,7 +321,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.12",
 					"stddev": "0.75"
@@ -334,7 +334,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.49",
 					"stddev": "0.76"
@@ -347,7 +347,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.40",
 					"stddev": "0.69"
@@ -360,7 +360,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.48",
 					"stddev": "0.53"
@@ -373,7 +373,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.70",
 					"stddev": "0.63"
@@ -386,7 +386,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.29",
 					"stddev": "0.52"
@@ -399,7 +399,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.19",
 					"stddev": "0.87"
@@ -412,7 +412,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.67",
 					"stddev": "0.64"
@@ -425,7 +425,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.40",
 					"stddev": "0.55"
@@ -438,7 +438,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.70",
 					"stddev": "0.66"
@@ -451,7 +451,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.60",
 					"stddev": "0.52"
@@ -464,7 +464,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.19",
 					"stddev": "0.43"
@@ -477,7 +477,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.30",
 					"stddev": "0.61"
@@ -490,7 +490,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.39",
 					"stddev": "0.57"
@@ -503,7 +503,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.72"
@@ -516,7 +516,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.66"
@@ -529,7 +529,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.17",
 					"stddev": "0.44"
@@ -542,7 +542,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.44",
 					"stddev": "0.60"
@@ -555,7 +555,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.95",
 					"stddev": "0.67"
@@ -568,7 +568,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.78",
 					"stddev": "0.81"
@@ -581,7 +581,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.60",
 					"stddev": "0.63"
@@ -594,7 +594,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.58",
 					"stddev": "0.74"
@@ -607,7 +607,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.92",
 					"stddev": "0.73"
@@ -620,7 +620,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.32",
 					"stddev": "0.93"
@@ -633,7 +633,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.56",
 					"stddev": "0.81"
@@ -646,7 +646,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.89",
 					"stddev": "0.95"
@@ -659,7 +659,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.33",
 					"stddev": "0.45"
@@ -672,7 +672,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.14",
 					"stddev": "0.84"
@@ -685,7 +685,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.50",
 					"stddev": "0.65"
@@ -698,7 +698,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.64",
 					"stddev": "0.77"
@@ -711,7 +711,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.87",
 					"stddev": "0.76"
@@ -724,7 +724,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.61",
 					"stddev": "0.65"
@@ -737,7 +737,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.18",
 					"stddev": "0.39"
@@ -750,7 +750,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.45",
 					"stddev": "0.56"
@@ -763,7 +763,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.63"
@@ -776,7 +776,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.12",
 					"stddev": "0.33"
@@ -789,7 +789,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.77",
 					"stddev": "0.76"
@@ -802,7 +802,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.45",
 					"stddev": "0.60"
@@ -815,7 +815,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.47",
 					"stddev": "0.66"
@@ -828,7 +828,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.12",
 					"stddev": "0.35"
@@ -841,7 +841,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.19",
 					"stddev": "0.37"
@@ -854,7 +854,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.46",
 					"stddev": "0.61"
@@ -867,7 +867,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.72"
@@ -880,7 +880,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.48",
 					"stddev": "0.64"
@@ -893,7 +893,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.83",
 					"stddev": "0.62"
@@ -906,7 +906,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.43",
 					"stddev": "0.79"
@@ -919,7 +919,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.39",
 					"stddev": "0.59"
@@ -932,7 +932,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.35",
 					"stddev": "0.56"
@@ -945,7 +945,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.04",
 					"stddev": "0.93"
@@ -958,7 +958,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.24",
 					"stddev": "0.48"
@@ -971,7 +971,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.59",
 					"stddev": "0.78"
@@ -984,7 +984,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.29",
 					"stddev": "0.62"
@@ -997,7 +997,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.22",
 					"stddev": "0.37"
@@ -1010,7 +1010,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.49",
 					"stddev": "0.90"
@@ -1023,7 +1023,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.06",
 					"stddev": "0.89"
@@ -1036,7 +1036,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.36",
 					"stddev": "0.77"
@@ -1049,7 +1049,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.62",
 					"stddev": "0.53"
@@ -1062,7 +1062,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.87",
 					"stddev": "0.72"
@@ -1075,7 +1075,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.36",
 					"stddev": "0.53"
@@ -1088,7 +1088,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.75",
 					"stddev": "0.83"
@@ -1101,7 +1101,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.20",
 					"stddev": "0.45"
@@ -1114,7 +1114,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.53",
 					"stddev": "0.82"
@@ -1127,7 +1127,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.60",
 					"stddev": "0.65"
@@ -1140,7 +1140,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.68",
 					"stddev": "0.69"
@@ -1154,7 +1154,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.27",
 					"stddev": "0.50"
@@ -1168,7 +1168,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.07",
 					"stddev": "0.96"
@@ -1182,7 +1182,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.25",
 					"stddev": "1.01"
@@ -1196,7 +1196,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.21",
 					"stddev": "1.00"
@@ -1210,7 +1210,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.40",
 					"stddev": "0.97"
@@ -1224,7 +1224,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.01",
 					"stddev": "0.94"
@@ -1238,7 +1238,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.51",
 					"stddev": "0.69"
@@ -1252,7 +1252,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.63"
@@ -1266,7 +1266,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.00",
 					"stddev": "0.83"
@@ -1280,7 +1280,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "2.14",
 					"stddev": "0.84"
@@ -1294,7 +1294,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.54",
 					"stddev": "0.67"
@@ -1308,7 +1308,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.15",
 					"stddev": "0.36"
@@ -1322,7 +1322,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.23",
 					"stddev": "0.42"
@@ -1336,7 +1336,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.74"
@@ -1350,7 +1350,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.34",
 					"stddev": "0.55"
@@ -1364,7 +1364,7 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
-					"show_t_score": true,
+					"as_score": true,
 					"function": "normal",
 					"mean": "1.61",
 					"stddev": "0.62"

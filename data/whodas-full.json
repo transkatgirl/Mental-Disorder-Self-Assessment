@@ -30,8 +30,7 @@
 				"percentile": {
 					"function": "ln",
 					"multiplier": 14.372,
-					"intercept": 37.598,
-					"show_raw": true
+					"intercept": 37.598
 				}
 			}
 		},
