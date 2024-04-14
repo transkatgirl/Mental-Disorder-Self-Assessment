@@ -16,117 +16,145 @@
 				font-size: .8em;
 			}
 
+			table,
+			tr,
+			th,
+			td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				padding: .25em .5em;
+				text-align: left;
+			}
+
+			td {
+				white-space: nowrap;
+			}
+
 		</style>
 	</head>
 
 	<body>
 		<h1>Mental Health Self-Assessment</h1>
-		<p>created by a mentally ill girl on the internet~</p>
+		<div id="introduction">
+			<p>created by a mentally ill girl on the internet~</p>
 
-		<noscript>
-			<p><strong>JavaScript is required to use this application.</strong></p>
-		</noscript>
+			<noscript>
+				<p><strong>JavaScript is required to use this application.</strong></p>
+			</noscript>
 
-		<h2>Introduction</h2>
-		<p>This application uses existing self-report mental health assessment questionnaires that have been assessed
-			for adequate reliability and validity. However, unlike clinical
-			tools that provide the results from these questionnaires to the
-			mental health professional
-			assessing the individual, this application allows the individual taking the questionnaire to assess their
-			own results.
-		</p>
-		<p>Allowing individuals to have a better understanding of their own mental health can empower them to make
-			informed
-			decisions regarding their mental health care, and <em>could greatly assist</em> those with limited access to
-			psychiatric
-			services. Although self-report assessments of mental-health have notable limitations (listed below), there
-			still exists
-			evidence (see references section) that there is potential for them to provide useful information with
-			limited bias.
-		</p>
-		<p>Combining information from multiple sources to maximize the depth and breadth of information available can
-			result in a more accurate picture of an individual's mental health. The results of self-assessments only
-			represent
-			one possible source; it is up to the user to fit them into the bigger picture.</p>
+			<h2>Introduction</h2>
+			<p>This application uses existing self-report mental health assessment questionnaires that have been
+				assessed
+				for adequate reliability and validity. However, unlike clinical
+				tools that provide the results from these questionnaires to the
+				mental health professional
+				assessing the individual, this application allows the individual taking the questionnaire to assess
+				their
+				own results.
+			</p>
+			<p>Allowing individuals to have a better understanding of their own mental health can empower them to make
+				informed
+				decisions regarding their mental health care, and <em>could greatly assist</em> those with limited
+				access to
+				psychiatric
+				services. Although self-report assessments of mental-health have notable limitations (listed below),
+				there
+				still exists
+				evidence (see references section) that there is potential for them to provide useful information with
+				limited bias.
+			</p>
+			<p>Combining information from multiple sources to maximize the depth and breadth of information available
+				can
+				result in a more accurate picture of an individual's mental health. The results of self-assessments only
+				represent
+				one possible source; it is up to the user to fit them into the bigger picture.</p>
 
-		<h3>Limitations</h3>
-		<p>Self-report questionnaires contain some inherit limitations in their validity. Individuals can skew
-			their results by exaggerating or under-reporting their symptoms, and can make errors (such as
-			misinterpreting a question or misremembering relevant information) that meaningfully
-			influence the
-			final results. This application does not attempt to assess indicators of potential response
-			biases.</p>
-		<p><strong>Knowledge of assessment contents can influence how individuals respond to them in the
-				future. This application uses clinical assessments outside of a clinical setting, which may bias future
-				responses to psychological tests.</strong> Although this application does make some attempts to prevent
-			the individual from <em>accidentally</em> biasing their results, repeated use of the questionnaire and
-			knowledge of the
-			questionnaire's scoring may bias subsequent responses.</p>
-		<p>Although the questionnaires used in this application have undergone some validation and are not limited to a
-			specific clinical subpopulation, they may still contain
-			flaws that limit their reliability and validity. Known limitations of the assessments used will be displayed
-			on the results page.
-		</p>
-		<p>The
-			current version
-			of this application is unable to
-			assess symptoms of developmental disorders (such as Attention-Deficit/Hyperactivity Disorder or Autism
-			Spectrum
-			Disorder) or substance use disorders. Measures related to these disorders may be added in a future version.
-		</p>
-		<p><strong>This application is a proof-of-concept and has not been validated for usefulness, accuracy or
-				correctness. This application should be used for educational purposes only and
-				is not a substitute for a diagnosis from a mental health professional. Clinical training is
-				required to make
-				a clinically useful
-				diagnosis</strong>, as it is difficult to determine the threshold where symptoms & traits become
-			pathological.</p>
+			<h3>Limitations</h3>
+			<p>Self-report questionnaires contain some inherit limitations in their validity. Individuals can skew
+				their results by exaggerating or under-reporting their symptoms, and can make errors (such as
+				misinterpreting a question or misremembering relevant information) that meaningfully
+				influence the
+				final results. This application does not attempt to assess indicators of potential response
+				biases.</p>
+			<p><strong>Knowledge of assessment contents can influence how individuals respond to them in the
+					future. This application uses clinical assessments outside of a clinical setting, which may bias
+					future
+					responses to psychological tests.</strong> Although this application does make some attempts to
+				prevent
+				the individual from <em>accidentally</em> biasing their results, repeated use of the questionnaire and
+				knowledge of the
+				questionnaire's scoring may bias subsequent responses.</p>
+			<p>Although the questionnaires used in this application have undergone some validation and are not limited
+				to a
+				specific clinical subpopulation, they may still contain
+				flaws that limit their reliability and validity. Known limitations of the assessments used will be
+				displayed
+				on the results page.
+			</p>
+			<p>The
+				current version
+				of this application is unable to
+				assess symptoms of developmental disorders (such as Attention-Deficit/Hyperactivity Disorder or Autism
+				Spectrum
+				Disorder) or substance use disorders. Measures related to these disorders may be added in a future
+				version.
+			</p>
+			<p><strong>This application is a proof-of-concept and has not been validated for usefulness, accuracy or
+					correctness. This application should be used for educational purposes only and
+					is not a substitute for a diagnosis from a mental health professional. Clinical training is
+					required to make
+					a clinically useful
+					diagnosis</strong>, as it is difficult to determine the threshold where symptoms & traits become
+				pathological.</p>
 
-		<h3>Privacy</h3>
-		<p><strong>All user data is processed and stored on-device, and will be immediately erased after closing or
-				navigating
-				away from the page.</strong> Data
-			generated by interacting with the application (such as questionnaire answers and final scores) will never be
-			sent to external servers.</p>
+			<h3>Privacy</h3>
+			<p><strong>All user data is processed and stored on-device, and will be immediately erased after closing or
+					navigating
+					away from the page.</strong> Data
+				generated by interacting with the application (such as questionnaire answers and final scores) will
+				never be
+				sent to external servers.</p>
 
-		<h3>Resources used</h3>
-		<p>The following documents were used to build this application:</p>
-		<ul>
-			<li>Introduction
-				<ul>
-					<li><a href="https://en.wikipedia.org/wiki/Mental_health#Prevention_and_promotion">Prevention and
-							promotion - Mental Health - Wikipedia</a></li>
-					<li><a href="https://doi.org/10.1037/abn0000201">Clinicians and Clients Disagree: Five Implications
-							for Clinical Science</a></li>
-					<li>DSM-5-TR - Preface & Section I</li>
-					<li><a href="https://en.wikipedia.org/wiki/Self-report_study">Self-report Study - Wikipedia</a></li>
-					<li><a href="https://en.wikipedia.org/wiki/Questionnaire#Concerns_with_questionnaires">Concerns with
-							questionnaires - Questionnaire
-							- Wikipedia</a></li>
-					<li><a href="https://en.wikipedia.org/wiki/Psychological_testing#Test_security">Test security -
-							Psychological testing - Wikipedia</a></li>
-				</ul>
-			</li>
-			<li>Questionnaire & Results
-				<ul id="application-references">
-					<li>Loading...</li>
-				</ul>
-			</li>
-		</ul>
+			<h3>Resources used</h3>
+			<p>The following documents were used to build this application:</p>
+			<ul>
+				<li>Introduction
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Mental_health#Prevention_and_promotion">Prevention
+								and
+								promotion - Mental Health - Wikipedia</a></li>
+						<li><a href="https://doi.org/10.1037/abn0000201">Clinicians and Clients Disagree: Five
+								Implications
+								for Clinical Science</a></li>
+						<li>DSM-5-TR - Preface & Section I</li>
+						<li><a href="https://en.wikipedia.org/wiki/Self-report_study">Self-report Study - Wikipedia</a>
+						</li>
+						<li><a href="https://en.wikipedia.org/wiki/Questionnaire#Concerns_with_questionnaires">Concerns
+								with
+								questionnaires - Questionnaire
+								- Wikipedia</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Psychological_testing#Test_security">Test security -
+								Psychological testing - Wikipedia</a></li>
+					</ul>
+				</li>
+				<li>Questionnaire & Results
+					<ul id="application-references">
+						<li>Loading...</li>
+					</ul>
+				</li>
+			</ul>
 
+			<hr>
+
+			<p><strong>This application is not guaranteed to provide an accurate
+					assessment of an
+					individual's mental health. It is a proof-of-concept, intended for educational purposes only, and
+					cannot
+					act
+					as a substitute
+					for services from a mental health professional.</strong></p>
+		</div>
 		<hr>
-
-		<p><strong>This application is not guaranteed to provide an accurate
-				assessment of an
-				individual's mental health. It is a proof-of-concept, intended for educational purposes only, and cannot
-				act
-				as a substitute
-				for services from a mental health professional. Use of this application may influence subsequent
-				responses
-				to psychological testing.</strong></p>
-
-		<hr>
-
 		<div id="application">
 			<p>Loading application...</p>
 		</div>

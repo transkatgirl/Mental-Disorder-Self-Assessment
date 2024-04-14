@@ -152,12 +152,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.62",
 					"stddev": "0.77"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"AntisocActs": {
 			"label": "Antisocial Behavior",
@@ -165,12 +165,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.07",
 					"stddev": "0.25"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"AppetiteLoss": {
 			"label": "Appetite Loss",
@@ -178,12 +178,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.68"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"BingeEating": {
 			"label": "Binge Eating",
@@ -191,12 +191,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.65",
 					"stddev": "0.79"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"BodilyDistress": {
 			"label": "Bodily Distress",
@@ -204,12 +204,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.84",
 					"stddev": "0.74"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"BodyDissatisfaction": {
 			"label": "Body Dissatisfaction",
@@ -217,12 +217,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.31",
 					"stddev": "0.94"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"BodyFocus": {
 			"label": "Body Focus",
@@ -230,12 +230,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.72",
 					"stddev": "0.68"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Callousness": {
 			"label": "Callousness",
@@ -243,12 +243,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.47",
 					"stddev": "0.55"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Checking": {
 			"label": "Checking",
@@ -256,12 +256,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.77"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Cleaning": {
 			"label": "Cleaning",
@@ -269,12 +269,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.58"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"CogDisorg": {
 			"label": "Cognitive Problems",
@@ -282,12 +282,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.97",
 					"stddev": "0.82"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Conversion": {
 			"label": "Conversion Symptoms",
@@ -295,12 +295,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.12",
 					"stddev": "0.31"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Counting": {
 			"label": "Counting",
@@ -308,12 +308,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.34",
 					"stddev": "0.55"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"DietRestraintEfforts": {
 			"label": "Dietary Restraint",
@@ -321,12 +321,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.12",
 					"stddev": "0.75"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"DiffReachingOrgasm": {
 			"label": "Difficulties Reaching Orgasm",
@@ -334,12 +334,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.49",
 					"stddev": "0.76"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"DiseaseConvict": {
 			"label": "Disease Conviction",
@@ -347,12 +347,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.40",
 					"stddev": "0.69"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Dishonesty": {
 			"label": "Dishonesty",
@@ -360,37 +360,40 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.48",
 					"stddev": "0.53"
 				}
-			},
-			"subscales": {
-				"Deceitfulness": {
-					"label": "Deceitfulness",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.68",
-							"stddev": "0.69"
-						}
-					}
-				},
-				"Manipulativeness": {
-					"label": "Manipulativeness",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.27",
-							"stddev": "0.50"
-						}
-					}
-				}
 			}
+		},
+		"Deceitfulness": {
+			"label": "Deceitfulness",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.68",
+					"stddev": "0.69"
+				}
+			},
+			"parent": "Dishonesty"
+		},
+		"Manipulativeness": {
+			"label": "Manipulativeness",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.27",
+					"stddev": "0.50"
+				}
+			},
+			"parent": "Dishonesty"
 		},
 		"Disorg": {
 			"label": "Disorganization",
@@ -398,12 +401,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.70",
 					"stddev": "0.63"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Dissociation": {
 			"label": "Dissociation",
@@ -411,12 +414,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.29",
 					"stddev": "0.52"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Distress": {
 			"label": "Distress-Dysphoria",
@@ -424,73 +427,82 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.19",
 					"stddev": "0.87"
 				}
-			},
-			"subscales": {
-				"Anehdonia": {
-					"label": "Anhedonia",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.07",
-							"stddev": "0.96"
-						}
-					}
-				},
-				"AnxiousWorry": {
-					"label": "Anxious Worry",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.25",
-							"stddev": "1.01"
-						}
-					}
-				},
-				"DepressedMood": {
-					"label": "Depressed Mood",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.21",
-							"stddev": "1.00"
-						}
-					}
-				},
-				"Lassitude": {
-					"label": "Lassitude",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.40",
-							"stddev": "0.97"
-						}
-					}
-				},
-				"ShameGuilt": {
-					"label": "Shame/Guilt",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.01",
-							"stddev": "0.94"
-						}
-					}
-				}
 			}
+		},
+		"Anehdonia": {
+			"label": "Anhedonia",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.07",
+					"stddev": "0.96"
+				}
+			},
+			"parent": "Distress-Dysphoria"
+		},
+		"AnxiousWorry": {
+			"label": "Anxious Worry",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.25",
+					"stddev": "1.01"
+				}
+			},
+			"parent": "Distress-Dysphoria"
+		},
+		"DepressedMood": {
+			"label": "Depressed Mood",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.21",
+					"stddev": "1.00"
+				}
+			},
+			"parent": "Distress-Dysphoria"
+		},
+		"Lassitude": {
+			"label": "Lassitude",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.40",
+					"stddev": "0.97"
+				}
+			},
+			"parent": "Distress-Dysphoria"
+		},
+		"ShameGuilt": {
+			"label": "Shame/Guilt",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.01",
+					"stddev": "0.94"
+				}
+			},
+			"parent": "Distress-Dysphoria"
 		},
 		"Domineering": {
 			"label": "Domineering",
@@ -498,12 +510,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.67",
 					"stddev": "0.64"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Eccentric": {
 			"label": "Eccentricity",
@@ -511,12 +523,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.40",
 					"stddev": "0.55"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Emotionality": {
 			"label": "Emotionality",
@@ -524,49 +536,54 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.70",
 					"stddev": "0.66"
 				}
-			},
-			"subscales": {
-				"AffLability": {
-					"label": "Affective Lability",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.51",
-							"stddev": "0.69"
-						}
-					}
-				},
-				"AngryHostility": {
-					"label": "Angry Hostility",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.53",
-							"stddev": "0.63"
-						}
-					}
-				},
-				"Irritability": {
-					"label": "irritability",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.00",
-							"stddev": "0.83"
-						}
-					}
-				}
 			}
+		},
+		"AffLability": {
+			"label": "Affective Lability",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.51",
+					"stddev": "0.69"
+				}
+			},
+			"parent": "Emotionality"
+		},
+		"AngryHostility": {
+			"label": "Angry Hostility",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.53",
+					"stddev": "0.63"
+				}
+			},
+			"parent": "Emotionality"
+		},
+		"Irritability": {
+			"label": "irritability",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.00",
+					"stddev": "0.83"
+				}
+			},
+			"parent": "Emotionality"
 		},
 		"Entitlement": {
 			"label": "Entitlement",
@@ -574,12 +591,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.60",
 					"stddev": "0.52"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"ExcessiveExercise": {
 			"label": "Excessive Exercise",
@@ -587,12 +604,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.19",
 					"stddev": "0.43"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Excoriation": {
 			"label": "Excoriation",
@@ -600,12 +617,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.30",
 					"stddev": "0.61"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Exhib": {
 			"label": "Exhibitionism",
@@ -613,12 +630,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.39",
 					"stddev": "0.57"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"FantasyProne": {
 			"label": "Fantasy Proneness",
@@ -626,12 +643,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.72"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"FoodSelectivity": {
 			"label": "Food Selectivity",
@@ -639,12 +656,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.66"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Gambling": {
 			"label": "Gambling",
@@ -652,12 +669,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.17",
 					"stddev": "0.44"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Gaming": {
 			"label": "Gaming",
@@ -665,12 +682,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.44",
 					"stddev": "0.60"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Grandiosity": {
 			"label": "Grandiosity",
@@ -678,12 +695,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.95",
 					"stddev": "0.67"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"HealthAnxiety": {
 			"label": "Health Anxiety",
@@ -691,12 +708,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.78",
 					"stddev": "0.81"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Hoarding": {
 			"label": "Hoarding",
@@ -704,12 +721,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.60",
 					"stddev": "0.63"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Hyperdelib": {
 			"label": "Hyperdeliberation",
@@ -717,12 +734,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.58",
 					"stddev": "0.74"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Hypervigilance": {
 			"label": "Hypervigilance",
@@ -730,12 +747,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.92",
 					"stddev": "0.73"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Insomnia": {
 			"label": "Insomnia",
@@ -743,12 +760,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.32",
 					"stddev": "0.93"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"LowSexArousal": {
 			"label": "Low Sexual Arousal",
@@ -756,12 +773,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.56",
 					"stddev": "0.81"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"LowSexInterest": {
 			"label": "Low Sexual Interest",
@@ -769,12 +786,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.89",
 					"stddev": "0.95"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"ManicEnergy": {
 			"label": "Manic Energy",
@@ -782,12 +799,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.33",
 					"stddev": "0.45"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Mistrust": {
 			"label": "Mistrust",
@@ -795,37 +812,40 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.14",
+					"stddev": "0.84"
+				}
+			}
+		},
+		"Cynicism": {
+			"label": "Cynicism",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.14",
 					"stddev": "0.84"
 				}
 			},
-			"subscales": {
-				"Cynicism": {
-					"label": "Cynicism",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "2.14",
-							"stddev": "0.84"
-						}
-					}
-				},
-				"Suspiciousness": {
-					"label": "Suspiciousness",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.54",
-							"stddev": "0.67"
-						}
-					}
+			"parent": "Mistrust"
+		},
+		"Suspiciousness": {
+			"label": "Suspiciousness",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.54",
+					"stddev": "0.67"
 				}
-			}
+			},
+			"parent": "Mistrust"
 		},
 		"MuscleBuilding": {
 			"label": "Muscle Building",
@@ -833,12 +853,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.50",
 					"stddev": "0.65"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Nightmares": {
 			"label": "Nightmares",
@@ -846,12 +866,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.64",
 					"stddev": "0.77"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"NonPersist": {
 			"label": "Non-persistence",
@@ -859,12 +879,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.87",
 					"stddev": "0.76"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"NonPlan": {
 			"label": "Non-planfulness",
@@ -872,12 +892,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.61",
 					"stddev": "0.65"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"NSSI": {
 			"label": "NSSI",
@@ -885,12 +905,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.18",
 					"stddev": "0.39"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Oppositional": {
 			"label": "Oppositionality",
@@ -898,12 +918,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.45",
 					"stddev": "0.56"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Panic": {
 			"label": "Panic",
@@ -911,12 +931,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.53",
 					"stddev": "0.63"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Paraphilias": {
 			"label": "Paraphilias",
@@ -924,12 +944,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.12",
 					"stddev": "0.33"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Perfectionism": {
 			"label": "Perfectionism",
@@ -937,12 +957,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.77",
 					"stddev": "0.76"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"PrematureOrgasm": {
 			"label": "Premature Orgasm",
@@ -950,12 +970,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.45",
 					"stddev": "0.60"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"ProbShopping": {
 			"label": "Problematic Shopping",
@@ -963,12 +983,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.47",
 					"stddev": "0.66"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Purging": {
 			"label": "Purging",
@@ -976,12 +996,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.12",
 					"stddev": "0.35"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RealityDist": {
 			"label": "Reality Distortion",
@@ -989,37 +1009,40 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.19",
 					"stddev": "0.37"
 				}
-			},
-			"subscales": {
-				"Delusions": {
-					"label": "Delusions",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.15",
-							"stddev": "0.36"
-						}
-					}
-				},
-				"Hallucinations": {
-					"label": "Hallucinations",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.23",
-							"stddev": "0.42"
-						}
-					}
-				}
 			}
+		},
+		"Delusions": {
+			"label": "Delusions",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.15",
+					"stddev": "0.36"
+				}
+			},
+			"parent": "Reality Distortion"
+		},
+		"Hallucinations": {
+			"label": "Hallucinations",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.23",
+					"stddev": "0.42"
+				}
+			},
+			"parent": "Reality Distortion"
 		},
 		"Restless": {
 			"label": "Restlessness",
@@ -1027,12 +1050,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.46",
 					"stddev": "0.61"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RestrictedAffect": {
 			"label": "Restricted Affectivity",
@@ -1040,12 +1063,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.80",
 					"stddev": "0.72"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RestrictiveEating": {
 			"label": "Restricted Eating",
@@ -1053,12 +1076,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.48",
 					"stddev": "0.64"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Rigidity": {
 			"label": "Rigidity",
@@ -1066,12 +1089,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.83",
 					"stddev": "0.62"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RiskAversion": {
 			"label": "Risk Aversion",
@@ -1079,12 +1102,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.43",
 					"stddev": "0.79"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RiskTaking": {
 			"label": "Risk Taking",
@@ -1092,12 +1115,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.39",
 					"stddev": "0.59"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RiskySex": {
 			"label": "Risky Sex",
@@ -1105,12 +1128,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.35",
 					"stddev": "0.56"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"RomDisinterest": {
 			"label": "Romantic Disinterest",
@@ -1118,12 +1141,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.04",
 					"stddev": "0.93"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SexSubstanceUse": {
 			"label": "Sex-Related Substance Use",
@@ -1131,12 +1154,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.24",
 					"stddev": "0.48"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SexualDistress": {
 			"label": "Sexual Distress",
@@ -1144,12 +1167,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.59",
 					"stddev": "0.78"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SexualPain": {
 			"label": "Sexual Pain",
@@ -1157,12 +1180,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.29",
 					"stddev": "0.62"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SocAggression": {
 			"label": "Social Aggression",
@@ -1170,12 +1193,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.22",
 					"stddev": "0.37"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SocAloofness": {
 			"label": "Social Aloofness",
@@ -1183,12 +1206,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.49",
 					"stddev": "0.90"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SocAnxiety": {
 			"label": "Social Anxiety",
@@ -1196,12 +1219,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.06",
 					"stddev": "0.89"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SomaticPreocc": {
 			"label": "Somatic Preoccupation",
@@ -1209,12 +1232,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.36",
 					"stddev": "0.77"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"SpecifcPhobiaIndex": {
 			"label": "Specific Phobia Index",
@@ -1222,49 +1245,54 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.62",
 					"stddev": "0.53"
 				}
-			},
-			"subscales": {
-				"AnimalPhobia": {
-					"label": "Animal-Insect Phobia",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.80",
-							"stddev": "0.74"
-						}
-					}
-				},
-				"BloodPhobia": {
-					"label": "Blood-Injection Phobia",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.34",
-							"stddev": "0.55"
-						}
-					}
-				},
-				"SituationalPhobia": {
-					"label": "Situational Phobias",
-					"choices": "12-month-significance",
-					"scoring": {
-						"average": true,
-						"percentile": {
-							"function": "normal",
-							"mean": "1.61",
-							"stddev": "0.62"
-						}
-					}
-				}
 			}
+		},
+		"AnimalPhobia": {
+			"label": "Animal-Insect Phobia",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.80",
+					"stddev": "0.74"
+				}
+			},
+			"parent": "Specific Phobia Index"
+		},
+		"BloodPhobia": {
+			"label": "Blood-Injection Phobia",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.34",
+					"stddev": "0.55"
+				}
+			},
+			"parent": "Specific Phobia Index"
+		},
+		"SituationalPhobia": {
+			"label": "Situational Phobias",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.61",
+					"stddev": "0.62"
+				}
+			},
+			"parent": "Specific Phobia Index"
 		},
 		"Submissiveness": {
 			"label": "Submissiveness",
@@ -1272,12 +1300,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.87",
 					"stddev": "0.72"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Suicidality": {
 			"label": "Suicidality",
@@ -1285,12 +1313,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.36",
 					"stddev": "0.53"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"TraumaReactions": {
 			"label": "Trauma Reactions",
@@ -1298,12 +1326,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.75",
 					"stddev": "0.83"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Trichotillomania": {
 			"label": "Trichotillomania",
@@ -1311,12 +1339,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.20",
 					"stddev": "0.45"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Wellbeing": {
 			"label": "Well-being",
@@ -1324,12 +1352,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "2.53",
 					"stddev": "0.82"
 				}
-			},
-			"subscales": {}
+			}
 		},
 		"Workaholism": {
 			"label": "Workaholism",
@@ -1337,12 +1365,12 @@
 			"scoring": {
 				"average": true,
 				"percentile": {
+					"show_t_score": true,
 					"function": "normal",
 					"mean": "1.60",
 					"stddev": "0.65"
 				}
-			},
-			"subscales": {}
+			}
 		}
 	},
 	"questions": [
