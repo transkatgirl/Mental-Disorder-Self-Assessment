@@ -142,7 +142,7 @@
 		"As you complete the survey, please consider whether there have been significant times during the last 12 months during which the following statements applied to you. Then please select the option that best describes how well each statement described you during that period."
 	],
 	"interpretation": [
-		"Scores are reported as t-scores by default, which have a mean of 50 and a standard deviation of 10. Statistically-based cutoffs (such as a t-score of 65-70 or greater) may be useful heuristics, but they should not be used in an inflexible manner. Low scores (such as a t-score below 40) are not always meaningful, and need to be evaluated on a case-by-case basis.",
+		"Scores are reported as t-scores, which have a mean of 50 and a standard deviation of 10. Statistically-based cutoffs (such as a t-score of 65-70 or greater) may be useful heuristics, but they should not be used in an inflexible manner. Low scores (such as a t-score below 40) are not always meaningful, and need to be evaluated on a case-by-case basis.",
 		"This scoring system makes the assumption that scores are normally distributed, and this assumption is often violated when evaluating pathological traits. If the scale is not normally distributed, then the t-scores may match up with either a higher or lower percentile, depending on how the distribution is skewed."
 	],
 	"scales": {

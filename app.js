@@ -21,6 +21,10 @@ for (let index = 0; index < hitop_sr.questions.length; ++index) {
 function build_assessment_instructions(assessment) {
 	const assessment_instructions = document.createElement("div");
 
+	const assessment_title = document.createElement("h2");
+	assessment_title.innerText = assessment.metadata.label;
+	assessment_instructions.appendChild(assessment_title);
+
 	assessment.instructions.forEach(function (item, index) {
 		const paragraph = document.createElement("p");
 		paragraph.innerText = item;
@@ -179,7 +183,7 @@ function build_assessment_section(section_form, assessment, index, question_ids)
 			range.min = choice.range.minimum;
 			range.max = choice.range.maximum;
 			range.step = choice.range.increment;
-			range.required = true;
+			//range.required = true;
 
 			const option = document.createElement("td");
 			option.appendChild(range);
@@ -211,26 +215,22 @@ function build_assessment(assessment) {
 	submit_button.innerText = "Score assessment";
 	assessment_form.appendChild(submit_button);
 
-	const assessment_title = document.createElement("h2");
-	assessment_title.innerText = assessment.metadata.label;
-
 	const assessment_area = document.createElement("div");
 	assessment_area.id = assessment.metadata.label_short;
-	assessment_area.appendChild(assessment_title);
 	assessment_area.appendChild(assessment_form);
 
 	assessment_form.addEventListener("submit", (event) => {
 		event.preventDefault();
 
-		score_assessment(assessment, question_ids, new FormData(assessment_form));
-
-		assessment_area.scrollIntoView();
-		//display_assessment_results(assessment, scores, assessment_area);
+		var [scores, percentiles] = score_assessment(assessment, question_ids, new FormData(assessment_form));
+		display_assessment_results(assessment, scores, percentiles, assessment_area);
 	});
 
 	return assessment_area;
 }
 
+
+// TODO: Calculate percentiles for normal distribution
 function score_assessment(assessment, question_ids, formdata) {
 	const scores = new Map();
 	const score_items = new Map();
@@ -349,15 +349,189 @@ function score_assessment(assessment, question_ids, formdata) {
 		}
 	}
 
-	console.log("final_scores", scores);
-	console.log("percentiles", percentiles);
-
 	return [scores, percentiles];
 }
 
-/*function display_assessment_results(assessment, scores, assessment_area) {
+// TODO: Build HiTOP model
+function build_assessment_interpretation(assessment) {
+	const assessment_info = document.createElement("div");
 
-}*/
+	const assessment_title = document.createElement("h2");
+	assessment_title.innerText = assessment.metadata.label;
+	assessment_info.appendChild(assessment_title);
+
+	assessment.metadata.description.forEach(function (item, index) {
+		const paragraph = document.createElement("p");
+		paragraph.innerText = item;
+		assessment_info.appendChild(paragraph);
+	});
+
+	const assessment_results_title = document.createElement("h3");
+	assessment_results_title.innerText = "Results";
+	assessment_info.appendChild(assessment_results_title);
+
+	assessment.interpretation.forEach(function (item, index) {
+		const paragraph = document.createElement("p");
+		paragraph.innerText = item;
+		assessment_info.appendChild(paragraph);
+	});
+
+	return assessment_info;
+}
+
+// TODO: Sort scales by label, sort subscales by scale label & subscale label (grouping children of the same scale together, allowing the child element's label to be omitted)
+
+function build_assessment_results(assessment, scores, percentiles) {
+	const results_tables = document.createElement("div");
+
+	const results_table = document.createElement("table");
+
+	console.log("final_scores", scores);
+	console.log("percentiles", percentiles);
+
+	var has_subscores = false;
+	var has_non_scored_fields = false;
+
+	for (const [key, value] of Object.entries(assessment.scales)) {
+		if (value.parent != null) {
+			has_subscores = true;
+		}
+	}
+
+	for (const [key, value] of scores.entries()) {
+		if (!(key in assessment.scales)) {
+			has_non_scored_fields = true;
+		}
+	}
+
+	const table_head = document.createElement("thead");
+	const table_head_row = document.createElement("tr");
+	table_head.appendChild(table_head_row);
+	if (has_subscores) {
+		const table_head_item_1 = document.createElement("th");
+		table_head_item_1.innerText = "Scale";
+		const table_head_item_2 = document.createElement("th");
+		table_head_item_2.innerText = "Subscale";
+		const table_head_item_3 = document.createElement("th");
+		table_head_item_3.innerText = "Value";
+
+		table_head_row.appendChild(table_head_item_1);
+		table_head_row.appendChild(table_head_item_2);
+		table_head_row.appendChild(table_head_item_3);
+	} else {
+		const table_head_item_1 = document.createElement("th");
+		table_head_item_1.innerText = "Scale";
+		const table_head_item_2 = document.createElement("th");
+		table_head_item_2.innerText = "Value";
+
+		table_head_row.appendChild(table_head_item_1);
+		table_head_row.appendChild(table_head_item_2);
+	}
+	results_table.appendChild(table_head);
+
+	const table_body = document.createElement("tbody");
+
+	// TODO: Add percentiles to items
+	for (const [key, value] of scores.entries()) {
+		if (key in assessment.scales) {
+			const table_row = document.createElement("tr");
+			if (has_subscores) {
+				const table_item_1 = document.createElement("td");
+				const table_item_2 = document.createElement("td");
+				const table_item_3 = document.createElement("td");
+				if (assessment.scales[key].parent != null) {
+					if ((assessment.scales[key].parent in assessment.scales) && (assessment.scales[assessment.scales[key].parent].label != null)) {
+						table_item_1.innerText = assessment.scales[assessment.scales[key].parent].label;
+					} else {
+						table_item_1.innerText = assessment.scales[key].parent;
+					}
+					if (assessment.scales[key].label != null) {
+						table_item_2.innerText = assessment.scales[key].label;
+					} else {
+						table_item_2.innerText = key;
+					}
+				} else {
+					if (assessment.scales[key].label != null) {
+						table_item_1.innerText = assessment.scales[key].label;
+					} else {
+						table_item_1.innerText = key;
+					}
+				}
+				table_item_3.innerText = value;
+				table_row.appendChild(table_item_1);
+				table_row.appendChild(table_item_2);
+				table_row.appendChild(table_item_3);
+			} else {
+				const table_item_1 = document.createElement("td");
+				const table_item_2 = document.createElement("td");
+				if (assessment.scales[key].label != null) {
+					table_item_1.innerText = assessment.scales[key].label;
+				} else {
+					table_item_1.innerText = key;
+				}
+				table_item_2.innerText = value;
+				table_row.appendChild(table_item_1);
+				table_row.appendChild(table_item_2);
+			}
+			table_body.appendChild(table_row);
+		}
+	}
+
+	results_table.appendChild(table_body);
+
+	results_tables.appendChild(results_table);
+
+	if (has_non_scored_fields) {
+		const field_table = document.createElement("table");
+
+		const field_table_head = document.createElement("thead");
+		const field_table_head_row = document.createElement("tr");
+		field_table_head.appendChild(field_table_head_row);
+
+		const field_table_head_item_1 = document.createElement("th");
+		field_table_head_item_1.innerText = "Field";
+		const field_table_head_item_2 = document.createElement("th");
+		field_table_head_item_2.innerText = "Value";
+
+		field_table_head_row.appendChild(field_table_head_item_1);
+		field_table_head_row.appendChild(field_table_head_item_2);
+
+		const field_table_body = document.createElement("tbody");
+		for (const [key, value] of scores.entries()) {
+			if (!(key in assessment.scales)) {
+				const field_table_row = document.createElement("tr");
+
+				const field_table_item_1 = document.createElement("td");
+				const field_table_item_2 = document.createElement("td");
+
+				field_table_item_1.innerText = key;
+				field_table_item_2.innerText = value;
+
+				field_table_row.appendChild(field_table_item_1);
+				field_table_row.appendChild(field_table_item_2);
+
+				field_table_body.appendChild(field_table_row);
+			}
+		}
+
+		field_table.appendChild(field_table_head);
+		field_table.appendChild(field_table_body);
+
+		results_tables.appendChild(document.createElement("br"));
+		results_tables.appendChild(field_table);
+	}
+
+	return results_tables;
+}
+
+function display_assessment_results(assessment, scores, percentiles, assessment_area) {
+	document.getElementById("introduction").style.display = "unset";
+	assessment_area.scrollIntoView();
+
+	assessment_area.innerHTML = "";
+	assessment_area.appendChild(build_assessment_interpretation(assessment));
+	assessment_area.appendChild(build_assessment_results(assessment, scores, percentiles));
+}
 
 function start_assessment() {
 	document.getElementById("introduction").style.display = "none";
@@ -369,7 +543,6 @@ function start_assessment() {
 	application_area.appendChild(build_assessment(hitop_sr));
 	application_area.appendChild(document.createElement("hr"));
 	application_area.appendChild(build_assessment(whodas));
-
 }
 
 
