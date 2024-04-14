@@ -30,8 +30,6 @@ function build_assessment_instructions(assessment) {
 	return assessment_instructions;
 }
 
-//const question_ids = new Map();
-
 function build_assessment_section(section_form, assessment, index) {
 	var assessment_section;
 
@@ -189,148 +187,53 @@ function build_assessment_section(section_form, assessment, index) {
 	}
 
 	section_form.appendChild(document.createElement("br"));
-
-	return section_form;
 }
 
 function run_assessment(assessment) {
-	window.scrollTo(0, 0);
-
-	const application_area = document.getElementById("application");
-	application_area.innerHTML = "";
-
 	const assessment_form = document.createElement("form");
 	assessment_form.id = assessment.metadata.label_short = "_form";
 
 	assessment_form.appendChild(build_assessment_instructions(assessment));
-
 	assessment.questions.forEach(function (item, index) {
-		application_area.appendChild(build_assessment_section(assessment_form, assessment, index));
+		build_assessment_section(assessment_form, assessment, index);
 	});
 
 	const submit_button = document.createElement("button");
 	submit_button.innerText = "Score assessment";
 	assessment_form.appendChild(submit_button);
 
+	const assessment_area = document.createElement("div");
+	assessment_area.id = assessment.metadata.label.short;
+	assessment_area.appendChild(assessment_form);
+
 	assessment_form.addEventListener("submit", (event) => {
 		event.preventDefault();
 
-		score_assessment(assessment, new FormData(assessment_form));
+		score_assessment(assessment, new FormData(assessment_form), assessment_area);
 	});
+
+	return assessment_area;
 }
 
-function score_assessment(assessment, formdata) {
+function score_assessment(assessment, formdata, assessment_area) {
 	console.log(formdata);
-
-	//const assessment_form = document.getElementById("elementId")
 
 
 }
 
 function start_assessment() {
 	document.getElementById("introduction").style.display = "none";
+	window.scrollTo(0, 0);
 
-	run_assessment(whodas);
+	// TODO: https://stackoverflow.com/questions/5007530/how-do-i-scroll-to-an-element-using-javascript#22292000
+
+	const application_area = document.getElementById("application");
+	application_area.innerHTML = "";
+
+	application_area.appendChild(run_assessment(whodas));
 
 }
 
-
-
-/*function start_assessment() {
-	const assessment_instructions = document.createElement("div");
-
-	hitop_sr.instructions.forEach(function (item, index) {
-		const paragraph = document.createElement("p");
-		paragraph.innerText = item;
-		assessment_instructions.appendChild(paragraph);
-	});
-
-	shuffle(hitop_sr.questions);
-	for (let index = 0; index < hitop_sr.questions.length; ++index) {
-		shuffle(hitop_sr.questions[index]);
-	}
-
-	const assessment_form = document.createElement("form");
-
-	var outer_index = 0;
-
-	hitop_sr.questions.forEach(function (item, index) {
-		var section_choices = "";
-		var assessment_section;
-		var assessment_list;
-
-		var inner_index = 0;
-		for (let [key, value] of Object.entries(item)) {
-			if (hitop_sr.scales[value].choices != section_choices) {
-				assessment_section = document.createElement("fieldset");
-				assessment_list = document.createElement("ul");
-				const section_instructions = document.createElement("legend");
-				section_instructions.innerText = hitop_sr.choices[hitop_sr.scales[value].choices].instructions;
-				assessment_section.appendChild(section_instructions);
-				assessment_section.appendChild(assessment_list);
-				assessment_form.appendChild(assessment_section);
-				section_choices = hitop_sr.scales[value].choices;
-			}
-
-			const assessment_item = document.createElement("fieldset");
-
-			const item_label = document.createElement("legend");
-			item_label.innerText = key;
-
-			assessment_item.appendChild(item_label);
-			hitop_sr.choices[hitop_sr.scales[value].choices].options.forEach(function (item, index) {
-				const item_label = document.createElement("label");
-				item_label.htmlFor = outer_index + "_" + inner_index;
-				item_label.innerText = item;
-
-				const item_button = document.createElement("input");
-				item_button.type = "radio";
-				item_button.name = outer_index + "_" + inner_index;
-				item_button.value = index;
-
-				assessment_item.appendChild(item_button);
-				assessment_item.appendChild(item_label);
-				assessment_item.appendChild(document.createElement("br"));
-			});
-
-			assessment_list.appendChild(assessment_item);
-
-			inner_index += 1;
-		}
-
-		outer_index += 1;
-	});
-
-	const application_area = document.getElementById("application");
-
-	assessment_form.addEventListener("submit", (event) => {
-		event.preventDefault();
-
-		console.log("test");
-
-		// TODO
-	});
-
-	assessment_form.appendChild(document.createElement("br"));
-
-	const submit_button = document.createElement("button");
-	submit_button.innerText = "Score assessment";
-	assessment_form.appendChild(submit_button);
-
-
-
-
-	document.getElementById("introduction").style.display = "none";
-	application_area.innerHTML = "";
-	application_area.appendChild(assessment_instructions);
-	application_area.appendChild(assessment_form);
-
-
-
-
-
-	// TODO
-}*/
 
 function init_references(reference_objects) {
 	const reference_list = document.getElementById("application-references");
