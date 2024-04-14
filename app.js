@@ -30,7 +30,9 @@ function build_assessment_instructions(assessment) {
 	return assessment_instructions;
 }
 
-function build_assessment_section(section_form, assessment, index) {
+// TODO: Enable input.required
+
+function build_assessment_section(section_form, assessment, index, question_ids) {
 	var assessment_section;
 
 	var section_header;
@@ -96,12 +98,13 @@ function build_assessment_section(section_form, assessment, index) {
 
 			const question = document.createElement("th");
 			question.innerText = key;
-			if (scale != null) {
-				question.htmlFor = scale;
-			} else {
-				question.htmlFor = question.innerText;
-			}
 			question.id = assessment.metadata.label_short + "_" + index + "_" + inner_index;
+			if (scale != null) {
+				question_ids.set(question.id, scale);
+			} else {
+				question_ids.set(question.id, key);
+			}
+			question.htmlFor = question.id;
 			question_row.appendChild(question);
 
 			const skip = choice.skip_option;
@@ -117,6 +120,7 @@ function build_assessment_section(section_form, assessment, index) {
 				choice_button.name = question.htmlFor;
 				choice_button.id = question.id + "_skip";
 				choice_button.value = "skip";
+				//choice_button.required = true;
 
 				choice.appendChild(choice_button);
 				choice.appendChild(choice_label);
@@ -136,6 +140,7 @@ function build_assessment_section(section_form, assessment, index) {
 				choice_button.name = question.htmlFor;
 				choice_button.id = question.id + "_" + index;
 				choice_button.value = index;
+				//choice_button.required = true;
 
 				choice.appendChild(choice_button);
 				choice.appendChild(choice_label);
@@ -159,12 +164,13 @@ function build_assessment_section(section_form, assessment, index) {
 
 			const question = document.createElement("td");
 			question.innerText = key;
-			if (scale != null) {
-				question.htmlFor = scale;
-			} else {
-				question.htmlFor = question.innerText;
-			}
 			question.id = assessment.metadata.label_short + "_" + index + "_" + inner_index;
+			if (scale != null) {
+				question_ids.set(question.id, scale);
+			} else {
+				question_ids.set(question.id, key);
+			}
+			question.htmlFor = question.id;
 
 			const range = document.createElement("input");
 			range.type = "number";
@@ -173,6 +179,7 @@ function build_assessment_section(section_form, assessment, index) {
 			range.min = choice.range.minimum;
 			range.max = choice.range.maximum;
 			range.step = choice.range.increment;
+			//range.required = true;
 
 			const option = document.createElement("td");
 			option.appendChild(range);
@@ -190,12 +197,14 @@ function build_assessment_section(section_form, assessment, index) {
 }
 
 function build_assessment(assessment) {
+	const question_ids = new Map();
+
 	const assessment_form = document.createElement("form");
-	assessment_form.id = assessment.metadata.label_short = "_form";
+	assessment_form.id = assessment.metadata.label_short + "_form";
 
 	assessment_form.appendChild(build_assessment_instructions(assessment));
 	assessment.questions.forEach(function (item, index) {
-		build_assessment_section(assessment_form, assessment, index);
+		build_assessment_section(assessment_form, assessment, index, question_ids);
 	});
 
 	const submit_button = document.createElement("button");
@@ -206,22 +215,55 @@ function build_assessment(assessment) {
 	assessment_title.innerText = assessment.metadata.label;
 
 	const assessment_area = document.createElement("div");
-	assessment_area.id = assessment.metadata.label.short;
+	assessment_area.id = assessment.metadata.label_short;
 	assessment_area.appendChild(assessment_title);
 	assessment_area.appendChild(assessment_form);
 
 	assessment_form.addEventListener("submit", (event) => {
 		event.preventDefault();
 
+		const formdata = new FormData(assessment_form);
+
+		const raw_scores = new Map();
+		const score_items = new Map();
+
+		for (const [key, value] of formdata.entries()) {
+			if (question_ids.has(key)) {
+				const score_id = question_ids.get(key);
+
+				if (raw_scores.has(score_id)) {
+					if (!isNaN(parseInt(value))) {
+						raw_scores.set(score_id, raw_scores.get(score_id) + parseInt(value));
+						score_items.set(score_id, score_items.get(score_id) + 1);
+					} else if (!isNaN(parseFloat(value))) {
+						raw_scores.set(score_id, raw_scores.get(score_id) + parseFloat(value));
+						score_items.set(score_id, score_items.get(score_id) + 1);
+					} else {
+						console.warn("duplicate of score_id: " + key + " : " + value);
+					}
+				} else {
+					if (!isNaN(parseInt(value))) {
+						raw_scores.set(score_id, parseInt(value));
+					} else if (!isNaN(parseFloat(value))) {
+						raw_scores.set(score_id, parseFloat(value));
+					} else {
+						raw_scores.set(score_id, value);
+					}
+					score_items.set(score_id, 1);
+				}
+			}
+		}
+
 		assessment_area.scrollIntoView();
-		score_assessment(assessment, new FormData(assessment_form), assessment_area);
+		score_assessment(assessment, raw_scores, score_items, assessment_area);
 	});
 
 	return assessment_area;
 }
 
-function score_assessment(assessment, formdata, assessment_area) {
-	console.log(formdata);
+function score_assessment(assessment, raw_scores, score_items, assessment_area) {
+	console.log(raw_scores);
+	console.log(score_items);
 
 
 }
