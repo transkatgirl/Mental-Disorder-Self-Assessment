@@ -80,16 +80,6 @@
 		},
 		"life-activities": {
 			"label": "Life activities",
-			"choices": "30-day-average-difficulty",
-			"scoring": {
-				"average": true,
-				"round": true,
-				"offset": -1,
-				"multiplier": 25
-			},
-			"parent": "total"
-		},
-		"work-activities": {
 			"choices": "30-day-average-difficulty-optional",
 			"scoring": {
 				"average": true,
@@ -97,7 +87,7 @@
 				"offset": -1,
 				"multiplier": 25
 			},
-			"parent": "life-activities"
+			"parent": "total"
 		},
 		"participation": {
 			"label": "Participation",
@@ -145,10 +135,10 @@
 			"Doing most important household tasks well?": "life-activities",
 			"Getting all the household work done that you needed to do?": "life-activities",
 			"Getting your household work done as quickly as needed?": "life-activities",
-			"Your day-to-day work/school?": "work-activities",
-			"Doing your most important work/school tasks well?": "work-activities",
-			"Getting all the work done that you need to do?": "work-activities",
-			"Getting your work done as quickly as needed?": "work-activities"
+			"Your day-to-day work/school?": "life-activities",
+			"Doing your most important work/school tasks well?": "life-activities",
+			"Getting all the work done that you need to do?": "life-activities",
+			"Getting your work done as quickly as needed?": "life-activities"
 		},
 		{
 			"How much of a problem did you have in joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?": "participation",
