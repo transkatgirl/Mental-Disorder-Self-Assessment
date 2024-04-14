@@ -189,7 +189,7 @@ function build_assessment_section(section_form, assessment, index) {
 	section_form.appendChild(document.createElement("br"));
 }
 
-function run_assessment(assessment) {
+function build_assessment(assessment) {
 	const assessment_form = document.createElement("form");
 	assessment_form.id = assessment.metadata.label_short = "_form";
 
@@ -202,13 +202,18 @@ function run_assessment(assessment) {
 	submit_button.innerText = "Score assessment";
 	assessment_form.appendChild(submit_button);
 
+	const assessment_title = document.createElement("h2");
+	assessment_title.innerText = assessment.metadata.label;
+
 	const assessment_area = document.createElement("div");
 	assessment_area.id = assessment.metadata.label.short;
+	assessment_area.appendChild(assessment_title);
 	assessment_area.appendChild(assessment_form);
 
 	assessment_form.addEventListener("submit", (event) => {
 		event.preventDefault();
 
+		assessment_area.scrollIntoView();
 		score_assessment(assessment, new FormData(assessment_form), assessment_area);
 	});
 
@@ -225,12 +230,12 @@ function start_assessment() {
 	document.getElementById("introduction").style.display = "none";
 	window.scrollTo(0, 0);
 
-	// TODO: https://stackoverflow.com/questions/5007530/how-do-i-scroll-to-an-element-using-javascript#22292000
-
 	const application_area = document.getElementById("application");
 	application_area.innerHTML = "";
 
-	application_area.appendChild(run_assessment(whodas));
+	application_area.appendChild(build_assessment(hitop_sr));
+	application_area.appendChild(document.createElement("hr"));
+	application_area.appendChild(build_assessment(whodas));
 
 }
 
@@ -252,14 +257,17 @@ function init_references(reference_objects) {
 	});
 }
 
-function init_assessment_info(number_questions) {
+function init_assessment_info(number_questionnaires, number_questions) {
 	const application_area = document.getElementById("application");
 
 	const application_title = document.createElement("h2");
 	application_title.innerText = "Start Assessment?";
 
-	const assessment_info = document.createElement("p");
-	assessment_info.innerText = "The assessment contains roughly " + (Math.round(number_questions / 100) * 100) + " questions, which are estimated to take " + Math.floor((number_questions * 6) / 600) * 10 + " to " + Math.ceil((number_questions * 9) / 600) * 10 + " minutes to complete. Avoid closing the application during the assessment, as this will erase all progress made.";
+	const assessment_info_1 = document.createElement("p");
+	assessment_info_1.innerText = "This application currently contains " + number_questionnaires + " questionnaires, which can be completed and scored independently. If you intend to complete all of the available questionnaires, this will result in a total length of roughly " + (Math.round(number_questions / 100) * 100) + " questions, which is estimated to take " + Math.floor((number_questions * 6) / 600) * 10 + " to " + Math.ceil((number_questions * 9) / 600) * 10 + " minutes to complete.";
+
+	const assessment_info_2 = document.createElement("p");
+	assessment_info_2.innerText = "Avoid closing the application until you are finished using it, as this will erase all progress made.";
 
 	const start_button = document.createElement("button");
 	start_button.innerText = "Start assessment";
@@ -267,19 +275,20 @@ function init_assessment_info(number_questions) {
 
 	application_area.innerHTML = "";
 	application_area.appendChild(application_title);
-	application_area.appendChild(assessment_info);
+	application_area.appendChild(assessment_info_1);
+	application_area.appendChild(assessment_info_2);
 	application_area.appendChild(start_button);
 }
 
 function init_page() {
-	init_references(hitop.metadata.references.concat(hitop_sr.metadata.references));
+	init_references(hitop.metadata.references.concat(hitop_sr.metadata.references, whodas.metadata.references));
 
 	number_questions = 0;
-	hitop_sr.questions.forEach(function (item, index) {
+	hitop_sr.questions.concat(whodas.questions).forEach(function (item, index) {
 		number_questions += Object.keys(item).length;
 	});
 
-	init_assessment_info(number_questions);
+	init_assessment_info(2, number_questions);
 }
 
 if (document.readyState === "loading") {
