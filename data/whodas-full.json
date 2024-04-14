@@ -33,71 +33,74 @@
 					"show_raw": true
 				}
 			},
-			"subscales": {
-				"cognition": {
-					"label": "Cognition",
-					"choices": "30-day-average-difficulty",
-					"scoring": {
-						"average": true,
-						"offset": -1,
-						"multiplier": 25
-					}
+			"cognition": {
+				"label": "Cognition",
+				"choices": "30-day-average-difficulty",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
 				},
-				"mobility": {
-					"label": "Mobility",
-					"choices": "30-day-average-difficulty",
-					"scoring": {
-						"average": true,
-						"offset": -1,
-						"multiplier": 25
-					}
+				"parent": "total"
+			},
+			"mobility": {
+				"label": "Mobility",
+				"choices": "30-day-average-difficulty",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
 				},
-				"self-care": {
-					"label": "Self-care",
-					"choices": "30-day-average-difficulty",
-					"scoring": {
-						"average": true,
-						"offset": -1,
-						"multiplier": 25
-					}
+				"parent": "total"
+			},
+			"self-care": {
+				"label": "Self-care",
+				"choices": "30-day-average-difficulty",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
 				},
-				"getting-along": {
-					"label": "Getting along",
-					"choices": "30-day-average-difficulty",
-					"scoring": {
-						"average": true,
-						"offset": -1,
-						"multiplier": 25
-					}
+				"parent": "total"
+			},
+			"getting-along": {
+				"label": "Getting along",
+				"choices": "30-day-average-difficulty",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
 				},
-				"life-activities": {
-					"label": "Life activities",
-					"choices": "30-day-average-difficulty",
-					"scoring": {
-						"average": true,
-						"offset": -1,
-						"multiplier": 25
-					},
-					"subscales": {
-						"work-activities": {
-							"choices": "30-day-average-difficulty-optional",
-							"scoring": {
-								"average": true,
-								"offset": -1,
-								"multiplier": 25
-							}
-						}
-					}
+				"parent": "total"
+			},
+			"life-activities": {
+				"label": "Life activities",
+				"choices": "30-day-average-difficulty",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
 				},
-				"participation": {
-					"label": "Participation",
-					"choices": "30-day-average",
-					"scoring": {
-						"average": true,
-						"offset": -1,
-						"multiplier": 25
-					}
-				}
+				"parent": "total"
+			},
+			"work-activities": {
+				"choices": "30-day-average-difficulty-optional",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
+				},
+				"parent": "life-activities"
+			},
+			"participation": {
+				"label": "Participation",
+				"choices": "30-day-average",
+				"scoring": {
+					"average": true,
+					"offset": -1,
+					"multiplier": 25
+				},
+				"parent": "total"
 			}
 		}
 	},

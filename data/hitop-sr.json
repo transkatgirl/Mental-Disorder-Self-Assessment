@@ -367,34 +367,6 @@
 				}
 			}
 		},
-		"Deceitfulness": {
-			"label": "Deceitfulness",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.68",
-					"stddev": "0.69"
-				}
-			},
-			"parent": "Dishonesty"
-		},
-		"Manipulativeness": {
-			"label": "Manipulativeness",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.27",
-					"stddev": "0.50"
-				}
-			},
-			"parent": "Dishonesty"
-		},
 		"Disorg": {
 			"label": "Disorganization",
 			"choices": "12-month-significance",
@@ -434,76 +406,6 @@
 				}
 			}
 		},
-		"Anehdonia": {
-			"label": "Anhedonia",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.07",
-					"stddev": "0.96"
-				}
-			},
-			"parent": "Distress-Dysphoria"
-		},
-		"AnxiousWorry": {
-			"label": "Anxious Worry",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.25",
-					"stddev": "1.01"
-				}
-			},
-			"parent": "Distress-Dysphoria"
-		},
-		"DepressedMood": {
-			"label": "Depressed Mood",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.21",
-					"stddev": "1.00"
-				}
-			},
-			"parent": "Distress-Dysphoria"
-		},
-		"Lassitude": {
-			"label": "Lassitude",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.40",
-					"stddev": "0.97"
-				}
-			},
-			"parent": "Distress-Dysphoria"
-		},
-		"ShameGuilt": {
-			"label": "Shame/Guilt",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.01",
-					"stddev": "0.94"
-				}
-			},
-			"parent": "Distress-Dysphoria"
-		},
 		"Domineering": {
 			"label": "Domineering",
 			"choices": "12-month-significance",
@@ -542,48 +444,6 @@
 					"stddev": "0.66"
 				}
 			}
-		},
-		"AffLability": {
-			"label": "Affective Lability",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.51",
-					"stddev": "0.69"
-				}
-			},
-			"parent": "Emotionality"
-		},
-		"AngryHostility": {
-			"label": "Angry Hostility",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.53",
-					"stddev": "0.63"
-				}
-			},
-			"parent": "Emotionality"
-		},
-		"Irritability": {
-			"label": "irritability",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.00",
-					"stddev": "0.83"
-				}
-			},
-			"parent": "Emotionality"
 		},
 		"Entitlement": {
 			"label": "Entitlement",
@@ -819,34 +679,6 @@
 				}
 			}
 		},
-		"Cynicism": {
-			"label": "Cynicism",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "2.14",
-					"stddev": "0.84"
-				}
-			},
-			"parent": "Mistrust"
-		},
-		"Suspiciousness": {
-			"label": "Suspiciousness",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.54",
-					"stddev": "0.67"
-				}
-			},
-			"parent": "Mistrust"
-		},
 		"MuscleBuilding": {
 			"label": "Muscle Building",
 			"choices": "12-month-significance",
@@ -1015,34 +847,6 @@
 					"stddev": "0.37"
 				}
 			}
-		},
-		"Delusions": {
-			"label": "Delusions",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.15",
-					"stddev": "0.36"
-				}
-			},
-			"parent": "Reality Distortion"
-		},
-		"Hallucinations": {
-			"label": "Hallucinations",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.23",
-					"stddev": "0.42"
-				}
-			},
-			"parent": "Reality Distortion"
 		},
 		"Restless": {
 			"label": "Restlessness",
@@ -1252,48 +1056,6 @@
 				}
 			}
 		},
-		"AnimalPhobia": {
-			"label": "Animal-Insect Phobia",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.80",
-					"stddev": "0.74"
-				}
-			},
-			"parent": "Specific Phobia Index"
-		},
-		"BloodPhobia": {
-			"label": "Blood-Injection Phobia",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.34",
-					"stddev": "0.55"
-				}
-			},
-			"parent": "Specific Phobia Index"
-		},
-		"SituationalPhobia": {
-			"label": "Situational Phobias",
-			"choices": "12-month-significance",
-			"scoring": {
-				"average": true,
-				"percentile": {
-					"show_t_score": true,
-					"function": "normal",
-					"mean": "1.61",
-					"stddev": "0.62"
-				}
-			},
-			"parent": "Specific Phobia Index"
-		},
 		"Submissiveness": {
 			"label": "Submissiveness",
 			"choices": "12-month-significance",
@@ -1371,6 +1133,244 @@
 					"stddev": "0.65"
 				}
 			}
+		},
+		"Deceitfulness": {
+			"label": "Deceitfulness",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.68",
+					"stddev": "0.69"
+				}
+			},
+			"parent": "Dishonesty"
+		},
+		"Manipulativeness": {
+			"label": "Manipulativeness",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.27",
+					"stddev": "0.50"
+				}
+			},
+			"parent": "Dishonesty"
+		},
+		"Anehdonia": {
+			"label": "Anhedonia",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.07",
+					"stddev": "0.96"
+				}
+			},
+			"parent": "Distress"
+		},
+		"AnxiousWorry": {
+			"label": "Anxious Worry",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.25",
+					"stddev": "1.01"
+				}
+			},
+			"parent": "Distress"
+		},
+		"DepressedMood": {
+			"label": "Depressed Mood",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.21",
+					"stddev": "1.00"
+				}
+			},
+			"parent": "Distress"
+		},
+		"Lassitude": {
+			"label": "Lassitude",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.40",
+					"stddev": "0.97"
+				}
+			},
+			"parent": "Distress"
+		},
+		"ShameGuilt": {
+			"label": "Shame/Guilt",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.01",
+					"stddev": "0.94"
+				}
+			},
+			"parent": "Distress"
+		},
+		"AffLability": {
+			"label": "Affective Lability",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.51",
+					"stddev": "0.69"
+				}
+			},
+			"parent": "Emotionality"
+		},
+		"AngryHostility": {
+			"label": "Angry Hostility",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.53",
+					"stddev": "0.63"
+				}
+			},
+			"parent": "Emotionality"
+		},
+		"Irritability": {
+			"label": "irritability",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.00",
+					"stddev": "0.83"
+				}
+			},
+			"parent": "Emotionality"
+		},
+		"Cynicism": {
+			"label": "Cynicism",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "2.14",
+					"stddev": "0.84"
+				}
+			},
+			"parent": "Mistrust"
+		},
+		"Suspiciousness": {
+			"label": "Suspiciousness",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.54",
+					"stddev": "0.67"
+				}
+			},
+			"parent": "Mistrust"
+		},
+		"Delusions": {
+			"label": "Delusions",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.15",
+					"stddev": "0.36"
+				}
+			},
+			"parent": "RealityDist"
+		},
+		"Hallucinations": {
+			"label": "Hallucinations",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.23",
+					"stddev": "0.42"
+				}
+			},
+			"parent": "RealityDist"
+		},
+		"AnimalPhobia": {
+			"label": "Animal-Insect Phobia",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.80",
+					"stddev": "0.74"
+				}
+			},
+			"parent": "SpecifcPhobiaIndex"
+		},
+		"BloodPhobia": {
+			"label": "Blood-Injection Phobia",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.34",
+					"stddev": "0.55"
+				}
+			},
+			"parent": "SpecifcPhobiaIndex"
+		},
+		"SituationalPhobia": {
+			"label": "Situational Phobias",
+			"choices": "12-month-significance",
+			"scoring": {
+				"average": true,
+				"percentile": {
+					"show_t_score": true,
+					"function": "normal",
+					"mean": "1.61",
+					"stddev": "0.62"
+				}
+			},
+			"parent": "SpecifcPhobiaIndex"
 		}
 	},
 	"questions": [
