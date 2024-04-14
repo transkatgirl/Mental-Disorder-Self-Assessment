@@ -26,6 +26,7 @@
 			"label": "Total",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"percentile": {
 					"function": "ln",
 					"multiplier": 14.372,
@@ -39,6 +40,7 @@
 			"choices": "30-day-average-difficulty",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},
@@ -49,6 +51,7 @@
 			"choices": "30-day-average-difficulty",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},
@@ -59,6 +62,7 @@
 			"choices": "30-day-average-difficulty",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},
@@ -69,6 +73,7 @@
 			"choices": "30-day-average-difficulty",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},
@@ -79,6 +84,7 @@
 			"choices": "30-day-average-difficulty",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},
@@ -88,6 +94,7 @@
 			"choices": "30-day-average-difficulty-optional",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},
@@ -98,6 +105,7 @@
 			"choices": "30-day-average",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25
 			},

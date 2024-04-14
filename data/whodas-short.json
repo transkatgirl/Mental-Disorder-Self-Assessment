@@ -27,6 +27,7 @@
 			"choices": "30-day-average-difficulty",
 			"scoring": {
 				"average": true,
+				"round": true,
 				"offset": -1,
 				"multiplier": 25,
 				"percentile": {
