@@ -431,7 +431,6 @@ function build_assessment_results(assessment, scores, percentiles) {
 
 	const table_body = document.createElement("tbody");
 
-	// TODO: Add percentiles to items
 	for (const [key, value] of scores.entries()) {
 		if (key in assessment.scales) {
 			const table_row = document.createElement("tr");
@@ -457,7 +456,11 @@ function build_assessment_results(assessment, scores, percentiles) {
 						table_item_1.innerText = key;
 					}
 				}
-				table_item_3.innerText = value;
+				if (percentiles.has(key)) {
+					table_item_3.innerText = value + " (" + Math.round(percentiles.get(key)) + "th percentile)";
+				} else {
+					table_item_3.innerText = value;
+				}
 				table_row.appendChild(table_item_1);
 				table_row.appendChild(table_item_2);
 				table_row.appendChild(table_item_3);
@@ -469,7 +472,11 @@ function build_assessment_results(assessment, scores, percentiles) {
 				} else {
 					table_item_1.innerText = key;
 				}
-				table_item_2.innerText = value;
+				if (percentiles.has(key)) {
+					table_item_2.innerText = value + " (" + Math.round(percentiles.get(key)) + "th percentile)";
+				} else {
+					table_item_2.innerText = value;
+				}
 				table_row.appendChild(table_item_1);
 				table_row.appendChild(table_item_2);
 			}
