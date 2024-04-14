@@ -179,7 +179,7 @@ function build_assessment_section(section_form, assessment, index, question_ids)
 			range.min = choice.range.minimum;
 			range.max = choice.range.maximum;
 			range.step = choice.range.increment;
-			//range.required = true;
+			range.required = true;
 
 			const option = document.createElement("td");
 			option.appendChild(range);
@@ -222,51 +222,63 @@ function build_assessment(assessment) {
 	assessment_form.addEventListener("submit", (event) => {
 		event.preventDefault();
 
-		const formdata = new FormData(assessment_form);
+		score_assessment(assessment, question_ids, new FormData(assessment_form));
 
-		const raw_scores = new Map();
-		const score_items = new Map();
+		assessment_area.scrollIntoView();
+		//display_assessment_results(assessment, scores, assessment_area);
+	});
 
-		for (const [key, value] of formdata.entries()) {
-			if (question_ids.has(key)) {
-				const score_id = question_ids.get(key);
+	return assessment_area;
+}
 
-				if (raw_scores.has(score_id)) {
-					if (!isNaN(parseInt(value))) {
+function score_assessment(assessment, question_ids, formdata) {
+	const raw_scores = new Map();
+	const score_items = new Map();
+
+	for (const [key, value] of formdata.entries()) {
+		if (question_ids.has(key)) {
+			const score_id = question_ids.get(key);
+
+			if (raw_scores.has(score_id)) {
+				if (!isNaN(parseInt(value))) {
+					if (typeof raw_scores.get(score_id) == "number") {
 						raw_scores.set(score_id, raw_scores.get(score_id) + parseInt(value));
 						score_items.set(score_id, score_items.get(score_id) + 1);
-					} else if (!isNaN(parseFloat(value))) {
+					} else {
+						console.warn("duplicate of score_id: " + key + " : " + value);
+					}
+				} else if (!isNaN(parseFloat(value))) {
+					if (typeof raw_scores.get(score_id) == "number") {
 						raw_scores.set(score_id, raw_scores.get(score_id) + parseFloat(value));
 						score_items.set(score_id, score_items.get(score_id) + 1);
 					} else {
 						console.warn("duplicate of score_id: " + key + " : " + value);
 					}
 				} else {
-					if (!isNaN(parseInt(value))) {
-						raw_scores.set(score_id, parseInt(value));
-					} else if (!isNaN(parseFloat(value))) {
-						raw_scores.set(score_id, parseFloat(value));
-					} else {
-						raw_scores.set(score_id, value);
-					}
-					score_items.set(score_id, 1);
+					console.warn("duplicate of score_id: " + key + " : " + value);
 				}
+			} else {
+				if (!isNaN(parseInt(value))) {
+					raw_scores.set(score_id, parseInt(value));
+				} else if (!isNaN(parseFloat(value))) {
+					raw_scores.set(score_id, parseFloat(value));
+				} else {
+					raw_scores.set(score_id, value);
+				}
+				score_items.set(score_id, 1);
 			}
 		}
+	}
 
-		assessment_area.scrollIntoView();
-		score_assessment(assessment, raw_scores, score_items, assessment_area);
-	});
-
-	return assessment_area;
-}
-
-function score_assessment(assessment, raw_scores, score_items, assessment_area) {
 	console.log(raw_scores);
 	console.log(score_items);
 
 
 }
+
+/*function display_assessment_results(assessment, scores, assessment_area) {
+
+}*/
 
 function start_assessment() {
 	document.getElementById("introduction").style.display = "none";
