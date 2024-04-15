@@ -69,7 +69,7 @@
 		},
 		"getting-along": {
 			"label": "Getting along",
-			"choices": "30-day-average-difficulty",
+			"choices": "30-day-average-difficulty-optional",
 			"scoring": {
 				"average": true,
 				"round": true,
