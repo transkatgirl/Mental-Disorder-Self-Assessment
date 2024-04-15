@@ -328,7 +328,7 @@ function score_assessment(assessment, question_ids, formdata) {
 					const z_score = (value - assessment.scales[key].scoring.percentile.mean) / assessment.scales[key].scoring.percentile.stddev;
 
 					if (assessment.scales[key].scoring.percentile.as_score) {
-						scores.set(key, (z_score * 10) + 50);
+						scores.set(key, Math.round((z_score * 10) + 50));
 					}
 
 					// TODO: Calculate this
