@@ -6,6 +6,8 @@ const whodas = { "metadata": { "label": "WHO Disability Assessment Schedule 2.0"
 
 // --- End generated section ---
 
+// TODO: Improve checks when working with assessment data
+
 function shuffle(array) {
 	for (let i = array.length - 1; i > 0; i--) {
 		let j = Math.floor(Math.random() * (i + 1));
@@ -229,7 +231,6 @@ function build_assessment(assessment) {
 	return assessment_area;
 }
 
-
 // TODO: Calculate percentiles for normal distribution
 function score_assessment(assessment, question_ids, formdata) {
 	const scores = new Map();
@@ -353,6 +354,26 @@ function score_assessment(assessment, question_ids, formdata) {
 }
 
 // TODO: Build HiTOP model
+function build_model_details(model) {
+	const model_info = document.createElement("details");
+
+	const model_summary = document.createElement("summary");
+	model_summary.innerText = model.metadata.label_short + " model";
+	model_info.appendChild(model_summary);
+
+	const model_info_header = document.createElement("h3");
+	model_info_header.innerText = model.metadata.label;
+	model_info.appendChild(model_info_header);
+
+	model.metadata.description.forEach(function (item, index) {
+		const paragraph = document.createElement("p");
+		paragraph.innerText = item;
+		model_info.appendChild(paragraph);
+	});
+
+	return model_info;
+}
+
 function build_assessment_interpretation(assessment) {
 	const assessment_info = document.createElement("div");
 
@@ -365,6 +386,14 @@ function build_assessment_interpretation(assessment) {
 		paragraph.innerText = item;
 		assessment_info.appendChild(paragraph);
 	});
+
+	if (assessment.metadata.dependencies != null) {
+		assessment.metadata.dependencies.forEach(function (item, index) {
+			if (item.name == "hitop") {
+				assessment_info.appendChild(build_model_details(hitop));
+			}
+		});
+	}
 
 	const assessment_results_title = document.createElement("h3");
 	assessment_results_title.innerText = "Results";
@@ -379,6 +408,7 @@ function build_assessment_interpretation(assessment) {
 	return assessment_info;
 }
 
+// TODO: Add graphing
 function build_assessment_results(assessment, scores, percentiles) {
 	const results_tables = document.createElement("div");
 
@@ -608,7 +638,6 @@ function start_assessment() {
 	application_area.appendChild(document.createElement("hr"));
 	application_area.appendChild(build_assessment(whodas));
 }
-
 
 function init_references(reference_objects) {
 	const reference_list = document.getElementById("application-references");
