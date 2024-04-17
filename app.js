@@ -7,6 +7,29 @@ const whodas = { "metadata": { "label": "WHO Disability Assessment Schedule 2.0"
 
 // TODO: Improve checks when working with assessment data
 
+function getZPercentile(z) {
+	if (z < -6.5)
+		return 0.0;
+	if (z > 6.5)
+		return 1.0;
+
+	var factK = 1;
+	var sum = 0;
+	var term = 1;
+	var k = 0;
+	var loopStop = Math.exp(-23);
+	while (Math.abs(term) > loopStop) {
+		term = .3989422804 * Math.pow(-1, k) * Math.pow(z, k) / (2 * k + 1) / Math.pow(2, k) * Math.pow(z, k + 1) / factK;
+		sum += term;
+		k++;
+		factK *= k;
+
+	}
+	sum += 0.5;
+
+	return sum;
+}
+
 function shuffle(array) {
 	for (let i = array.length - 1; i > 0; i--) {
 		let j = Math.floor(Math.random() * (i + 1));
@@ -229,8 +252,6 @@ function build_assessment(assessment) {
 
 	return assessment_area;
 }
-
-// TODO: Calculate percentiles for normal distribution
 function score_assessment(assessment, question_ids, formdata) {
 	const scores = new Map();
 	const score_items = new Map();
@@ -331,19 +352,25 @@ function score_assessment(assessment, question_ids, formdata) {
 						scores.set(key, Math.round((z_score * 10) + 50));
 					}
 
-					// TODO: Calculate this
-					//percentile =
-
+					percentile = getZPercentile(z_score) * 100;
 				} else if (assessment.scales[key].scoring.percentile.function == "ln") {
-					percentile = (Math.log(value) * assessment.scales[key].scoring.percentile.multiplier) + assessment.scales[key].scoring.percentile.intercept;
+					if (value == 0) {
+						percentile = assessment.scales[key].scoring.percentile.intercept;
+					} else {
+						percentile = (Math.log(value) * assessment.scales[key].scoring.percentile.multiplier) + assessment.scales[key].scoring.percentile.intercept;
+					}
 				}
+			}
+
+			if (percentile >= 100) {
+				percentile = 100;
 			}
 
 			if (assessment.scales[key].scoring.round) {
 				scores.set(key, Math.round(value));
 			}
 
-			if (percentile != null) {
+			if ((percentile != null) && (percentile >= 0)) {
 				percentiles.set(key, percentile);
 			}
 		}
@@ -386,7 +413,6 @@ function build_assessment_interpretation(assessment) {
 	return assessment_info;
 }
 
-// TODO: Add graphing
 function build_assessment_results(assessment, scores, percentiles) {
 	const results_tables = document.createElement("div");
 
@@ -521,8 +547,18 @@ function build_assessment_results(assessment, scores, percentiles) {
 					}
 					last_scale = key;
 				}
-				if ((percentiles.has(key)) && (percentiles.get(key) >= 0) && (percentiles.get(key) <= 100)) {
-					table_item_3.innerText = value + " (" + Math.round(percentiles.get(key)) + "th percentile)";
+				if (percentiles.has(key)) {
+					if (percentiles.get(key) > 99) {
+						table_item_3.innerText = value + " (>99th percentile)";
+					} else if (percentiles.get(key) < 1) {
+						table_item_3.innerText = value + " (>1st percentile)";
+					} else if (percentiles.get(key) <= 2) {
+						table_item_3.innerText = value + " (2nd percentile)";
+					} else if (percentiles.get(key) <= 3) {
+						table_item_3.innerText = value + " (3rd percentile)";
+					} else {
+						table_item_3.innerText = value + " (" + Math.round(percentiles.get(key)) + "th percentile)";
+					}
 				} else {
 					table_item_3.innerText = value;
 				}
@@ -594,6 +630,11 @@ function build_assessment_results(assessment, scores, percentiles) {
 	}
 
 	return results_tables;
+}
+
+// TODO: Add graphing
+function build_assessment_result_graphs(assessment, scores, percentiles) {
+
 }
 
 function display_assessment_results(assessment, scores, percentiles, assessment_area) {
