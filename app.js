@@ -30,6 +30,21 @@ function getZPercentile(z) {
 	return sum;
 }
 
+function getOrdinalSuffix(i) {
+	let j = i % 10,
+		k = i % 100;
+	if (j === 1 && k !== 11) {
+		return i + "st";
+	}
+	if (j === 2 && k !== 12) {
+		return i + "nd";
+	}
+	if (j === 3 && k !== 13) {
+		return i + "rd";
+	}
+	return i + "th";
+}
+
 function shuffle(array) {
 	for (let i = array.length - 1; i > 0; i--) {
 		let j = Math.floor(Math.random() * (i + 1));
@@ -252,6 +267,7 @@ function build_assessment(assessment) {
 
 	return assessment_area;
 }
+
 function score_assessment(assessment, question_ids, formdata) {
 	const scores = new Map();
 	const score_items = new Map();
@@ -551,13 +567,16 @@ function build_assessment_results(assessment, scores, percentiles) {
 					if (percentiles.get(key) > 99) {
 						table_item_3.innerText = value + " (>99th percentile)";
 					} else if (percentiles.get(key) < 1) {
-						table_item_3.innerText = value + " (>1st percentile)";
-					} else if (percentiles.get(key) <= 2) {
-						table_item_3.innerText = value + " (2nd percentile)";
-					} else if (percentiles.get(key) <= 3) {
-						table_item_3.innerText = value + " (3rd percentile)";
+						table_item_3.innerText = value + " (<1st percentile)";
 					} else {
-						table_item_3.innerText = value + " (" + Math.round(percentiles.get(key)) + "th percentile)";
+						table_item_3.innerText = value + " (" + getOrdinalSuffix(Math.round(percentiles.get(key))) + " percentile)";
+					}
+					if (percentiles.get(key) < (getZPercentile(-1) * 100)) {
+						table_item_3.style.color = "green";
+					} else if (percentiles.get(key) > (getZPercentile(2) * 100)) {
+						table_item_3.style.color = "red";
+					} else if (percentiles.get(key) > (getZPercentile(1.5) * 100)) {
+						table_item_3.style.color = "orange";
 					}
 				} else {
 					table_item_3.innerText = value;
@@ -574,7 +593,20 @@ function build_assessment_results(assessment, scores, percentiles) {
 					table_item_1.innerText = key;
 				}
 				if ((percentiles.has(key)) && (percentiles.get(key) >= 0) && (percentiles.get(key) <= 100)) {
-					table_item_2.innerText = value + " (" + Math.round(percentiles.get(key)) + "th percentile)";
+					if (percentiles.get(key) > 99) {
+						table_item_2.innerText = value + " (>99th percentile)";
+					} else if (percentiles.get(key) < 1) {
+						table_item_2.innerText = value + " (<1st percentile)";
+					} else {
+						table_item_2.innerText = value + " (" + getOrdinalSuffix(Math.round(percentiles.get(key))) + " percentile)";
+					}
+					if (percentiles.get(key) < (getZPercentile(-1) * 100)) {
+						table_item_2.style.color = "green";
+					} else if (percentiles.get(key) > (getZPercentile(2) * 100)) {
+						table_item_2.style.color = "red";
+					} else if (percentiles.get(key) > (getZPercentile(1.5) * 100)) {
+						table_item_2.style.color = "yellow";
+					}
 				} else {
 					table_item_2.innerText = value;
 				}
