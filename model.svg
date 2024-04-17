@@ -19,37 +19,18 @@
 				<text x="50%" y="16.5%" dominant-baseline="middle">Spectra</text>
 				<text x="50%" y="23.5%" dominant-baseline="middle">Subfactors</text>
 				<text x="50%" y="30.5%" dominant-baseline="middle">Syndromes</text>
-				<text x="50%" y="37.5%" dominant-baseline="middle">Homogeneous
-					<tspan x="50%" dy="2.5%" dominant-baseline="middle">Symptom</tspan>
-					<tspan x="50%" dy="2.5%" dominant-baseline="middle">Components / </tspan>
-					<tspan x="50%" dy="2.5%" dominant-baseline="middle">Maladaptive Traits</tspan>
-				</text>
+				<text x="50%" y="37.5%" dominant-baseline="middle">Homogeneous<tspan x="50%" dy="2.5%" dominant-baseline="middle">Symptom</tspan><tspan x="50%" dy="2.5%" dominant-baseline="middle">Components / </tspan><tspan x="50%" dy="2.5%" dominant-baseline="middle">Maladaptive Traits</tspan></text>
 				<text x="50%" y="85.5%" dominant-baseline="middle">Symptoms</text>
 				<text x="50%" y="92.5%" dominant-baseline="middle">Related Constructs</text>
 			</g>
 			<g font-size="8%" fill="#74818b">
-				<text x="50%" y="5%" dominant-baseline="middle">Very broad dimensions
-					<tspan x="50%" dy="2%" dominant-baseline="middle">that comprise multiple spectra.</tspan>
-				</text>
-				<text x="50%" y="19%" dominant-baseline="middle">Larger constellations
-					<tspan x="50%" dy="2%" dominant-baseline="middle">of syndromes.</tspan>
-				</text>
-				<text x="50%" y="26%" dominant-baseline="middle">Clusters of closely-
-					<tspan x="50%" dy="2%" dominant-baseline="middle">related syndromes.</tspan>
-				</text>
-				<text x="50%" y="33%" dominant-baseline="middle">Composites of closely-
-					<tspan x="50%" dy="2%" dominant-baseline="middle">related components and traits.</tspan>
-				</text>
-				<text x="50%" y="47.5%" dominant-baseline="middle">Constellations of closely-
-					<tspan x="50%" dy="2%" dominant-baseline="middle">related symptom manifestations.</tspan>
-				</text>
-				<!-- <text x="50%" y="88%" dominant-baseline="middle">Individual signs, symptoms,
-					<tspan x="50%" dy="2%" dominant-baseline="middle">and maladaptive behaviors.</tspan>
-				</text> -->
-				<text x="50%" y="95%" dominant-baseline="middle">Connects the framework
-					<tspan x="50%" dy="2%" dominant-baseline="middle">to existing models, but</tspan>
-					<tspan x="50%" dy="2%" dominant-baseline="middle">not a part of the framework.</tspan>
-				</text>
+				<text x="50%" y="5%" dominant-baseline="middle">Very broad dimensions<tspan x="50%" dy="2%" dominant-baseline="middle">that comprise multiple spectra.</tspan></text>
+				<text x="50%" y="19%" dominant-baseline="middle">Larger constellations<tspan x="50%" dy="2%" dominant-baseline="middle">of syndromes.</tspan></text>
+				<text x="50%" y="26%" dominant-baseline="middle">Clusters of closely-<tspan x="50%" dy="2%" dominant-baseline="middle">related syndromes.</tspan></text>
+				<text x="50%" y="33%" dominant-baseline="middle">Composites of closely-<tspan x="50%" dy="2%" dominant-baseline="middle">related components and traits.</tspan></text>
+				<text x="50%" y="47.5%" dominant-baseline="middle">Constellations of closely-<tspan x="50%" dy="2%" dominant-baseline="middle">related symptom manifestations.</tspan></text>
+				<!-- <text x="50%" y="88%" dominant-baseline="middle">Individual signs, symptoms,<tspan x="50%" dy="2%" dominant-baseline="middle">and maladaptive behaviors.</tspan></text> -->
+				<text x="50%" y="95%" dominant-baseline="middle">Connects the framework<tspan x="50%" dy="2%" dominant-baseline="middle">to existing models, but</tspan><tspan x="50%" dy="2%" dominant-baseline="middle">not a part of the framework.</tspan></text>
 			</g>
 		</g>
 	</svg>
@@ -119,7 +100,6 @@
 
 				<!-- Spectra -> Subfactors -->
 				<line x1="18.75%" x2="18.75%" y1="19%" y2="21%" />
-				<line x1="33.75%" x2="33.75%" y1="19%" y2="21%" />
 				<line x1="41.25%" x2="41.25%" y1="19%" y2="21%" />
 				<line x1="46.925%" x2="46.925%" y1="19%" y2="21%" />
 				<line x1="50.575%" x2="50.575%" y1="19%" y2="21%" />
@@ -132,13 +112,11 @@
 				<line x1="93.75%" x2="93.75%" y1="19%" y2="35%" />
 
 				<!-- Subfactors -> Symptom Components / Maladaptive Traits -->
-				<line x1="33.75%" x2="33.75%" y1="26%" y2="35%" />
 				<line x1="41.25%" x2="41.25%" y1="26%" y2="35%" />
 				<line x1="86.25%" x2="86.25%" y1="26%" y2="35%" />
 
 				<!-- Symptom Components / Maladaptive Traits -> Related Concepts -->
 				<line x1="3.75%" x2="3.75%" y1="81%" y2="90%" />
-				<line x1="33.75%" x2="33.75%" y1="81%" y2="90%" />
 				<line x1="41.25%" x2="41.25%" y1="81%" y2="90%" />
 				<line x1="86.25%" x2="86.25%" y1="81%" y2="90%" />
 				<line x1="93.75%" x2="93.75%" y1="81%" y2="90%" />
@@ -149,6 +127,7 @@
 
 			<!-- Spectra -> Subfactors -->
 			<line x1="26.25%" x2="26.25%" y1="19%" y2="21%" />
+			<line x1="33.75%" x2="33.75%" y1="19%" y2="21%" />
 
 			<!-- Spectra -> Symptom Components / Maladaptive Traits -->
 			<line x1="11.25%" x2="11.25%" y1="19%" y2="35%" />
@@ -157,6 +136,7 @@
 			<line x1="71.25%" x2="71.25%" y1="19%" y2="35%" />
 
 			<!-- Subfactors -> Symptom Components / Maladaptive Traits -->
+			<line x1="33.75%" x2="33.75%" y1="26%" y2="35%" />
 			<line x1="48.75%" x2="48.75%" y1="26%" y2="35%" />
 			<line x1="78.75%" x2="78.75%" y1="26%" y2="35%" />
 
@@ -169,6 +149,7 @@
 			<line x1="71.25%" x2="71.25%" y1="81%" y2="83%" />
 
 			<!-- Symptom Components / Maladaptive Traits -> Related Concepts -->
+			<line x1="33.75%" x2="33.75%" y1="81%" y2="90%" />
 			<line x1="48.75%" x2="48.75%" y1="81%" y2="90%" />
 			<line x1="56.25%" x2="56.25%" y1="81%" y2="90%" />
 			<line x1="63.75%" x2="63.75%" y1="81%" y2="90%" />
@@ -192,11 +173,11 @@
 		<!-- Subfactors -->
 		<g stroke="black" stroke-width="0.25%" stroke-dasharray="0.5%,0.5%" stroke-dashoffset="0.15%">
 			<!-- TODO: Find relevant citation in browser history -->
-			<rect x="30.1%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#6BB7DF" />
 			<rect x="37.6%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#86ABDF" />
 		</g>
 		<rect x="15.1%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#5EC6E4" />
 		<rect x="22.6%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#64BFE2" />
+		<rect x="30.1%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#6BB7DF" />
 		<rect x="45.1%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#9D9FDC" />
 		<rect x="75.1%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#FF99B9" />
 		<rect x="82.6%" y="21%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#FF8AAA" />
@@ -207,12 +188,12 @@
 		<!-- Homogeneous Symptom Components / Maladaptive Traits-->
 		<g stroke="black" stroke-width="0.25%" stroke-dasharray="0.5%,0.5%" stroke-dashoffset="0.15%">
 			<rect x="0.1%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#C5EFF5" />
-			<rect x="30.1%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#B6DBF0" />
 			<rect x="37.6%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#C2D6EF" />
 			<rect x="82.6%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#FFB8CD" />
 			<rect x="90.1%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#FFCCC6" />
 		</g>
 		<rect x="7.6%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#B6DAEF" />
+		<rect x="30.1%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#B6DBF0" />
 		<rect x="45.1%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#CECFED" />
 		<rect x="52.6%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#E0C0E9" />
 		<rect x="60.1%" y="35%" width="7.3%" height="46%" rx="1%" ry="1%" fill="#EECAE1" />
@@ -225,13 +206,13 @@
 		<!-- Related Constructs -->
 		<g stroke="black" stroke-width="0.25%" stroke-dasharray="0.5%,0.5%" stroke-dashoffset="0.15%">
 			<rect x="0.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#C5EFF5" />
-			<rect x="30.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#B6DBF0" />
 			<rect x="37.6%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#C2D6EF" />
 			<rect x="82.6%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#FFB8CD" />
 			<rect x="90.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#FFCCC6" />
 		</g>
 		<rect x="15.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#AFE2F1" />
 		<rect x="22.6%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#B1E0F0" />
+		<rect x="30.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#B6DBF0" />
 		<rect x="45.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#CECFED" />
 		<rect x="52.6%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#E0C0E9" />
 		<rect x="60.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#EECAE1" />
@@ -252,15 +233,9 @@
 			</g>
 			<g font-size="7%">
 				<!-- Spectra -->
-				<text x="54.375%" y="15.625%" dominant-baseline="middle">Thought
-					<tspan x="54.375%" dy="1.75%" dominant-baseline="middle">Disorder</tspan>
-				</text>
-				<text x="76.875%" y="15.625%" dominant-baseline="middle">Disinhibited
-					<tspan x="76.875%" dy="1.75%" dominant-baseline="middle">Externalizing</tspan>
-				</text>
-				<text x="91.875%" y="15.625%" dominant-baseline="middle">Antagonistic
-					<tspan x="91.875%" dy="1.75%" dominant-baseline="middle">Externalizing</tspan>
-				</text>
+				<text x="54.375%" y="15.625%" dominant-baseline="middle">Thought<tspan x="54.375%" dy="1.75%" dominant-baseline="middle">Disorder</tspan></text>
+				<text x="76.875%" y="15.625%" dominant-baseline="middle">Disinhibited<tspan x="76.875%" dy="1.75%" dominant-baseline="middle">Externalizing</tspan></text>
+				<text x="91.875%" y="15.625%" dominant-baseline="middle">Antagonistic<tspan x="91.875%" dy="1.75%" dominant-baseline="middle">Externalizing</tspan></text>
 			</g>
 			<g font-size="6.5%">
 				<!-- Spectra -->
@@ -268,24 +243,175 @@
 				<text x="63.75%" y="16.5%" dominant-baseline="middle">Detachment</text>
 
 				<!-- Subfactors -->
-				<text x="18.75%" y="22.6875%" dominant-baseline="middle">Sexual
-					<tspan x="18.75%" dy="1.625%" dominant-baseline="middle">Problems</tspan>
-				</text>
-				<text x="26.25%" y="22.6875%" dominant-baseline="middle">Eating
-					<tspan x="26.25%" dy="1.625%" dominant-baseline="middle">Pathology</tspan>
-				</text>
+				<text x="18.75%" y="22.6875%" dominant-baseline="middle">Sexual<tspan x="18.75%" dy="1.625%" dominant-baseline="middle">Problems</tspan></text>
+				<text x="26.25%" y="22.6875%" dominant-baseline="middle">Eating<tspan x="26.25%" dy="1.625%" dominant-baseline="middle">Pathology</tspan></text>
 				<text x="33.75%" y="23.5%" dominant-baseline="middle">Fear</text>
 				<text x="41.25%" y="23.5%" dominant-baseline="middle">Distress</text>
 				<text x="48.75%" y="23.5%" dominant-baseline="middle">Mania</text>
-				<text x="78.75%" y="22%" dominant-baseline="middle">Harmful
-					<tspan x="78.75%" dy="1.5%" dominant-baseline="middle">Substance</tspan>
-					<tspan x="78.75%" dy="1.5%" dominant-baseline="middle">Use</tspan>
+				<text x="78.75%" y="22%" dominant-baseline="middle">Harmful<tspan x="78.75%" dy="1.5%" dominant-baseline="middle">Substance</tspan><tspan x="78.75%" dy="1.5%" dominant-baseline="middle">Use</tspan></text>
+				<text x="86.25%" y="22.6875%" dominant-baseline="middle">Antisocial<tspan x="86.25%" dy="1.625%" dominant-baseline="middle">Behavior</tspan></text>
+			</g>
+			<g font-size="5.5%">
+				<!-- Symptom Components / Maladaptive Traits, y: 58 -->
+				<text x="3.75%" y="37%" dominant-baseline="middle">
+					<tspan x="3.75%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">Conversion</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">Somatization</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">Malaise</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">Head Pain</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">Gastro-</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">intestinal</tspan>
+					<tspan x="3.75%" dy="1.375%" dominant-baseline="middle">Cognitive</tspan>
 				</text>
-				<text x="86.25%" y="22.6875%" dominant-baseline="middle">Antisocial
-					<tspan x="86.25%" dy="1.625%" dominant-baseline="middle">Behavior</tspan>
+				<text x="11.25%" y="37%" dominant-baseline="middle">
+					<tspan x="11.25%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Anxiousness</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Emotional</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">lability</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Hostility</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Perseveration</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Restricted</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">affectivity</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Separation</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">insecurity</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Submissive-</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">ness</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Identity</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">problems</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Negative</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">relationships</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Fragility</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Ineptitude</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle" font-size="90%">(low)</tspan>
+					<tspan x="11.25%" dy="1.375%" dominant-baseline="middle">Invulnerability</tspan>
+				</text>
+				<text x="33.75%" y="37%" dominant-baseline="middle">
+					<tspan x="33.75%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Interactive</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">anxiety</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Performance</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">anxiety</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Public places</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Enclosed</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">spaces</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Animal phobia</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Situational</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">phobia</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Blood-</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">injection-injury</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Physiological</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">panic</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Psychological</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">panic</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Cleaning</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Rituals</tspan>
+					<tspan x="33.75%" dy="1.375%" dominant-baseline="middle">Checking</tspan>
+				</text>
+				<text x="41.25%" y="37%" dominant-baseline="middle">
+					<tspan x="41.25%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="48.75%" y="37%" dominant-baseline="middle">
+					<tspan x="48.75%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="56.25%" y="37%" dominant-baseline="middle">
+					<tspan x="56.25%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="63.75%" y="37%" dominant-baseline="middle">
+					<tspan x="63.75%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="71.25%" y="37%" dominant-baseline="middle">
+					<tspan x="71.25%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="78.75%" y="37%" dominant-baseline="middle">
+					<tspan x="78.75%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="86.25%" y="37%" dominant-baseline="middle">
+					<tspan x="86.25%" dominant-baseline="middle" font-weight="500">Components</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+				<text x="93.75%" y="37%" dominant-baseline="middle">
+					<tspan x="93.75%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+				</text>
+
+			</g>
+			<g font-size="5%">
+				<!-- Related Constructs, y: 95, start with 91.3125 -->
+				<!-- TODO: Center on y-axis, remove whitespace -->
+				<text x="3.75%" y="91.3125%" dominant-baseline="middle">Illness Anxiety
+					<tspan x="3.75%" dy="1.25%" dominant-baseline="middle">Disorder,</tspan>
+					<tspan x="3.75%" dy="1.25%" dominant-baseline="middle">Somatic</tspan>
+					<tspan x="3.75%" dy="1.25%" dominant-baseline="middle">Symptom</tspan>
+					<tspan x="3.75%" dy="1.25%" dominant-baseline="middle">Disorder</tspan>
+				</text>
+
+				<text x="18.75%" y="91.3125%" dominant-baseline="middle">Arousal
+					<tspan x="18.75%" dy="1.25%" dominant-baseline="middle">Difficulties,</tspan>
+					<tspan x="18.75%" dy="1.25%" dominant-baseline="middle">Low Desire,</tspan>
+					<tspan x="18.75%" dy="1.25%" dominant-baseline="middle">Orgasmic</tspan>
+					<tspan x="18.75%" dy="1.25%" dominant-baseline="middle">Dysfunction,</tspan>
+					<tspan x="18.75%" dy="1.25%" dominant-baseline="middle">Sexual Pain</tspan>
+				</text>
+				<text x="26.25%" y="91.3125%" dominant-baseline="middle">Anorexia
+					<tspan x="26.25%" dy="1.25%" dominant-baseline="middle">Nervosa,</tspan>
+					<tspan x="26.25%" dy="1.25%" dominant-baseline="middle">Binge Eating</tspan>
+					<tspan x="26.25%" dy="1.25%" dominant-baseline="middle">Disorder,</tspan>
+					<tspan x="26.25%" dy="1.25%" dominant-baseline="middle">Bulimia</tspan>
+					<tspan x="26.25%" dy="1.25%" dominant-baseline="middle">Nervosa</tspan>
+				</text>
+				<text x="33.75%" y="91.3125%" dominant-baseline="middle">Agoraphobia,
+					<tspan x="33.75%" dy="1.25%" dominant-baseline="middle">OCD, SAD,</tspan>
+					<tspan x="33.75%" dy="1.25%" dominant-baseline="middle">Panic Disorder,</tspan>
+					<tspan x="33.75%" dy="1.25%" dominant-baseline="middle">Social Phobia,</tspan>
+					<tspan x="33.75%" dy="1.25%" dominant-baseline="middle">Specific</tspan>
+					<tspan x="33.75%" dy="1.25%" dominant-baseline="middle">Phobia</tspan>
+				</text>
+				<text x="41.25%" y="91.3125%" dominant-baseline="middle">Borderline PD,
+					<tspan x="41.25%" dy="1.25%" dominant-baseline="middle">Dysthymia,</tspan>
+					<tspan x="41.25%" dy="1.25%" dominant-baseline="middle">GAD, MDD,</tspan>
+					<tspan x="41.25%" dy="1.25%" dominant-baseline="middle">PTSD</tspan>
+				</text>
+				<text x="48.75%" y="91.3125%" dominant-baseline="middle">Bipolar I &amp; II</text>
+				<text x="56.25%" y="91.3125%" dominant-baseline="middle">Mood Disorders
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle">w/ Psychosis,</tspan>
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle"></tspan>
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle">Paranoid PD</tspan>
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle">Schizophrenia </tspan>
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle">Spectrum,</tspan>
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle">Schizoid PD,</tspan>
+					<tspan x="56.25%" dy="1.25%" dominant-baseline="middle">Schizotypal PD</tspan>
+				</text>
+				<text x="63.75%" y="91.3125%" dominant-baseline="middle">Avoidant PD,
+					<tspan x="63.75%" dy="1.25%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Histrionic</tspan>
+					<tspan x="63.75%" dy="1.25%" dominant-baseline="middle">PD,</tspan>
+					<tspan x="63.75%" dy="1.25%" dominant-baseline="middle">Schizoid PD</tspan>
+				</text>
+				<text x="78.75%" y="91.3125%" dominant-baseline="middle">Substance-
+					<tspan x="78.75%" dy="1.25%" dominant-baseline="middle">Related</tspan>
+					<tspan x="78.75%" dy="1.25%" dominant-baseline="middle">Disorders</tspan>
+				</text>
+				<text x="86.25%" y="91.3125%" dominant-baseline="middle">Antisocial PD,
+					<tspan x="86.25%" dy="1.25%" dominant-baseline="middle">Conduct</tspan>
+					<tspan x="86.25%" dy="1.25%" dominant-baseline="middle">Disorder,</tspan>
+					<tspan x="86.25%" dy="1.25%" dominant-baseline="middle">IED, ODD,</tspan>
+					<tspan x="86.25%" dy="1.25%" dominant-baseline="middle">ADHD</tspan>
+				</text>
+				<text x="93.75%" y="91.3125%" dominant-baseline="middle">Borderline PD,
+					<tspan x="93.75%" dy="1.25%" dominant-baseline="middle">Histrionic PD,</tspan>
+					<tspan x="93.75%" dy="1.25%" dominant-baseline="middle">Narcissistic PD,</tspan>
+					<tspan x="93.75%" dy="1.25%" dominant-baseline="middle">Paranoid PD</tspan>
 				</text>
 			</g>
-			<g font-size="4%"></g>
 		</g>
 	</svg>
 </svg>
