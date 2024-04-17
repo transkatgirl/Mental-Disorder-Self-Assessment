@@ -163,11 +163,11 @@
 		<!-- Spectra -->
 		<g stroke="black" stroke-width="0.25%" stroke-dasharray="0.5%,0.5%" stroke-dashoffset="0.15%">
 			<rect x="0.1%" y="14%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#8BDDE9" />
+			<rect x="48.85%" y="14%" width="11.05%" height="5%" rx="1%" ry="1%" fill="#CA92DA" />
 			<rect x="67.6%" y="14%" width="18.55%" height="5%" rx="1%" ry="1%" fill="#FF899C" />
 			<rect x="86.35%" y="14%" width="11.05%" height="5%" rx="1%" ry="1%" fill="#FF998B" />
 		</g>
 		<rect x="7.6%" y="14%" width="41.05%" height="5%" rx="1%" ry="1%" fill="#7ABEE1" />
-		<rect x="48.85%" y="14%" width="11.05%" height="5%" rx="1%" ry="1%" fill="#CA92DA" />
 		<rect x="60.1%" y="14%" width="7.3%" height="5%" rx="1%" ry="1%" fill="#DD95C2" />
 
 		<!-- Subfactors -->
@@ -309,41 +309,141 @@
 				</text>
 				<text x="41.25%" y="37%" dominant-baseline="middle">
 					<tspan x="41.25%" dominant-baseline="middle" font-weight="500">Components</tspan>
-					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Dysphoria</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Lassitude</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Anhedonia</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Insomnia</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Suicidality</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Agitation</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Retardation</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Appetite loss</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Appetite gain</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Wellbeing</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">GAD</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Symptoms</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Re-</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">experiencing</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Avoidance</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Hyperarousal</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Numbing</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Dissociation</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Irritability</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">Pure</tspan>
+					<tspan x="41.25%" dy="1.375%" dominant-baseline="middle">obsessions</tspan>
 				</text>
 				<text x="48.75%" y="37%" dominant-baseline="middle">
 					<tspan x="48.75%" dominant-baseline="middle" font-weight="500">Components</tspan>
-					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">Euphoric</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">activation</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">Hyper-active</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">cognition</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">Reckless</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">over-</tspan>
+					<tspan x="48.75%" dy="1.375%" dominant-baseline="middle">confidence</tspan>
 				</text>
 				<text x="56.25%" y="37%" dominant-baseline="middle">
 					<tspan x="56.25%" dominant-baseline="middle" font-weight="500">Components</tspan>
-					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle"></tspan>
-					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle" font-weight="500">Traits</tspan>
-					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Psychotic</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Disorganized</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Inexpressivity</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Avolition</tspan>
+					<tspan x="56.25%" dy="2.75%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Eccentricity</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Cognitive/</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">perceptual</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">dysregulation</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Unusual beliefs</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">and</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">experiences</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">Fantasy</tspan>
+					<tspan x="56.25%" dy="1.375%" dominant-baseline="middle">proneness</tspan>
 				</text>
 				<text x="63.75%" y="37%" dominant-baseline="middle">
 					<tspan x="63.75%" dominant-baseline="middle" font-weight="500">Traits</tspan>
-					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Anhedonia</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Depressivity</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Intimacy</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">avoidance</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Suspicious-</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">ness</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Withdrawal</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Interpersonal</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">passivity</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">Disaffiliative-</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">ness</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Attention</tspan>
+					<tspan x="63.75%" dy="1.375%" dominant-baseline="middle">seeking</tspan>
 				</text>
 				<text x="71.25%" y="37%" dominant-baseline="middle">
 					<tspan x="71.25%" dominant-baseline="middle" font-weight="500">Traits</tspan>
-					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Problematic</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">impulsivity</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Irresponsibility</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Theft</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Distractibility</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Risk taking</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Rigid</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">perfectionism</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle" font-size="90%">(low)</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Ruminative</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">deliberation</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle" font-size="90%">(low)</tspan>
+					<tspan x="71.25%" dy="1.375%" dominant-baseline="middle">Workaholism</tspan>
 				</text>
 				<text x="78.75%" y="37%" dominant-baseline="middle">
 					<tspan x="78.75%" dominant-baseline="middle" font-weight="500">Components</tspan>
-					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">Alcohol use</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">Alcohol</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">problems</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">Marijuana use</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">Marijuana</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">problems</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">Drug use</tspan>
+					<tspan x="78.75%" dy="1.375%" dominant-baseline="middle">Drug problems</tspan>
 				</text>
 				<text x="86.25%" y="37%" dominant-baseline="middle">
 					<tspan x="86.25%" dominant-baseline="middle" font-weight="500">Components</tspan>
-					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"></tspan>
-					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle" font-weight="500">Traits</tspan>
-					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Physical</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">aggression</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Destructive</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">aggression</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Relational</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">aggression</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Fraud</tspan>
+					<tspan x="86.25%" dy="2.75%" dominant-baseline="middle" font-weight="500">Traits</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Impatient</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">urgency</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Planful</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">control</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle" font-size="90%">(low)</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Dependability</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Alienation</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Boredom</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">proneness</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Blame</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">externalization</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Honesty</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Rebelliousness</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle"><tspan dominant-baseline="middle" font-size="90%">(low)</tspan> Empathy</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">Excitement</tspan>
+					<tspan x="86.25%" dy="1.375%" dominant-baseline="middle">seeking</tspan>
 				</text>
 				<text x="93.75%" y="37%" dominant-baseline="middle">
 					<tspan x="93.75%" dominant-baseline="middle" font-weight="500">Traits</tspan>
-					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle"></tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Attention</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">seeking</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Callousness</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Deceitfulness</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Grandiosity</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Manipulative-</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">ness</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Rudeness</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Egocentricity</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Dominance</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Flirtatiousness</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle" font-size="90%">(low)</tspan>
+					<tspan x="93.75%" dy="1.375%" dominant-baseline="middle">Timorousness</tspan>
 				</text>
-
 			</g>
 			<g font-size="5%">
 				<!-- Related Constructs, y: 95, start with 91.3125 -->
