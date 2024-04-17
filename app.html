@@ -37,9 +37,14 @@
 			figure {
 				border: 1px solid black;
 				padding: .5em;
-				width: fit-content;
+				max-width: 50em;
 			}
 
+			figure p {
+				margin-bottom: 0;
+			}
+
+			object,
 			svg {
 				max-width: 100%;
 			}
@@ -137,25 +142,32 @@
 				are
 				currently
 				used in widespread clinical practice.</p>
-			<p>This application uses an alternate classification
-				framework, based around a modified version of the <a
+			<p>This application currently uses the <a
 					href="https://en.wikipedia.org/wiki/Hierarchical_Taxonomy_of_Psychopathology">Hierarchical Taxonomy
-					of Psychopathology (HiTOP)</a> model. Instead of
+					of Psychopathology (HiTOP)</a> framework. Instead of
 				discrete categories, the HiTOP model
 				uses continuous dimensions of
 				varying levels of specificity, organized hierarchically from narrowest to broadest.</p>
-			<p>However, many aspects of the current HiTOP model are provisional or incomplete. In order to work around
-				these limitations, stop-gap modifications were made to incorporate <em>preliminary</em> research (see
-				references
-				section). As work on these models progresses, these modifications will become unnecessary.</p>
+			<p>However, many aspects of the current HiTOP model are provisional or incomplete. For example, the current
+				HiTOP model does not cover developmental disorders (such as Attention-Deficit/Hyperactivity Disorder or
+				Autism
+				Spectrum
+				Disorder). There have been <a href="https://osf.io/preprints/psyarxiv/7um9a">preliminary attempts</a> to
+				create more comprehensive dimensional models, but additional research is needed to confirm their
+				validity.</p>
 
 			<figure>
-				<svg version="1.1" viewBox="0 0 100 50" preserveAspectRatio="slice" xmlns="http://www.w3.org/2000/svg">
-					<rect width="100%" height="100%" fill="lightgray " />
-				</svg>
-
-				<figcaption>The mental disorder classification model used by this application. Modifications are
-					displayed with dotted lines.</figcaption>
+				<object type="image/svg+xml" data="model.svg"></object>
+				<figcaption>The mental disorder classification framework used by this application. Parts of the
+					framework still
+					undergoing active research are
+					shown with dashed lines.
+				</figcaption>
+				<p>Note that compared to the HiTOP framework, dashed lines are not restricted to preliminary
+					items. Parts where the HiTOP framework differs from recent research are also shown
+					with dotted lines.<br>
+					The "Related Constructs" section should not be treated as an official part of the framework; it
+					exists purely to help bridge the gap between categorical and non-categorical models.</p>
 			</figure>
 
 			<p><strong>This application is not associated with or endorsed by any psychiatric
