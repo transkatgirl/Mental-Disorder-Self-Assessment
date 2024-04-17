@@ -13,7 +13,7 @@
 			<rect x="0" y="83%" width="100%" height="5%" />
 			<rect x="0" y="90%" width="100%" height="10%" />
 		</g> -->
-		<g font-size-adjust="0.5" font-family="sans-serif" text-anchor="middle">
+		<g font-size-adjust="0.5" font-family="sans-serif" font-weight="300" text-anchor="middle">
 			<g font-size="10%">
 				<text x="50%" y="2.5%" dominant-baseline="middle">Superspectra</text>
 				<text x="50%" y="16.5%" dominant-baseline="middle">Spectra</text>
@@ -43,9 +43,9 @@
 				<text x="50%" y="47.5%" dominant-baseline="middle">Constellations of closely-
 					<tspan x="50%" dy="2%" dominant-baseline="middle">related symptom manifestations.</tspan>
 				</text>
-				<text x="50%" y="88%" dominant-baseline="middle">Individual signs, symptoms,
+				<!-- <text x="50%" y="88%" dominant-baseline="middle">Individual signs, symptoms,
 					<tspan x="50%" dy="2%" dominant-baseline="middle">and maladaptive behaviors.</tspan>
-				</text>
+				</text> -->
 				<text x="50%" y="95%" dominant-baseline="middle">Connects the framework
 					<tspan x="50%" dy="2%" dominant-baseline="middle">to existing models, but</tspan>
 					<tspan x="50%" dy="2%" dominant-baseline="middle">not a part of the framework.</tspan>
@@ -238,7 +238,7 @@
 		<rect x="75.1%" y="90%" width="7.3%" height="10%" rx="1%" ry="1%" fill="#FFCCDD" />
 
 		<g font-size-adjust="0.5" font-family="sans-serif" font-weight="300" text-anchor="middle">
-			<g font-size="7.5%">
+			<g font-size="8%">
 				<!-- Superspectra -->
 				<text x="50%" y="2.5%" dominant-baseline="middle">General Factor of Psychopathology (p-factor)</text>
 				<text x="82.5%" y="9.5%" dominant-baseline="middle">Externalizing</text>
@@ -247,6 +247,8 @@
 				<text x="28.125%" y="16.5%" dominant-baseline="middle">Internalizing</text>
 
 				<!-- Placeholders: Syndromes, Symptoms -->
+				<text x="48.75%" y="30.5%" dominant-baseline="middle">Dimensional Syndromes</text>
+				<text x="48.75%" y="85.5%" dominant-baseline="middle">Individual Signs, Symptoms, and Maladaptive Behaviors</text>
 			</g>
 			<g font-size="7%">
 				<!-- Spectra -->
@@ -275,9 +277,9 @@
 				<text x="33.75%" y="23.5%" dominant-baseline="middle">Fear</text>
 				<text x="41.25%" y="23.5%" dominant-baseline="middle">Distress</text>
 				<text x="48.75%" y="23.5%" dominant-baseline="middle">Mania</text>
-				<text x="78.75%" y="21.875%" dominant-baseline="middle">Harmful
-					<tspan x="78.75%" dy="1.625%" dominant-baseline="middle">Substance</tspan>
-					<tspan x="78.75%" dy="1.625%" dominant-baseline="middle">Use</tspan>
+				<text x="78.75%" y="22%" dominant-baseline="middle">Harmful
+					<tspan x="78.75%" dy="1.5%" dominant-baseline="middle">Substance</tspan>
+					<tspan x="78.75%" dy="1.5%" dominant-baseline="middle">Use</tspan>
 				</text>
 				<text x="86.25%" y="22.6875%" dominant-baseline="middle">Antisocial
 					<tspan x="86.25%" dy="1.625%" dominant-baseline="middle">Behavior</tspan>
