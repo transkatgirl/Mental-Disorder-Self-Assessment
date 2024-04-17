@@ -538,7 +538,6 @@ function build_assessment_results(assessment, scores, percentiles) {
 			if (has_subscores) {
 				const table_item_1 = document.createElement("td");
 				const table_item_2 = document.createElement("td");
-				const table_item_3 = document.createElement("td");
 				if (assessment.scales[key].parent != null) {
 					if (last_scale != assessment.scales[key].parent) {
 						if ((assessment.scales[key].parent in assessment.scales) && (assessment.scales[assessment.scales[key].parent].label != null)) {
@@ -563,56 +562,41 @@ function build_assessment_results(assessment, scores, percentiles) {
 					}
 					last_scale = key;
 				}
-				if (percentiles.has(key)) {
-					if (percentiles.get(key) > 99) {
-						table_item_3.innerText = value + " (>99th percentile)";
-					} else if (percentiles.get(key) < 1) {
-						table_item_3.innerText = value + " (<1st percentile)";
-					} else {
-						table_item_3.innerText = value + " (" + getOrdinalSuffix(Math.round(percentiles.get(key))) + " percentile)";
-					}
-					if (percentiles.get(key) < (getZPercentile(-1) * 100)) {
-						table_item_3.style.color = "green";
-					} else if (percentiles.get(key) > (getZPercentile(2) * 100)) {
-						table_item_3.style.color = "red";
-					} else if (percentiles.get(key) > (getZPercentile(1.5) * 100)) {
-						table_item_3.style.color = "orange";
-					}
-				} else {
-					table_item_3.innerText = value;
-				}
+
 				table_row.appendChild(table_item_1);
 				table_row.appendChild(table_item_2);
-				table_row.appendChild(table_item_3);
 			} else {
 				const table_item_1 = document.createElement("td");
-				const table_item_2 = document.createElement("td");
 				if (assessment.scales[key].label != null) {
 					table_item_1.innerText = assessment.scales[key].label;
 				} else {
 					table_item_1.innerText = key;
 				}
-				if ((percentiles.has(key)) && (percentiles.get(key) >= 0) && (percentiles.get(key) <= 100)) {
-					if (percentiles.get(key) > 99) {
-						table_item_2.innerText = value + " (>99th percentile)";
-					} else if (percentiles.get(key) < 1) {
-						table_item_2.innerText = value + " (<1st percentile)";
-					} else {
-						table_item_2.innerText = value + " (" + getOrdinalSuffix(Math.round(percentiles.get(key))) + " percentile)";
-					}
-					if (percentiles.get(key) < (getZPercentile(-1) * 100)) {
-						table_item_2.style.color = "green";
-					} else if (percentiles.get(key) > (getZPercentile(2) * 100)) {
-						table_item_2.style.color = "red";
-					} else if (percentiles.get(key) > (getZPercentile(1.5) * 100)) {
-						table_item_2.style.color = "yellow";
-					}
-				} else {
-					table_item_2.innerText = value;
-				}
 				table_row.appendChild(table_item_1);
-				table_row.appendChild(table_item_2);
 			}
+
+			const table_item_value = document.createElement("td");
+
+			if (percentiles.has(key)) {
+				if (percentiles.get(key) > 99) {
+					table_item_value.innerText = value + " (>99th percentile)";
+				} else if (percentiles.get(key) < 1) {
+					table_item_value.innerText = value + " (<1st percentile)";
+				} else {
+					table_item_value.innerText = value + " (" + getOrdinalSuffix(Math.round(percentiles.get(key))) + " percentile)";
+				}
+				if (percentiles.get(key) < (getZPercentile(-1) * 100)) {
+					table_item_value.style.color = "blue";
+				} else if (percentiles.get(key) > (getZPercentile(2) * 100)) {
+					table_item_value.style.color = "red";
+				} else if (percentiles.get(key) > (getZPercentile(1.5) * 100)) {
+					table_item_value.style.color = "orange";
+				}
+			} else {
+				table_item_value.innerText = value;
+			}
+			table_row.appendChild(table_item_value);
+
 			table_body.appendChild(table_row);
 		}
 	}
