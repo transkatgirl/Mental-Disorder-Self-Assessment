@@ -352,26 +352,6 @@ function score_assessment(assessment, question_ids, formdata) {
 	return [scores, percentiles];
 }
 
-/*function build_model_details(model) {
-	const model_info = document.createElement("details");
-
-	const model_summary = document.createElement("summary");
-	model_summary.innerText = model.metadata.label_short + " model";
-	model_info.appendChild(model_summary);
-
-	const model_info_header = document.createElement("h3");
-	model_info_header.innerText = model.metadata.label;
-	model_info.appendChild(model_info_header);
-
-	model.metadata.description.forEach(function (item, index) {
-		const paragraph = document.createElement("p");
-		paragraph.innerText = item;
-		model_info.appendChild(paragraph);
-	});
-
-	return model_info;
-}*/
-
 function build_assessment_interpretation(assessment) {
 	const assessment_info = document.createElement("div");
 
