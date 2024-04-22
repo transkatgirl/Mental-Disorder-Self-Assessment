@@ -6,134 +6,11 @@
 			"The HiTOP-SR is a mental health intake assessment covering all elements of the HiTOP model.",
 			"HiTOP-consistent assessment instruments are a work in progress; This early version of the HiTOP-SR does not currently cover harmful substance use."
 		],
-		"type": "questionnaire",
 		"references": [
 			{
 				"title": "HiTOP-SR Research-Ready - Version 2023-12-01",
 				"retrieved": 1712840093515,
 				"link": "https://www.3plab.org/hitop/"
-			}
-		],
-		"dependencies": [
-			{
-				"name": "hitop",
-				"mapping": {
-					"subfactor-fear": [
-						"Agoraphobia",
-						"Checking",
-						"Cleaning",
-						"Counting",
-						"Excoriation",
-						"Hoarding",
-						"Hypervigilance",
-						"Panic",
-						"SpecifcPhobiaIndex",
-						"AnimalPhobia",
-						"BloodPhobia",
-						"SituationalPhobia",
-						"TraumaReactions",
-						"Trichotillomania"
-					],
-					"subfactor-antisocial": [
-						"AntisocActs",
-						"Oppositional"
-					],
-					"subfactor-eating": [
-						"AppetiteLoss",
-						"BingeEating",
-						"BodyDissatisfaction",
-						"BodyFocus",
-						"DietRestraintEfforts",
-						"ExcessiveExercise",
-						"FoodSelectivity",
-						"MuscleBuilding",
-						"Purging",
-						"RestrictiveEating"
-					],
-					"spectra-somatoform": [
-						"BodilyDistress",
-						"Conversion",
-						"DiseaseConvict",
-						"HealthAnxiety",
-						"SomaticPreocc"
-					],
-					"spectra-antagonistic": [
-						"Callousness",
-						"Dishonesty",
-						"Deceitfulness",
-						"Manipulativeness",
-						"Domineering",
-						"Entitlement",
-						"Exhib",
-						"Grandiosity",
-						"SocAggression"
-					],
-					"subfactor-distress": [
-						"CogDisorg",
-						"Distress",
-						"Anehdonia",
-						"AnxiousWorry",
-						"DepressedMood",
-						"Lassitude",
-						"ShameGuilt",
-						"Emotionality",
-						"AffLability",
-						"AngryHostility",
-						"Irritability",
-						"Insomnia",
-						"Nightmares",
-						"NSSI",
-						"Suicidality"
-					],
-					"subfactor-sexual": [
-						"DiffReachingOrgasm",
-						"LowSexArousal",
-						"LowSexInterest",
-						"Paraphilias",
-						"PrematureOrgasm",
-						"RiskySex",
-						"SexSubstanceUse",
-						"SexualDistress",
-						"SexualPain"
-					],
-					"spectra-disinhibited": [
-						"Disorg",
-						"Gambling",
-						"Gaming",
-						"Hyperdelib",
-						"NonPersist",
-						"NonPlan",
-						"Perfectionism",
-						"ProbShopping",
-						"Restless",
-						"Rigidity",
-						"RiskAversion",
-						"RiskTaking",
-						"Workaholism"
-					],
-					"spectra-disordered": [
-						"Dissociation",
-						"Eccentric",
-						"FantasyProne",
-						"Mistrust",
-						"Cynicism",
-						"Suspiciousness",
-						"RealityDist",
-						"Delusions",
-						"Hallucinations"
-					],
-					"subfactor-mania": [
-						"ManicEnergy"
-					],
-					"spectra-detached": [
-						"RestrictedAffect",
-						"RomDisinterest",
-						"SocAloofness",
-						"SocAnxiety",
-						"Submissiveness",
-						"Wellbeing"
-					]
-				}
 			}
 		]
 	},
@@ -157,7 +34,8 @@
 					"mean": "1.62",
 					"stddev": "0.77"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"AntisocActs": {
 			"label": "Antisocial Behavior",
@@ -170,7 +48,8 @@
 					"mean": "1.07",
 					"stddev": "0.25"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-antisocial"
 		},
 		"AppetiteLoss": {
 			"label": "Appetite Loss",
@@ -183,7 +62,8 @@
 					"mean": "1.53",
 					"stddev": "0.68"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"BingeEating": {
 			"label": "Binge Eating",
@@ -196,7 +76,8 @@
 					"mean": "1.65",
 					"stddev": "0.79"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"BodilyDistress": {
 			"label": "Bodily Distress",
@@ -209,7 +90,8 @@
 					"mean": "1.84",
 					"stddev": "0.74"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-somatoform"
 		},
 		"BodyDissatisfaction": {
 			"label": "Body Dissatisfaction",
@@ -222,7 +104,8 @@
 					"mean": "2.31",
 					"stddev": "0.94"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"BodyFocus": {
 			"label": "Body Focus",
@@ -235,7 +118,8 @@
 					"mean": "1.72",
 					"stddev": "0.68"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"Callousness": {
 			"label": "Callousness",
@@ -248,7 +132,8 @@
 					"mean": "1.47",
 					"stddev": "0.55"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"Checking": {
 			"label": "Checking",
@@ -261,7 +146,8 @@
 					"mean": "1.80",
 					"stddev": "0.77"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Cleaning": {
 			"label": "Cleaning",
@@ -274,7 +160,8 @@
 					"mean": "1.53",
 					"stddev": "0.58"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"CogDisorg": {
 			"label": "Cognitive Problems",
@@ -287,7 +174,8 @@
 					"mean": "1.97",
 					"stddev": "0.82"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Conversion": {
 			"label": "Conversion Symptoms",
@@ -300,7 +188,8 @@
 					"mean": "1.12",
 					"stddev": "0.31"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-somatoform"
 		},
 		"Counting": {
 			"label": "Counting",
@@ -313,7 +202,8 @@
 					"mean": "1.34",
 					"stddev": "0.55"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"DietRestraintEfforts": {
 			"label": "Dietary Restraint",
@@ -326,7 +216,8 @@
 					"mean": "2.12",
 					"stddev": "0.75"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"DiffReachingOrgasm": {
 			"label": "Difficulties Reaching Orgasm",
@@ -339,7 +230,8 @@
 					"mean": "1.49",
 					"stddev": "0.76"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"DiseaseConvict": {
 			"label": "Disease Conviction",
@@ -352,7 +244,8 @@
 					"mean": "1.40",
 					"stddev": "0.69"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-somatoform"
 		},
 		"Dishonesty": {
 			"label": "Dishonesty",
@@ -365,7 +258,8 @@
 					"mean": "1.48",
 					"stddev": "0.53"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"Disorg": {
 			"label": "Disorganization",
@@ -378,7 +272,8 @@
 					"mean": "1.70",
 					"stddev": "0.63"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"Dissociation": {
 			"label": "Dissociation",
@@ -391,7 +286,8 @@
 					"mean": "1.29",
 					"stddev": "0.52"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disordered"
 		},
 		"Distress": {
 			"label": "Distress-Dysphoria",
@@ -404,7 +300,8 @@
 					"mean": "2.19",
 					"stddev": "0.87"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Domineering": {
 			"label": "Domineering",
@@ -417,7 +314,8 @@
 					"mean": "1.67",
 					"stddev": "0.64"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"Eccentric": {
 			"label": "Eccentricity",
@@ -430,7 +328,8 @@
 					"mean": "1.40",
 					"stddev": "0.55"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disordered"
 		},
 		"Emotionality": {
 			"label": "Emotionality",
@@ -443,7 +342,8 @@
 					"mean": "1.70",
 					"stddev": "0.66"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Entitlement": {
 			"label": "Entitlement",
@@ -456,7 +356,8 @@
 					"mean": "1.60",
 					"stddev": "0.52"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"ExcessiveExercise": {
 			"label": "Excessive Exercise",
@@ -469,7 +370,8 @@
 					"mean": "1.19",
 					"stddev": "0.43"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"Excoriation": {
 			"label": "Excoriation",
@@ -482,7 +384,8 @@
 					"mean": "1.30",
 					"stddev": "0.61"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Exhib": {
 			"label": "Exhibitionism",
@@ -495,7 +398,8 @@
 					"mean": "1.39",
 					"stddev": "0.57"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"FantasyProne": {
 			"label": "Fantasy Proneness",
@@ -508,7 +412,8 @@
 					"mean": "1.80",
 					"stddev": "0.72"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disordered"
 		},
 		"FoodSelectivity": {
 			"label": "Food Selectivity",
@@ -521,7 +426,8 @@
 					"mean": "1.53",
 					"stddev": "0.66"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"Gambling": {
 			"label": "Gambling",
@@ -534,7 +440,8 @@
 					"mean": "1.17",
 					"stddev": "0.44"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"Gaming": {
 			"label": "Gaming",
@@ -547,7 +454,8 @@
 					"mean": "1.44",
 					"stddev": "0.60"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"Grandiosity": {
 			"label": "Grandiosity",
@@ -560,7 +468,8 @@
 					"mean": "1.95",
 					"stddev": "0.67"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"HealthAnxiety": {
 			"label": "Health Anxiety",
@@ -573,7 +482,8 @@
 					"mean": "1.78",
 					"stddev": "0.81"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-somatoform"
 		},
 		"Hoarding": {
 			"label": "Hoarding",
@@ -586,7 +496,8 @@
 					"mean": "1.60",
 					"stddev": "0.63"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Hyperdelib": {
 			"label": "Hyperdeliberation",
@@ -599,7 +510,8 @@
 					"mean": "2.58",
 					"stddev": "0.74"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"Hypervigilance": {
 			"label": "Hypervigilance",
@@ -612,7 +524,8 @@
 					"mean": "1.92",
 					"stddev": "0.73"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Insomnia": {
 			"label": "Insomnia",
@@ -625,7 +538,8 @@
 					"mean": "2.32",
 					"stddev": "0.93"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"LowSexArousal": {
 			"label": "Low Sexual Arousal",
@@ -638,7 +552,8 @@
 					"mean": "1.56",
 					"stddev": "0.81"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"LowSexInterest": {
 			"label": "Low Sexual Interest",
@@ -651,7 +566,8 @@
 					"mean": "1.89",
 					"stddev": "0.95"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"ManicEnergy": {
 			"label": "Manic Energy",
@@ -664,7 +580,8 @@
 					"mean": "1.33",
 					"stddev": "0.45"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-mania"
 		},
 		"Mistrust": {
 			"label": "Mistrust",
@@ -677,7 +594,8 @@
 					"mean": "2.14",
 					"stddev": "0.84"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disordered"
 		},
 		"MuscleBuilding": {
 			"label": "Muscle Building",
@@ -690,7 +608,8 @@
 					"mean": "1.50",
 					"stddev": "0.65"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"Nightmares": {
 			"label": "Nightmares",
@@ -703,7 +622,8 @@
 					"mean": "1.64",
 					"stddev": "0.77"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"NonPersist": {
 			"label": "Non-persistence",
@@ -716,7 +636,8 @@
 					"mean": "1.87",
 					"stddev": "0.76"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"NonPlan": {
 			"label": "Non-planfulness",
@@ -729,7 +650,8 @@
 					"mean": "1.61",
 					"stddev": "0.65"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"NSSI": {
 			"label": "NSSI",
@@ -742,7 +664,8 @@
 					"mean": "1.18",
 					"stddev": "0.39"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Oppositional": {
 			"label": "Oppositionality",
@@ -755,7 +678,8 @@
 					"mean": "1.45",
 					"stddev": "0.56"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-antisocial"
 		},
 		"Panic": {
 			"label": "Panic",
@@ -768,7 +692,8 @@
 					"mean": "1.53",
 					"stddev": "0.63"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Paraphilias": {
 			"label": "Paraphilias",
@@ -781,7 +706,8 @@
 					"mean": "1.12",
 					"stddev": "0.33"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"Perfectionism": {
 			"label": "Perfectionism",
@@ -794,7 +720,8 @@
 					"mean": "1.77",
 					"stddev": "0.76"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"PrematureOrgasm": {
 			"label": "Premature Orgasm",
@@ -807,7 +734,8 @@
 					"mean": "1.45",
 					"stddev": "0.60"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"ProbShopping": {
 			"label": "Problematic Shopping",
@@ -820,7 +748,8 @@
 					"mean": "1.47",
 					"stddev": "0.66"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"Purging": {
 			"label": "Purging",
@@ -833,7 +762,8 @@
 					"mean": "1.12",
 					"stddev": "0.35"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"RealityDist": {
 			"label": "Reality Distortion",
@@ -846,7 +776,8 @@
 					"mean": "1.19",
 					"stddev": "0.37"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disordered"
 		},
 		"Restless": {
 			"label": "Restlessness",
@@ -859,7 +790,8 @@
 					"mean": "1.46",
 					"stddev": "0.61"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"RestrictedAffect": {
 			"label": "Restricted Affectivity",
@@ -872,7 +804,8 @@
 					"mean": "1.80",
 					"stddev": "0.72"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-detached"
 		},
 		"RestrictiveEating": {
 			"label": "Restricted Eating",
@@ -885,7 +818,8 @@
 					"mean": "1.48",
 					"stddev": "0.64"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-eating"
 		},
 		"Rigidity": {
 			"label": "Rigidity",
@@ -898,7 +832,8 @@
 					"mean": "1.83",
 					"stddev": "0.62"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"RiskAversion": {
 			"label": "Risk Aversion",
@@ -911,7 +846,8 @@
 					"mean": "2.43",
 					"stddev": "0.79"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"RiskTaking": {
 			"label": "Risk Taking",
@@ -924,7 +860,8 @@
 					"mean": "1.39",
 					"stddev": "0.59"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"RiskySex": {
 			"label": "Risky Sex",
@@ -937,7 +874,8 @@
 					"mean": "1.35",
 					"stddev": "0.56"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"RomDisinterest": {
 			"label": "Romantic Disinterest",
@@ -950,7 +888,8 @@
 					"mean": "2.04",
 					"stddev": "0.93"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-detached"
 		},
 		"SexSubstanceUse": {
 			"label": "Sex-Related Substance Use",
@@ -963,7 +902,8 @@
 					"mean": "1.24",
 					"stddev": "0.48"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"SexualDistress": {
 			"label": "Sexual Distress",
@@ -976,7 +916,8 @@
 					"mean": "1.59",
 					"stddev": "0.78"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"SexualPain": {
 			"label": "Sexual Pain",
@@ -989,7 +930,8 @@
 					"mean": "1.29",
 					"stddev": "0.62"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-sexual"
 		},
 		"SocAggression": {
 			"label": "Social Aggression",
@@ -1002,7 +944,8 @@
 					"mean": "1.22",
 					"stddev": "0.37"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"SocAloofness": {
 			"label": "Social Aloofness",
@@ -1015,7 +958,8 @@
 					"mean": "2.49",
 					"stddev": "0.90"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-detached"
 		},
 		"SocAnxiety": {
 			"label": "Social Anxiety",
@@ -1028,7 +972,8 @@
 					"mean": "2.06",
 					"stddev": "0.89"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-detached"
 		},
 		"SomaticPreocc": {
 			"label": "Somatic Preoccupation",
@@ -1041,7 +986,8 @@
 					"mean": "2.36",
 					"stddev": "0.77"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-somatoform"
 		},
 		"SpecifcPhobiaIndex": {
 			"label": "Specific Phobia Index",
@@ -1054,7 +1000,8 @@
 					"mean": "1.62",
 					"stddev": "0.53"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Submissiveness": {
 			"label": "Submissiveness",
@@ -1067,7 +1014,8 @@
 					"mean": "1.87",
 					"stddev": "0.72"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-detached"
 		},
 		"Suicidality": {
 			"label": "Suicidality",
@@ -1080,7 +1028,8 @@
 					"mean": "1.36",
 					"stddev": "0.53"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-distress"
 		},
 		"TraumaReactions": {
 			"label": "Trauma Reactions",
@@ -1093,7 +1042,8 @@
 					"mean": "1.75",
 					"stddev": "0.83"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Trichotillomania": {
 			"label": "Trichotillomania",
@@ -1106,7 +1056,8 @@
 					"mean": "1.20",
 					"stddev": "0.45"
 				}
-			}
+			},
+			"mapping": "hitop-subfactor-fear"
 		},
 		"Wellbeing": {
 			"label": "Well-being",
@@ -1119,7 +1070,8 @@
 					"mean": "2.53",
 					"stddev": "0.82"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-detached"
 		},
 		"Workaholism": {
 			"label": "Workaholism",
@@ -1132,7 +1084,8 @@
 					"mean": "1.60",
 					"stddev": "0.65"
 				}
-			}
+			},
+			"mapping": "hitop-spectra-disinhibited"
 		},
 		"Deceitfulness": {
 			"label": "Deceitfulness",
@@ -1146,7 +1099,8 @@
 					"stddev": "0.69"
 				}
 			},
-			"parent": "Dishonesty"
+			"parent": "Dishonesty",
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"Manipulativeness": {
 			"label": "Manipulativeness",
@@ -1160,7 +1114,8 @@
 					"stddev": "0.50"
 				}
 			},
-			"parent": "Dishonesty"
+			"parent": "Dishonesty",
+			"mapping": "hitop-spectra-antagonistic"
 		},
 		"Anehdonia": {
 			"label": "Anhedonia",
@@ -1174,7 +1129,8 @@
 					"stddev": "0.96"
 				}
 			},
-			"parent": "Distress"
+			"parent": "Distress",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"AnxiousWorry": {
 			"label": "Anxious Worry",
@@ -1188,7 +1144,8 @@
 					"stddev": "1.01"
 				}
 			},
-			"parent": "Distress"
+			"parent": "Distress",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"DepressedMood": {
 			"label": "Depressed Mood",
@@ -1202,7 +1159,8 @@
 					"stddev": "1.00"
 				}
 			},
-			"parent": "Distress"
+			"parent": "Distress",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Lassitude": {
 			"label": "Lassitude",
@@ -1216,7 +1174,8 @@
 					"stddev": "0.97"
 				}
 			},
-			"parent": "Distress"
+			"parent": "Distress",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"ShameGuilt": {
 			"label": "Shame/Guilt",
@@ -1230,7 +1189,8 @@
 					"stddev": "0.94"
 				}
 			},
-			"parent": "Distress"
+			"parent": "Distress",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"AffLability": {
 			"label": "Affective Lability",
@@ -1244,7 +1204,8 @@
 					"stddev": "0.69"
 				}
 			},
-			"parent": "Emotionality"
+			"parent": "Emotionality",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"AngryHostility": {
 			"label": "Angry Hostility",
@@ -1258,7 +1219,8 @@
 					"stddev": "0.63"
 				}
 			},
-			"parent": "Emotionality"
+			"parent": "Emotionality",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Irritability": {
 			"label": "irritability",
@@ -1272,7 +1234,8 @@
 					"stddev": "0.83"
 				}
 			},
-			"parent": "Emotionality"
+			"parent": "Emotionality",
+			"mapping": "hitop-subfactor-distress"
 		},
 		"Cynicism": {
 			"label": "Cynicism",
@@ -1286,7 +1249,8 @@
 					"stddev": "0.84"
 				}
 			},
-			"parent": "Mistrust"
+			"parent": "Mistrust",
+			"mapping": "hitop-spectra-disordered"
 		},
 		"Suspiciousness": {
 			"label": "Suspiciousness",
@@ -1300,7 +1264,8 @@
 					"stddev": "0.67"
 				}
 			},
-			"parent": "Mistrust"
+			"parent": "Mistrust",
+			"mapping": "hitop-spectra-disordered"
 		},
 		"Delusions": {
 			"label": "Delusions",
@@ -1314,7 +1279,8 @@
 					"stddev": "0.36"
 				}
 			},
-			"parent": "RealityDist"
+			"parent": "RealityDist",
+			"mapping": "hitop-spectra-disordered"
 		},
 		"Hallucinations": {
 			"label": "Hallucinations",
@@ -1328,7 +1294,8 @@
 					"stddev": "0.42"
 				}
 			},
-			"parent": "RealityDist"
+			"parent": "RealityDist",
+			"mapping": "hitop-spectra-disordered"
 		},
 		"AnimalPhobia": {
 			"label": "Animal-Insect Phobia",
@@ -1342,7 +1309,8 @@
 					"stddev": "0.74"
 				}
 			},
-			"parent": "SpecifcPhobiaIndex"
+			"parent": "SpecifcPhobiaIndex",
+			"mapping": "hitop-subfactor-fear"
 		},
 		"BloodPhobia": {
 			"label": "Blood-Injection Phobia",
@@ -1356,7 +1324,8 @@
 					"stddev": "0.55"
 				}
 			},
-			"parent": "SpecifcPhobiaIndex"
+			"parent": "SpecifcPhobiaIndex",
+			"mapping": "hitop-subfactor-fear"
 		},
 		"SituationalPhobia": {
 			"label": "Situational Phobias",
@@ -1370,7 +1339,8 @@
 					"stddev": "0.62"
 				}
 			},
-			"parent": "SpecifcPhobiaIndex"
+			"parent": "SpecifcPhobiaIndex",
+			"mapping": "hitop-subfactor-fear"
 		}
 	},
 	"questions": [

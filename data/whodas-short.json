@@ -5,7 +5,6 @@
 		"description": [
 			"The WHODAS 2.0 assessment is a generic instrument for assessing health status and disability across different cultures and settings. It can be used across all diseases, including mental, neurological and addictive disorders."
 		],
-		"type": "questionnaire",
 		"references": [
 			{
 				"title": "WHO Disability Assessment Schedule 2.0",

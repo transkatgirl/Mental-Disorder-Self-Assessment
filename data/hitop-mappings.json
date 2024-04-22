@@ -1,0 +1,112 @@
+{
+	"hitop-superspectra-general": {
+		"superspectra": [
+			"General Factor of Psychopathology (p-factor)"
+		]
+	},
+	"hitop-spectra-somatoform": {
+		"spectra": [
+			"Somatoform"
+		]
+	},
+	"hitop-spectra-internalizing": {
+		"spectra": [
+			"Internalizing"
+		]
+	},
+	"hitop-subfactor-sexual": {
+		"spectra": [
+			"Internalizing"
+		],
+		"subfactor": [
+			"Sexual Problems"
+		]
+	},
+	"hitop-subfactor-eating": {
+		"spectra": [
+			"Internalizing"
+		],
+		"subfactor": [
+			"Eating Pathology"
+		]
+	},
+	"hitop-subfactor-fear": {
+		"spectra": [
+			"Internalizing"
+		],
+		"subfactor": [
+			"Fear"
+		]
+	},
+	"hitop-subfactor-distress": {
+		"spectra": [
+			"Internalizing"
+		],
+		"subfactor": [
+			"Distress"
+		]
+	},
+	"hitop-subfactor-mania": {
+		"spectra": [
+			"Internalizing",
+			"Thought Disorder"
+		],
+		"subfactor": [
+			"Mania"
+		]
+	},
+	"hitop-spectra-disordered": {
+		"spectra": [
+			"Thought Disorder"
+		]
+	},
+	"hitop-spectra-detached": {
+		"spectra": [
+			"Detachment"
+		]
+	},
+	"hitop-superspectra-externalizing": {
+		"superspectra": [
+			"Externalizing"
+		]
+	},
+	"hitop-spectra-disinhibited": {
+		"superspectra": [
+			"Externalizing"
+		],
+		"spectra": [
+			"Disinhibited Externalizing"
+		]
+	},
+	"hitop-subfactor-substance": {
+		"superspectra": [
+			"Externalizing"
+		],
+		"spectra": [
+			"Disinhibited Externalizing"
+		],
+		"subfactor": [
+			"Harmful Substance Use"
+		]
+	},
+	"hitop-subfactor-antisocial": {
+		"superspectra": [
+			"Externalizing"
+		],
+		"spectra": [
+			"Disinhibited Externalizing",
+			"Antagonistic Externalizing"
+		],
+		"subfactor": [
+			"Antisocial Behavior"
+		]
+	},
+	"hitop-spectra-antagonistic": {
+		"superspectra": [
+			"Externalizing"
+		],
+		"spectra": [
+			"Antagonistic Externalizing"
+		]
+	}
+}
