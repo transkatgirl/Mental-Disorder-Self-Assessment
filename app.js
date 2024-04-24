@@ -56,6 +56,24 @@ function shuffle(array) {
 	}
 }
 
+function approximate(number) {
+	const multiplier = 10 ** Math.floor(Math.log10(number));
+
+	return Math.round((number / multiplier)) * multiplier;
+}
+
+function approximate_lower(number) {
+	const multiplier = 10 ** Math.floor(Math.log10(number));
+
+	return Math.floor((number / multiplier)) * multiplier;
+}
+
+function approximate_higher(number) {
+	const multiplier = 10 ** Math.floor(Math.log10(number));
+
+	return Math.ceil((number / multiplier)) * multiplier;
+}
+
 shuffle(hitop_sr.questions);
 for (let index = 0; index < hitop_sr.questions.length; ++index) {
 	shuffle(hitop_sr.questions[index]);
@@ -522,32 +540,27 @@ function build_assessment_results(assessment, scores, percentiles) {
 
 	const table_head = document.createElement("thead");
 	const table_head_row = document.createElement("tr");
-	table_head.appendChild(table_head_row);
+
+	const table_head_item_scale = document.createElement("th");
+	table_head_item_scale.innerText = "Scale";
+	table_head_row.appendChild(table_head_item_scale);
 	if (has_subscores) {
-		const table_head_item_1 = document.createElement("th");
-		table_head_item_1.innerText = "Scale";
-		const table_head_item_2 = document.createElement("th");
-		table_head_item_2.innerText = "Subscale";
-		const table_head_item_3 = document.createElement("th");
-		table_head_item_3.innerText = "Value";
-
-		table_head_row.appendChild(table_head_item_1);
-		table_head_row.appendChild(table_head_item_2);
-		table_head_row.appendChild(table_head_item_3);
-	} else {
-		const table_head_item_1 = document.createElement("th");
-		table_head_item_1.innerText = "Scale";
-		const table_head_item_2 = document.createElement("th");
-		table_head_item_2.innerText = "Value";
-
-		table_head_row.appendChild(table_head_item_1);
-		table_head_row.appendChild(table_head_item_2);
+		const table_head_item_subscale = document.createElement("th");
+		table_head_item_subscale.innerText = "Subscale";
+		table_head_row.appendChild(table_head_item_subscale);
 	}
+
+	const table_head_item_value = document.createElement("th");
+	table_head_item_value.innerText = "Value";
+	table_head_row.appendChild(table_head_item_value);
+
+	table_head.appendChild(table_head_row);
 	results_table.appendChild(table_head);
 
 	const table_body = document.createElement("tbody");
 
 	var last_scale;
+	//var last_scale_element;
 
 	for (const [key, value] of sorted_scores) {
 		if (key in assessment.scales) {
@@ -699,15 +712,27 @@ function init_references(reference_objects) {
 	reference_list.innerHTML = "";
 
 	reference_objects.forEach(function (item, index) {
-		const list_item = document.createElement("li");
+		if ((item.link != null) || (item.title != null)) {
+			const list_item = document.createElement("li");
 
-		const item_link = document.createElement("a");
-		item_link.href = item.link;
-		item_link.innerText = item.title;
+			if (item.link != null) {
+				const item_link = document.createElement("a");
+				item_link.href = item.link;
 
-		list_item.appendChild(item_link);
+				if (item.title != null) {
+					item_link.innerText = item.title;
+				} else {
+					item_link.innerText = item.link;
+				}
 
-		reference_list.appendChild(list_item);
+				list_item.appendChild(item_link);
+
+			} else {
+				list_item.innerText = item.title;
+			}
+
+			reference_list.appendChild(list_item);
+		}
 	});
 }
 
@@ -717,8 +742,13 @@ function init_assessment_info(number_questionnaires, number_questions) {
 	const application_title = document.createElement("h2");
 	application_title.innerText = "Start Assessment?";
 
+	const question_approx_multiplier = 10 ** Math.floor(Math.log10(number_questions));
+
+	const min_question_minutes = ((number_questions * 6) / 60);
+	const max_question_minutes = ((number_questions * 9) / 60);
+
 	const assessment_info_1 = document.createElement("p");
-	assessment_info_1.innerText = "This application currently contains " + number_questionnaires + " questionnaires, which can be completed and scored independently. If you intend to complete all of the available questionnaires, this will result in a total length of roughly " + (Math.round(number_questions / 100) * 100) + " questions, which is estimated to take " + Math.floor((number_questions * 6) / 600) * 10 + " to " + Math.ceil((number_questions * 9) / 600) * 10 + " minutes to complete.";
+	assessment_info_1.innerText = "This application currently contains " + number_questionnaires + " questionnaires, which can be completed and scored independently. If you intend to complete all of the available questionnaires, this will result in a total length of roughly " + approximate(number_questions) + " questions, which is estimated to take " + approximate_lower(min_question_minutes) + " to " + approximate_higher(max_question_minutes) + " minutes to complete.";
 
 	const assessment_info_2 = document.createElement("p");
 	assessment_info_2.innerText = "Avoid closing the application until you are finished using it, as this will erase all progress made.";
