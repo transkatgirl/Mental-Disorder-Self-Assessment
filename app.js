@@ -602,12 +602,12 @@ function build_assessment_results(assessment, scores, percentiles) {
 				} else {
 					table_item_value.innerText = value + " (" + getOrdinalSuffix(Math.round(percentiles.get(key))) + " percentile)";
 				}
-				if (percentiles.get(key) < (getZPercentile(-1) * 100)) {
-					table_item_value.style.color = "blue";
-				} else if (percentiles.get(key) > (getZPercentile(2) * 100)) {
-					table_item_value.style.color = "red";
-				} else if (percentiles.get(key) > (getZPercentile(1.5) * 100)) {
-					table_item_value.style.color = "orange";
+				if (percentiles.get(key) <= (getZPercentile(-1) * 100)) {
+					table_item_value.setAttribute("class", "score-low");
+				} else if (percentiles.get(key) >= (getZPercentile(2) * 100)) {
+					table_item_value.setAttribute("class", "score-alert");
+				} else if (percentiles.get(key) >= (getZPercentile(1.5) * 100)) {
+					table_item_value.setAttribute("class", "score-warn");
 				}
 			} else {
 				table_item_value.innerText = value;
