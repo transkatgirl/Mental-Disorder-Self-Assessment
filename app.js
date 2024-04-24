@@ -748,7 +748,22 @@ function init_assessment_info(number_questionnaires, number_questions) {
 	const max_question_minutes = ((number_questions * 9) / 60);
 
 	const assessment_info_1 = document.createElement("p");
-	assessment_info_1.innerText = "This application currently contains " + number_questionnaires + " questionnaires, which can be completed and scored independently. If you intend to complete all of the available questionnaires, this will result in a total length of roughly " + approximate(number_questions) + " questions, which is estimated to take " + approximate_lower(min_question_minutes) + " to " + approximate_higher(max_question_minutes) + " minutes to complete.";
+	if (number_questionnaires > 1) {
+		if (max_question_minutes <= 5) {
+			assessment_info_1.innerText = "This application currently contains " + number_questionnaires + " questionnaires, which can be completed and scored independently. If you intend to complete all of the available questionnaires, this will result in a total length of roughly " + approximate(number_questions) + " questions, which is estimated to take up to 5 minutes to complete.";
+		} else {
+			assessment_info_1.innerText = "This application currently contains " + number_questionnaires + " questionnaires, which can be completed and scored independently. If you intend to complete all of the available questionnaires, this will result in a total length of roughly " + approximate(number_questions) + " questions, which is estimated to take " + approximate_lower(min_question_minutes) + " to " + approximate_higher(max_question_minutes) + " minutes to complete.";
+		}
+	} else if (number_questionnaires != 0) {
+		if (max_question_minutes <= 5) {
+			assessment_info_1.innerText = "This application currently contains one questionnaire, with a total length of roughly " + approximate(number_questions) + " questions. This is estimated to take up to 5 minutes to complete.";
+		} else {
+			assessment_info_1.innerText = "This application currently contains one questionnaire, with a total length of roughly " + approximate(number_questions) + " questions. This is estimated to take " + approximate_lower(min_question_minutes) + " to " + approximate_higher(max_question_minutes) + " minutes to complete.";
+		}
+	} else {
+		return;
+	}
+
 
 	const assessment_info_2 = document.createElement("p");
 	assessment_info_2.innerText = "Avoid closing the application until you are finished using it, as this will erase all progress made.";
