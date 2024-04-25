@@ -2,17 +2,20 @@
 	"hitop-superspectra-general": {
 		"superspectra": [
 			"General Factor of Psychopathology (p-factor)"
-		]
+		],
+		"index": 0
 	},
 	"hitop-spectra-somatoform": {
 		"spectra": [
 			"Somatoform"
-		]
+		],
+		"index": 1
 	},
 	"hitop-spectra-internalizing": {
 		"spectra": [
 			"Internalizing"
-		]
+		],
+		"index": 2
 	},
 	"hitop-subfactor-sexual": {
 		"spectra": [
@@ -20,7 +23,8 @@
 		],
 		"subfactor": [
 			"Sexual Problems"
-		]
+		],
+		"index": 3
 	},
 	"hitop-subfactor-eating": {
 		"spectra": [
@@ -28,7 +32,8 @@
 		],
 		"subfactor": [
 			"Eating Pathology"
-		]
+		],
+		"index": 4
 	},
 	"hitop-subfactor-fear": {
 		"spectra": [
@@ -36,7 +41,8 @@
 		],
 		"subfactor": [
 			"Fear"
-		]
+		],
+		"index": 5
 	},
 	"hitop-subfactor-distress": {
 		"spectra": [
@@ -44,7 +50,8 @@
 		],
 		"subfactor": [
 			"Distress"
-		]
+		],
+		"index": 6
 	},
 	"hitop-subfactor-mania": {
 		"spectra": [
@@ -53,22 +60,26 @@
 		],
 		"subfactor": [
 			"Mania"
-		]
+		],
+		"index": 7
 	},
 	"hitop-spectra-disordered": {
 		"spectra": [
 			"Thought Disorder"
-		]
+		],
+		"index": 8
 	},
 	"hitop-spectra-detached": {
 		"spectra": [
 			"Detachment"
-		]
+		],
+		"index": 9
 	},
 	"hitop-superspectra-externalizing": {
 		"superspectra": [
 			"Externalizing"
-		]
+		],
+		"index": 10
 	},
 	"hitop-spectra-disinhibited": {
 		"superspectra": [
@@ -76,7 +87,8 @@
 		],
 		"spectra": [
 			"Disinhibited Externalizing"
-		]
+		],
+		"index": 11
 	},
 	"hitop-subfactor-substance": {
 		"superspectra": [
@@ -87,7 +99,8 @@
 		],
 		"subfactor": [
 			"Harmful Substance Use"
-		]
+		],
+		"index": 12
 	},
 	"hitop-subfactor-antisocial": {
 		"superspectra": [
@@ -99,7 +112,8 @@
 		],
 		"subfactor": [
 			"Antisocial Behavior"
-		]
+		],
+		"index": 13
 	},
 	"hitop-spectra-antagonistic": {
 		"superspectra": [
@@ -107,6 +121,7 @@
 		],
 		"spectra": [
 			"Antagonistic Externalizing"
-		]
+		],
+		"index": 14
 	}
 }
