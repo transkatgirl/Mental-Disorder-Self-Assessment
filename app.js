@@ -632,7 +632,7 @@ function build_assessment_results(assessment, scores, percentiles) {
 					table_item_value.setAttribute("class", "score-low");
 				} else if (percentiles.get(key) >= (getZPercentile(2) * 100)) {
 					table_item_value.setAttribute("class", "score-alert");
-				} else if (percentiles.get(key) >= (getZPercentile(1.5) * 100)) {
+				} else if (percentiles.get(key) >= (getZPercentile(1) * 100)) {
 					table_item_value.setAttribute("class", "score-warn");
 				}
 			} else {
